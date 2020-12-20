@@ -1,0 +1,218 @@
+#### Contents
+- [Guides](#guides) - high level guides
+- [Examples](../examples/) - full examples of code
+- [Projects](#projects) - project briefs and due dates
+
+---
+
+- Week 1 - [Hello, World! Again!](#hello-world-again) - ...
+- Week 2 - [Review](#review) - ...
+- Week 3 - [Voices](#voices) - ...
+- Week 4 - [Data](#data) - ...
+- Week 4 - [AI](#ai)
+- Week 6 - [Project 1 Studio](#project-1-studio) - ...
+- Reading week
+- Week 7 - [The webpage](#the-webpage) - ...
+- Week 8 - [jQuery](#jquery) - ...
+- Week 9 - [jQuery UI](#jquery-ui) - ...
+- Week 10 - [3D](#3d) - ...
+- Week 11 - [Project 2 Studio I](#project-2-studio-i) - support for project 2
+- Week 12 - [Project 2 Studio II](#project-2-studio-ii) - support for project 2
+- Week 13 - [Project 2 Studio III](#project-2-studio-iii) - support for project 2
+
+---
+
+#### Guides
+- tbd.
+
+#### Projects
+- tbd.
+
+---
+
+# Hello, World! Again!
+
+Week of 18 January 2021
+
+## Objectives
+- Meeting each other
+- Discussing the course
+- Installing software
+
+## Reminders
+- The [C-LAB](https://clab.concordia.ca/) is there to help you
+
+## Before class
+- Install the course software if you haven't already
+- Join the course Discord (invite link at top of course Moodle)
+- Get pumped!
+
+## Classroom
+- Discussion of the week in #start-of-class
+
+## Studio
+- Start work on next week's material
+
+## Homework
+- Continue work on next week's material
+
+---
+
+# Review
+
+Week of 25 January 2021
+
+## Objectives
+- Remembering JavaScript fundamentals
+- Remembering p5.js
+
+## Reminders
+- The [C-LAB](https://clab.concordia.ca/) is there to help you
+
+## Before class
+
+### Topics
+- p5.js
+- Variables
+- Conditionals
+- Events
+- Loops
+- Functions
+- Object-Oriented Programming
+
+### Activity
+- Simple tile-based world? (Maybe even have the examples above built that idea?)
+
+### Examples
+- Examples from CART253 most obviously
+
+---
+
+# Voices (p5.Gibber? Pizzicato?)
+
+Week of 1 February 2021
+
+## Objectives
+- Making the computer talk with ResponsiveVoice
+- Making the computer listen with annyang!
+- Making music with p5.Gibber?
+
+## Before class
+
+### Topics
+- JavaScript libraries
+- ResponsiveVoice
+- annyang!
+- p5.Gibber?
+ -Pizzicato?
+
+### Activity
+- Slamina?
+
+### Examples
+- ...
+
+---
+
+# Data (including localStorage) (and geolocation?)
+
+Week of 8 February 2021
+
+## Objectives
+- Understanding the JSON format
+- Playing with JSON data
+- Saving and loading data in the browser
+
+---
+
+# AI (and X?)
+
+Week of 15 February 2021
+
+## Objectives
+- Playing with ml5.js
+
+---
+
+# Project 1 studio (and Phaser)
+
+Week of 22 February 2021
+
+## Objectives
+- Working on Project 1
+
+---
+
+# Reading week (Could let P1 hand-in slip into here for them)
+
+Week of 1 March 2021
+
+---
+
+# The Webpage (and animation/scrolling?)
+
+Week of 8 March 2021
+
+## Objectives
+- Understanding HTML and CSS
+- Understanding the JavaScript and the DOM
+- ... animation? Scrolling?
+
+---
+
+# jQuery (and prediction?)
+
+Week of 15 March 2021
+
+## Objectives
+- Learning to use jQuery
+- Playing with user prediction
+
+---
+
+# jQuery UI (and form input?)
+
+Week of 22 March 2021
+
+## Objectives
+- Learning to use jQuery UI
+- Using form input in a program
+
+---
+
+# A-Frame (and threes.js?)
+
+Week of 29 March 2021
+
+## Objectives
+- Learning the A-Frame library
+- Using jQuery with A-Frame
+
+---
+
+# Project 2 studio
+
+Week of 5 April 2021
+
+## Objectives
+- Working on Project 2
+
+---
+
+# Project 2 studio
+
+Week of 12 April 2021
+
+## Objectives
+- Working on Project 2
+
+---
+
+# Project 2 studio
+
+Week of 19 April 2021
+
+## Objectives
+- Working on Project 2
+
+---
