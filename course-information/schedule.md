@@ -88,7 +88,7 @@ Week of 25 January 2021
 
 ---
 
-# Voices (p5.Gibber? Pizzicato?)
+# Voices
 
 Week of 1 February 2021
 
@@ -114,7 +114,7 @@ Week of 1 February 2021
 
 ---
 
-# Data (including localStorage) (and geolocation?)
+# Data
 
 Week of 8 February 2021
 
@@ -125,7 +125,7 @@ Week of 8 February 2021
 
 ---
 
-# AI (and X?)
+# AI
 
 Week of 15 February 2021
 
@@ -134,22 +134,23 @@ Week of 15 February 2021
 
 ---
 
-# Project 1 studio (and Phaser)
+# Project 1 studio
 
 Week of 22 February 2021
 
 ## Objectives
 - Working on Project 1
+- Getting a taste of a game engine
 
 ---
 
-# Reading week (Could let P1 hand-in slip into here for them)
+# Reading week
 
 Week of 1 March 2021
 
 ---
 
-# The Webpage (and animation/scrolling?)
+# The Webpage
 
 Week of 8 March 2021
 
@@ -160,7 +161,7 @@ Week of 8 March 2021
 
 ---
 
-# jQuery (and prediction?)
+# jQuery
 
 Week of 15 March 2021
 
@@ -170,7 +171,7 @@ Week of 15 March 2021
 
 ---
 
-# jQuery UI (and form input?)
+# jQuery UI
 
 Week of 22 March 2021
 
@@ -180,7 +181,7 @@ Week of 22 March 2021
 
 ---
 
-# A-Frame (and threes.js?)
+# A-Frame
 
 Week of 29 March 2021
 
