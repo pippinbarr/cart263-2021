@@ -1,0 +1,44 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+@font-face {
+    font-family: 'Atkinson';
+    src: url('../fonts/atkinson-hyperlegible-bold-102-webfont.woff2') format('woff2'),
+         url('../fonts/atkinson-hyperlegible-bold-102-webfont.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'Atkinson';
+    src: url('../fonts/atkinson-hyperlegible-bolditalic-102-webfont.woff2') format('woff2'),
+         url('../fonts/atkinson-hyperlegible-bolditalic-102-webfont.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+
+}
+
+@font-face {
+    font-family: 'Atkinson';
+    src: url('../fonts/atkinson-hyperlegible-italic-102-webfont.woff2') format('woff2'),
+         url('../fonts/atkinson-hyperlegible-italic-102-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+
+}
+
+@font-face {
+    font-family: 'Atkinson';
+    src: url('../fonts/atkinson-hyperlegible-regular-102-webfont.woff2') format('woff2'),
+         url('../fonts/atkinson-hyperlegible-regular-102-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body {
+  font-family: Atkinson, sans-serif;
+}
