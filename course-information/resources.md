@@ -1,4 +1,4 @@
-#### [Home](/README.md) | [Schedule](/course-information/schedule.md) | [Course Outline](/course-information/outline.md)
+#### [Home](../README.md) | [Schedule](schedule.md) | [Course Outline](outline.md)
 
 # Resources
 
