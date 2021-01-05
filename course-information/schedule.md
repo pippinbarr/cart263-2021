@@ -1,4 +1,4 @@
-# CART 263 - Creative Computation II - Winter 2021
+# Schedule
 
 #### Contents
 - [Guides](#guides) - high level guides

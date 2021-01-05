@@ -1,4 +1,4 @@
-# Other resources
+# Resources
 
 The internet is full of amazing resources for learning how to program, and specifically for learning how to program in JavaScript and how to use the many available libraries. This is not a complete list, just an indication of a few good options.
 
