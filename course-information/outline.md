@@ -1,3 +1,5 @@
+#### [Home](../README.md) | [Schedule](schedule.md) | [Course Outline](outline.md) | [Repository](https://www.github.com/pippinbarr/cart263-2021)
+
 # CART 263: Creative Computation II – Winter 2021 – 3 credits
 
 ## When?

@@ -1,4 +1,4 @@
-#### [Home](../README.md) | [Schedule](schedule.md) | [Course Outline](outline.md)
+#### [Home](../README.md) | [Schedule](schedule.md) | [Course Outline](outline.md) | [Repository](https://www.github.com/pippinbarr/cart263-2021)
 
 # Resources
 
