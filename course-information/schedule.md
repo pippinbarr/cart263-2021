@@ -76,17 +76,16 @@ Week of 25 January 2021
 ## Before class
 
 ### Topics
-- [p5.js](../topics/p5js/p5js.md)
-- [JavaScript Review](../topics/javascript/review/javascript-review.md)
+- [JavaScript syntax review](../topics/javascript/syntax-review/javascript-review.md)
 - [Constants](../topics/javascript/constants.md)
 - [More functions](more-functions.md)
 - [Object parameters](object-parameters.md)
 
 ### Activity
-- Where's Sausage Dog?
+- [Activity: Where's Sausage Dog?](../activities/wheres-sausage-dog.md)
 
 ### Exercise
-- No really, where's sausage dog???
+- [Exercise: Where's Sausage Dog?+](../exercises/wheres-sausage-dog-plus)
 
 ### Examples
 - Examples from CART253 most obviously
