@@ -76,16 +76,17 @@ Week of 25 January 2021
 ## Before class
 
 ### Topics
-- p5.js
-- Variables
-- Conditionals
-- Events
-- Loops
-- Functions
-- Object-Oriented Programming
+- [p5.js](../topics/p5js/p5js.md)
+- [JavaScript Review](../topics/javascript/review/javascript-review.md)
+- [Constants](../topics/javascript/constants.md)
+- [More functions](more-functions.md)
+- [Object parameters](object-parameters.md)
 
 ### Activity
-- Simple tile-based world? (Maybe even have the examples above built that idea?)
+- Where's Sausage Dog?
+
+### Exercise
+- No really, where's sausage dog???
 
 ### Examples
 - Examples from CART253 most obviously
