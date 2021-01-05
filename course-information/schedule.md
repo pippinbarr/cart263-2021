@@ -1,8 +1,4 @@
-```javascript
-function setup() {
-  console.log("Hello, world!");
-}
-```
+# CART 263 - Creative Computation II - Winter 2021
 
 #### Contents
 - [Guides](#guides) - high level guides
