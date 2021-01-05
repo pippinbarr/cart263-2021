@@ -1,3 +1,9 @@
+```javascript
+function setup() {
+  console.log("Hello, world!");
+}
+```
+
 #### Contents
 - [Guides](#guides) - high level guides
 - [Examples](../examples/) - full examples of code
