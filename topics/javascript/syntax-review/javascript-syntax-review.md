@@ -16,11 +16,11 @@ In Creative Computation II, we will be assuming that this material can be more o
 - [`"use strict";`](use-strict.md)
 - [Variables](variables.md)
 - [Values](values.md)
-- [Object-Oriented Programming](oop.md)
-- [Functions](functions.md)
-- [Arrays](arrays.md)
 - [Conditionals](conditionals.md)
+- [Functions](functions.md)
 - [Loops](loops.md)
+- [Object-Oriented Programming](oop.md)
+- [Arrays](arrays.md)
 
 ---
 
