@@ -122,3 +122,44 @@ class Tiger {
 - The above arrow function version does work because the arrow function __doesn't__ create a new context (or `this`), and so the `this` still refers to the `Tiger`.
 
 - Read more here: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions (or Google it)
+
+
+
+---
+
+## Extra: forEach loops
+
+- There's another kind of loop specifically for arrays
+- It works by calling a _function_ on each element in an array, passing the element as an argument
+
+```javascript
+let numbers = [1,2,3,5,7,11,13];
+numbers.forEach(function (element) {
+  console.log(element);
+});
+```
+
+- `forEach` is **not guaranteed to go through the array in order**
+- But it can be a nice way to do something to every array element when order doesn't matter, e.g.
+
+```javascript
+enemies.forEach(function (enemy) {
+  enemy.update();
+  enemy.display();
+});
+```
+
+???
+
+- Note that this is a classic use of an anonymous function!
+- This kind of use of a function, passed as a parameter to some other function so it can be used at the appropriate time or with the appropriate data, is called a "callback" function
+- If you dislike using anonymous functions (which is fine!) you can write a defined function instead:
+
+```javascript
+enemies.forEach(handleEnemy);
+
+function handleEnemy(enemy) {
+  enemy.update();
+  enemy.display();
+}
+```

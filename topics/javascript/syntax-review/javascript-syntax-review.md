@@ -19,8 +19,8 @@ In Creative Computation II, we will be assuming that this material can be more o
 - [Conditionals](conditionals.md)
 - [Functions](functions.md)
 - [Loops](loops.md)
-- [Object-Oriented Programming](oop.md)
 - [Arrays](arrays.md)
+- [Object-Oriented Programming](oop.md)
 
 ---
 
