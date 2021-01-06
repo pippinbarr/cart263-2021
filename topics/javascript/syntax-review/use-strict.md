@@ -67,3 +67,7 @@ That error then helps us to see our mistake! Phew!
 ## Use `"use strict";`!
 
 It is your friend and it wants to help you.
+
+---
+
+# }

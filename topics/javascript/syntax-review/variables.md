@@ -139,3 +139,7 @@ function draw() {
 ```
 
 It's the different behaviour of `anotherLocalVariable` here that's the key. When we use `let` we are guaranteeing our variable will **only** exist within its current curly brackets. This is much more consistent than the behaviour of `var` and that's why we prefer `let`!
+
+---
+
+# }
