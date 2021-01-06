@@ -73,31 +73,4 @@ So, `i` starts at 0, and then becomes 1, 2, 3, 4, 5, 6, 7, 8, 9 until the loop e
 
 ---
 
-## `for` loops and arrays
-
-`for` loops are especially marvellous at going through an array and doing something with each element in it. We could add all the numbers in an array together for example...
-
-```javascript
-let numbers = [1,2,3,5,7,11,13];
-
-let sum = 0;
-for (let i = 0; i < numbers.length; i++) {
-  sum = sum + numbers[i];
-}
-
-console.log(sum); // 42
-```
-
-Note the use of `numbers.length` to limit `i` (this guarantees we won't count past the end of the array).
-
-When we're working with programs that contain arrays of objects we need to update, `for` loops are great there too, e.g. if we have an array of cat objects that will wander around on the screen with their `update()` method we can update all the cats in the array with a `for` loop:
-
-```javascript
-for (let i = 0; i < cats.length; i++) {
-  cats[i].update();
-}
-```
-
----
-
 # }
