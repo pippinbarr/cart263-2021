@@ -76,11 +76,11 @@ Week of 25 January 2021
 ## Before class
 
 ### Topics
-- (If needed) **Read** [JavaScript syntax review](../topics/javascript/syntax-review/javascript-review.md)
+- (If needed) **Read** [JavaScript syntax review](../topics/javascript/syntax-review/javascript-syntax-review.md)
 - (If needed) **Watch** [Creative Computation I videos](https://www.youtube.com/channel/UCgMMSLb6Zywjhk9JW6I00Aw) and **Review** [Creative Computation I materials](https://github.com/pippinbarr/cart253-2020/blob/master/course-information/schedule.md)
 - **Watch** [Constants]() video and **read** [Constants](../topics/javascript/constants.md) notes.
-- **Watch** [Object parameters]() video and **read** [Object parameters](object-parameters.md) notes.
-- **Watch** [First-class functions]() video and **read** [First-class functions](first-class-functions.md) notes.
+- **Watch** [Object parameters]() video and **read** [Object parameters](../topics/javascript/object-parameters.md) notes.
+- **Watch** [First-class functions]() video and **read** [First-class functions](../topics/javascript/first-class-functions.md) notes.
 
 ### Activity
 - **Complete** [Activity: Where's Sausage Dog?](../activities/wheres-sausage-dog.md) (**Watch** [Where's Sausage Dog? activity]() video to see Pippin doing it)
