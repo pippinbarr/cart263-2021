@@ -76,19 +76,20 @@ Week of 25 January 2021
 ## Before class
 
 ### Topics
-- [JavaScript syntax review](../topics/javascript/syntax-review/javascript-review.md)
-- [Constants](../topics/javascript/constants.md)
-- [Object parameters](object-parameters.md)
-- [First-class functions](first-class-functions.md)
+- (If needed) **Read** [JavaScript syntax review](../topics/javascript/syntax-review/javascript-review.md)
+- (If needed) **Watch** [Creative Computation I videos](https://www.youtube.com/channel/UCgMMSLb6Zywjhk9JW6I00Aw) and **Review** [Creative Computation I materials](https://github.com/pippinbarr/cart253-2020/blob/master/course-information/schedule.md)
+- **Watch** [Constants]() video and **read** [Constants](../topics/javascript/constants.md) notes.
+- **Watch** [Object parameters]() video and **read** [Object parameters](object-parameters.md) notes.
+- **Watch** [First-class functions]() video and **read** [First-class functions](first-class-functions.md) notes.
 
 ### Activity
-- [Activity: Where's Sausage Dog?](../activities/wheres-sausage-dog.md)
+- **Complete** [Activity: Where's Sausage Dog?](../activities/wheres-sausage-dog.md) (**Watch** [Where's Sausage Dog? activity]() video to see Pippin doing it)
 
 ### Exercise
-- [Exercise: Where's Sausage Dog?+](../exercises/wheres-sausage-dog-plus)
+- **Complete** [Exercise: Where's Sausage Dog?+](../exercises/wheres-sausage-dog-plus)
 
 ### Examples
-- Examples from CART253 most obviously
+- Examples from CART253 most obviously...
 
 ---
 
