@@ -78,8 +78,8 @@ Week of 25 January 2021
 ### Topics
 - [JavaScript syntax review](../topics/javascript/syntax-review/javascript-review.md)
 - [Constants](../topics/javascript/constants.md)
-- [More functions](more-functions.md)
 - [Object parameters](object-parameters.md)
+- [First-class functions](first-class-functions.md)
 
 ### Activity
 - [Activity: Where's Sausage Dog?](../activities/wheres-sausage-dog.md)
