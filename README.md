@@ -14,7 +14,7 @@ Secdtion B: Samuel Paré-Chouinard
 
 ### Important pages
 
-* [Course Outline](https://pippinbarr.github.io/cart263-2021/course-information/outline.md)
-* [Schedule](https://pippinbarr.github.io/cart263-2021/course-information/schedule.md)
+* [Course Outline](https://pippinbarr.github.io/cart263-2021/course-information/outline.html)
+* [Schedule](https://pippinbarr.github.io/cart263-2021/course-information/schedule.html)
 * [Repository](https://www.github.com/pippinbarr/cart263-2021/)
-* [Resources](https://pippinbarr.github.io/cart263-2021/course-information/resources.md)
+* [Resources](https://pippinbarr.github.io/cart263-2021/course-information/resources.html)
