@@ -86,10 +86,10 @@ Week of 25 January 2021
 - **Complete** [Activity: Where's Sausage Dog?](../activities/wheres-sausage-dog.md) (**Watch** [Where's Sausage Dog? activity]() video to see Pippin doing it) ([Example final code](https://github.com/pippinbarr/cart263-2021/tree/main/activities/wheres-sausage-dog), [Play](https://pippinbarr.github.io/cart263-2021/activities/wheres-sausage-dog/))
 
 ### Exercise
-- **Complete** [Exercise: Where's Sausage Dog?+](../exercises/wheres-sausage-dog-plus)
+- **Complete** [Exercise: Where's Sausage Dog? New Game+](../exercises/wheres-sausage-dog-new-game-plus.md)
 
 ### Examples
-- Examples from CART253 most obviously...
+- For various examples of JavaScript and p5, refer to the [CART253 Fall 2020 repository](https://www.github.com/pippinbarr/cart253-2020/).
 
 ---
 
