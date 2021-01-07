@@ -83,7 +83,7 @@ Week of 25 January 2021
 - **Watch** [First-class functions]() video and **read** [First-class functions](../topics/javascript/first-class-functions.md) notes.
 
 ### Activity
-- **Complete** [Activity: Where's Sausage Dog?](../activities/wheres-sausage-dog/) (**Watch** [Where's Sausage Dog? activity]() video to see Pippin doing it) ([Example final code](https://www.github.com/pippinbarr/cart263-2021/activities/wheres-sausage-dog/), [Play](https://pippinbarr.github.io/cart263-2021/activities/wheres-sausage-dog/))
+- **Complete** [Activity: Where's Sausage Dog?](../activities/wheres-sausage-dog/) (**Watch** [Where's Sausage Dog? activity]() video to see Pippin doing it) ([Example final code](https://github.com/pippinbarr/cart263-2021/tree/main/activities/wheres-sausage-dog), [Play](https://pippinbarr.github.io/cart263-2021/activities/wheres-sausage-dog/))
 
 ### Exercise
 - **Complete** [Exercise: Where's Sausage Dog?+](../exercises/wheres-sausage-dog-plus)
