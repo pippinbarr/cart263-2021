@@ -39,22 +39,32 @@
 Week of 18 January 2021
 
 ## Objectives
+- Software setup
 - Meeting each other
 - Discussing the course
-- Installing software
 
 ## Reminders
 - The [C-LAB](https://clab.concordia.ca/) is there to help you
 
 ## Before class
-- Install the course software if you haven't already
-- Join the course Discord (invite link at top of course Moodle)
-- Get pumped!
+- Join the Discord (invitation link at top of the course Moodle)
+- Read the [Course Outline](./outline.md)
+- Get your software set up
+  * Follow the [Course Software Guide](../guides/course-software.md) guide
+  * Set up your course repository on GitHub (follow the [GitHub Guide](../guides/github-repository.md)) if needed)
+  * Review the [Version Control Guide](../guides/github-desktop.md) if needed
+  * Review the [Git Cheatsheet](../guides/git-cheatsheet.md) for a condensed review of version control using GitHub Desktop or Atom or the command line
+- Get pumped!?
 
-## Classroom
-- Discussion of the week in #start-of-class
+## Classroom (in Discord classroom channels at 13:30 on the day of class)
+* Welcome
+* Introductions (don't forget your pronouns!)
+* Reviewing the [Course Outline](./outline.md)
+* Reviewing the [Course Schedule](./schedule.md)
+* Time management?
 
-## Studio
+## Studio (in Discord studio channels after classroom period)
+- Instructor and TA available to help
 - Start work on next week's material
 
 ## Homework
@@ -86,10 +96,22 @@ Week of 25 January 2021
 - **Complete** [Activity: Where's Sausage Dog?](../activities/wheres-sausage-dog.md) (**Watch** [Where's Sausage Dog? activity]() video to see Pippin doing it) ([Example final code](https://github.com/pippinbarr/cart263-2021/tree/main/activities/wheres-sausage-dog), [Play](https://pippinbarr.github.io/cart263-2021/activities/wheres-sausage-dog/))
 
 ### Exercise
-- **Complete** [Exercise: Where's Sausage Dog? New Game+](../exercises/wheres-sausage-dog-new-game-plus.md)
+- **Complete** [Exercise: Where's Sausage Dog? New Game+](../exercises/wheres-sausage-dog-new-game-plus.md) (due the night of class)
 
 ### Examples
 - For various examples of JavaScript and p5, refer to the [CART253 Fall 2020 repository](https://www.github.com/pippinbarr/cart253-2020/).
+
+## Classroom (in Discord classroom channels at 13:30 on the day of class)
+* Q&A
+* Review of the week's material
+
+## Studio (in Discord studio channels after classroom period)
+- Instructor and TA available to help
+- Work on [Exercise: Where's Sausage Dog? New Game+](../exercises/wheres-sausage-dog-new-game-plus.md) (due the night of class)
+- Start work on next week's material
+
+## Homework
+- Continue work on next week's material
 
 ---
 
