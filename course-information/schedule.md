@@ -9,28 +9,30 @@
 
 ---
 
-- Week 1 - [Hello, World! Again!](#hello-world-again) - ...
-- Week 2 - [Review](#review) - ...
-- Week 3 - [Voices](#voices) - ...
-- Week 4 - [Data](#data) - ...
-- Week 4 - [AI](#ai)
-- Week 6 - [Project 1 Studio](#project-1-studio) - ...
+- Week 1 - [Hello, World! Again!](#hello-world-again) - Getting settled
+- Week 2 - [Review](#review) - Remembering JavaScript and p5.js
+- Week 3 - [Voices](#voices) - Working with speech output and input
+- Week 4 - [Data](#data) - Working with JSON data and browser-based storage
+- Week 4 - [AI](#ai) - Playing with machine learning models
+- Week 6 - [Project 1 Studio](#project-1-studio) - Studio support for Project 1
 - Reading week
-- Week 7 - [The webpage](#the-webpage) - ...
-- Week 8 - [jQuery](#jquery) - ...
-- Week 9 - [jQuery UI](#jquery-ui) - ...
-- Week 10 - [3D](#3d) - ...
-- Week 11 - [Project 2 Studio I](#project-2-studio-i) - support for project 2
-- Week 12 - [Project 2 Studio II](#project-2-studio-ii) - support for project 2
-- Week 13 - [Project 2 Studio III](#project-2-studio-iii) - support for project 2
+- Week 7 - [The webpage](#the-webpage) - Introduction to HTML, CSS, and the DOM
+- Week 8 - [jQuery](#jquery) - Manipulating HTML and CSS via jQuery
+- Week 9 - [jQuery UI](#jquery-ui) - Interface elements with jQuery UI
+- Week 10 - [3D](#3d) - 3D graphics on the canvas with A-Frame
+- Week 11 - [Project 2 Studio I](#project-2-studio-i) - Studio support for Project 2
+- Week 12 - [Project 2 Studio II](#project-2-studio-ii) - Studio support for Project 2
+- Week 13 - [Project 2 Studio III](#project-2-studio-iii) - Studio support for Project 2
 
 ---
 
 #### Guides
-- tbd.
+- [Style Guide](../guides/style-guide.md)
+- [Git Cheatsheet](../guides/git-cheatsheet.md)
 
 #### Projects
-- tbd.
+- Project 1
+- Project 2
 
 ---
 
