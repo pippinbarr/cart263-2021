@@ -45,9 +45,6 @@ Week of 18 January 2021
 - Meeting each other
 - Discussing the course
 
-## Reminders
-- The [C-LAB](https://clab.concordia.ca/) is there to help you
-
 ## Before class
 - **Join** the Discord (invitation link at top of the course Moodle)
 - **Watch** [1.1 Welcome to Creative Computation II](https://youtu.be/xlZvoxpDHvg)
@@ -65,6 +62,7 @@ Week of 18 January 2021
 * Reviewing the [Course Outline](./outline.md)
 * Reviewing the [Course Schedule](./schedule.md)
 * Time management?
+* The [C-LAB](https://clab.concordia.ca/) is there to help you
 
 ## Studio (in Discord studio channels after classroom period)
 - Instructor and TA available to help
@@ -107,6 +105,7 @@ Week of 25 January 2021
 ## Classroom (in Discord classroom channels at 13:30 on the day of class)
 * Q&A
 * Review of the week's material
+* The [C-LAB](https://clab.concordia.ca/) is there to help you
 
 ## Studio (in Discord studio channels after classroom period)
 - Instructor and TA available to help
