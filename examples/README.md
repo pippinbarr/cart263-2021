@@ -10,4 +10,4 @@
 
 ### Tile-based world
 
-[Online](${site.baseurl}/examples/tile-based-world/), [Source Code](${site.repourl}/examples/tile-based-world/), [Download](${site.baseurl}/examples/tile-based-world.zip)
+[Online](tile-based-world/), [Source Code](https://www.pippinbarr.com/pippinbarr/cart263-2021/blob/master/examples/tile-based-world/), [Download](tile-based-world.zip)
