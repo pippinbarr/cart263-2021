@@ -51,7 +51,7 @@ As you can see, the convention is to write constants in ALL CAPITALS with unders
 
 ## In practice
 
-Consider this program to draw three randomly positioned circles on the canvas...
+Consider this program to draw concentric circles on the canvas...
 
 ```javascript
 function setup() {
@@ -71,7 +71,7 @@ function draw() {
 }
 ```
 
-There are hardcoded numbers in here we know we should change to variables for clarity, notably the number of circles, the alpha value of the circles, and the amount the circle size increases per circle.
+There are hardcoded numbers in here we know we should change to variables for clarity, notably the number of circles (`10`), the alpha value of the circles (`50`), and the amount the circle size increases per circle (`50`).
 
 So we could just make all of them variables...
 
