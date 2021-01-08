@@ -49,14 +49,15 @@ Week of 18 January 2021
 - The [C-LAB](https://clab.concordia.ca/) is there to help you
 
 ## Before class
-- Join the Discord (invitation link at top of the course Moodle)
-- Read the [Course Outline](./outline.md)
-- Get your software set up
+- **Join** the Discord (invitation link at top of the course Moodle)
+- **Watch** [1.1 Welcome to Creative Computation II](https://youtu.be/xlZvoxpDHvg)
+- **Read** the [Course Outline](./outline.md)
+- **Set up** your software
   * Follow the [Course Software Guide](../guides/course-software.md) guide
   * Set up your course repository on GitHub (follow the [GitHub Guide](../guides/github-repository.md)) if needed)
   * Review the [Version Control Guide](../guides/github-desktop.md) if needed
   * Review the [Git Cheatsheet](../guides/git-cheatsheet.md) for a condensed review of version control using GitHub Desktop or Atom or the command line
-- Get pumped!?
+- **Get** pumped!?
 
 ## Classroom (in Discord classroom channels at 13:30 on the day of class)
 * Welcome
