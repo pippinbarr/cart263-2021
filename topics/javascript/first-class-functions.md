@@ -39,7 +39,7 @@ let plus = add;
 
 // And we can then CALL the function inside plus in the usual way!
 let onePlusOne = plus(1,1); // Call the function inside plus (which is the add() function!)
-console.log(onePlusOne); // 2
+alert(onePlusOne); // 2
 ```
 
 In fact, all function names are essentially just the **variable name** that the function is stored inside!
@@ -133,6 +133,12 @@ Hopefully you can see this is really quite similar! The key different is that we
 
 One of the big advantages of arrow functions is that they don't change the meaning of `this` inside the block of code they run (unlike regular functions). This can be especially helpful when using something like `setTimeout()` inside a class, which **doesn't** work with a method...
 
+`script.js`
+```javascript
+let tiger = new Tiger();
+```
+
+`Tiger.js`
 ```javascript
 class Tiger {
   constructor() {
@@ -150,6 +156,12 @@ class Tiger {
 
 And also doesn't work with a standard anonymous function...
 
+`script.js`
+```javascript
+let tiger = new Tiger();
+```
+
+`Tiger.js`
 ```javascript
 class Tiger {
   constructor() {
@@ -167,6 +179,12 @@ The above doesn't work because the `this` inside the anonymous function actually
 
 We can fix this with an arrow function which does **not** change the meaning of `this`:
 
+`script.js`
+```javascript
+let tiger = new Tiger();
+```
+
+`Tiger.js`
 ```javascript
 class Tiger {
   constructor() {
@@ -194,7 +212,7 @@ let add = (a, b) => {
   return a + b;
 };
 let onePlusOne = add(1, 1);
-console.log(onePlusOne); // 2
+alert(onePlusOne); // 2
 ```
 
 #### Even more abbreviated arrow functions
@@ -204,7 +222,7 @@ If your function only needs to return the result of an expression (like our addi
 ```javascript
 let add = (a, b) => a + b;
 let onePlusOne = add(1, 1);
-console.log(onePlusOne); // 2
+alert(onePlusOne); // 2
 ```
 
 Now that is getting seriously abbreviated!
