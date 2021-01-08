@@ -4,7 +4,7 @@
 
 ## Summary
 
-Using object literals as parameters for functions and methods is a really nice way to avoid extremely long argument and parameter lists. Destructuring lets us take this one step further for really convenient code.
+Using object literals as parameters for functions and methods is a nice way to avoid extremely long argument and parameter lists. Destructuring lets us take this one step further for really convenient code.
 
 ---
 
@@ -38,13 +38,13 @@ function drawFancyRect(x, y, w, h, r, g, b, mode) {
 }
 ```
 
-Notice especially how **calling** `drawFancyRect()` in `draw()` looks really confusing because you can't easily tell what all the different numbers mean. This problem occurs in methods and constructors in Object-Oriented Programing too.
+Notice especially how **calling** `drawFancyRect()` in `draw()` looks really confusing because you can't easily tell what all the different numbers mean. This problem occurs in methods and constructors in Object-Oriented Programming too.
 
 ---
 
 ## Object literals as parameters
 
-A great solution to most of this problem is to have your function, method, or constructor take a **single** argument that is an **object** with properties representing all the different values needed. This allows you to give them names when calling it...
+A great solution to most of this problem is to have your function, method, or constructor take a **single** argument that is an **object** with properties representing all the different values needed. This allows you to use property names for clarity when calling it...
 
 ```javascript
 function setup() {
@@ -76,12 +76,12 @@ function drawFancyRect(config) {
 }
 ```
 
-This is already significantly better because in `draw()` we can easily see what easy value is being used to set for our `drawFancyRect()` call.
+This is already significantly better because in `draw()` we can easily see the property names of the values being used in our `drawFancyRect()` call.
 
-It does lead to a slightly uglier `drawFancyRect()` though. There are two problems
+It does lead to a slightly uglier `drawFancyRect()` though. There are two problems:
 
 1. We have to write `config` everywhere to get the different values out of the object parameter
-2. Because there's just one parameter object, it's harder to tell what the full set of properties we need in the object are
+2. Because there's just a single parameter object, it's harder to tell what the full set of possible properties the function expects to be in the object are
 
 We can fix this!
 
@@ -89,7 +89,7 @@ We can fix this!
 
 ## Destructuring object parameters
 
-"Destructuring" is a bit of a scary word, but it's very helpful in this case. In JavaScript it allows us to easily break an object down into individual variables based on its properties, which is extremely helpful:
+"Destructuring" is a bit of a scary word, but it's very helpful in this case. In JavaScript it allows us to easily break an object down into individual variables based on its properties, which is lovely:
 
 ```javascript
 function setup() {
@@ -124,7 +124,7 @@ function drawFancyRect({x, y, width, height, fillColor, mode}) {
 }
 ```
 
-Quite beautiful really, and worth getting into the habit of using when you're writing functions/methods/constructors with a lot of parameters.
+Quite beautiful really. It's well worth getting into the habit of using this approach when you're writing functions/methods/constructors that have a lot of parameters.
 
 ---
 

@@ -51,6 +51,86 @@ As you can see, the convention is to write constants in ALL CAPITALS with unders
 
 ## In practice
 
+Consider this program to draw three randomly positioned circles on the canvas...
+
+```javascript
+function setup() {
+  createCanvas(500, 500);
+}
+
+function draw() {
+  background(0);
+
+  // Loop once for each of 10 circles, drawing them 50 pixels larger each time
+  for (let i = 0; i < 10; i++) {
+    push();
+    fill(255, 50);
+    ellipse(width / 2, height / 2, i * 50);
+    pop();
+  }
+}
+```
+
+There are hardcoded numbers in here we know we should change to variables for clarity, notably the number of circles, the alpha value of the circles, and the amount the circle size increases per circle.
+
+So we could just make all of them variables...
+
+```javascript
+let numCircles = 10;
+let circleSizeIncrease = 50;
+let circleAlpha = 50;
+
+function setup() {
+  createCanvas(500, 500);
+}
+
+function draw() {
+  background(0);
+
+  // Loop once for each of 10 circles, drawing them 50 pixels larger each time
+  for (let i = 0; i < numCircles; i++) {
+    push();
+    fill(255, circleAlpha);
+    ellipse(width / 2, height / 2, i * circleSizeIncrease);
+    pop();
+  }
+}
+```
+
+However, let's say we know we're never going to change the **number** of circles in our program, even though we might change their alpha or size increase. If we know that, we should change the `numCircles` variable to a constant. This acknowledges it won't change officially, and helps us to avoid potentially changing it by accident at some point.
+
+```javascript
+const NUM_CIRCLES = 10;
+let circleSizeIncrease = 50;
+let circleAlpha = 50;
+
+function setup() {
+  createCanvas(500, 500);
+}
+
+function draw() {
+  background(0);
+
+  // Just for fun, since they ARE variables after all
+  circleAlpha = map(mouseX, 0, width, 10, 100);
+  circleSizeIncrease = map(mouseY, 0, height, 10, 100);
+
+  // Loop once for each of 10 circles, drawing them 50 pixels larger each time
+  for (let i = 0; i < NUM_CIRCLES; i++) {
+    push();
+    fill(255, circleAlpha);
+    ellipse(width / 2, height / 2, i * circleSizeIncrease);
+    pop();
+  }
+}
+```
+
+As programs become more complex, it is more and more useful to guarantee that we can't accidentally change variables by just making them constants. If it turns out we **do** want to be able to change them, we can convert them back to variables.
+
+---
+
+## Another example just for the sake of it
+
 Consider this program to draw a grid of randomly shaded tiles...
 
 ```javascript
@@ -95,7 +175,7 @@ function drawTile(row, col) {
 }
 ```
 
-Here it's nice to use constants at the top of our script because we're not going to **change** the width, height, or tile size when the program's running. Therefore, we make those things **constants**.
+Again, it's nice to use constants at the top of our script because we're not going to **change** the width, height, or tile size when the program's running. Therefore, we make those things **constants**.
 
 ---
 

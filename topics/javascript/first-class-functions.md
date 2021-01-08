@@ -4,6 +4,8 @@
 
 ## Summary
 
+Functions in JavaScript are called "first-class" because they're treated like any other kind of **value**. That means functions can be assigned to variables, stored in arrays or object properties, passed as arguments to other functions, and more! Anonymous functions (functions without a name) are particularly common in JavaScript programming, and are important to recognize.
+
 ---
 
 ## Contents
@@ -18,7 +20,9 @@
 
 ## First-class functions?
 
-In JavaScript functions are "first-class", as in they are "first-class citizens of the program"! In essence this means that functions are just another kind of **value** in your program. This means they can be stored in variables, stored in the properties of objects, passed as arguments to other functions, and other slightly surprising things...
+In JavaScript functions are "first-class", as in they are "first-class citizens of the program"!
+
+In essence this means that functions are treated like any kind of **value** in your program. This means they can be assigned to variables, stored in arrays or the the properties of objects, passed as arguments to other functions, among other things things...
 
 Consider:
 
@@ -44,9 +48,12 @@ In fact, all function names are essentially just the **variable name** that the 
 
 ## Functions as arguments
 
-A much more common use of functions in this way is when we pass a function as an **argument** to some other function. `setTimeout()` is a good example of this!
+A common use of this nature of functions is passing a function as an **argument** to some other function. `setTimeout()` is a classic example of this!
 
-When we call `setTimeout()` we give it a **function** to call, and a delay to call it after...
+When we call `setTimeout()` we have to provide two arguments:
+
+1. a **function** to call,
+2. a delay in milliseconds to call it after...
 
 ```javascript
 function hello() {
@@ -56,7 +63,7 @@ function hello() {
 setTimeout(hello, 5000); // Call the hello() function after 5000 milliseconds
 ```
 
-Here we pass the `hello` function to `setTimeout()` as an argument. Note we do **not** include parentheses after `hello` because we don't want to **call** it, we want to pass the function itself to `setTimeout()`.
+Here we pass the `hello` function to `setTimeout()` as an **argument**. Note we do **not** write parentheses after `hello` because we don't want to **call** the function, we want to **pass** the function to `setTimeout()`.
 
 ---
 
@@ -69,8 +76,8 @@ Because functions are just another kind of **value**, we can actually create the
 Here's an example of creating an anonymous function, storing it in a variable, then passing that variable to `setTimeout()` so it will be called after a delay...
 
 ```javascript
-let hello = function () {
-  alert(`Hello!`)
+let hello = function () { // Note how the function definition has no name!
+  alert(`Hello!`);
 };
 
 setTimeout(hello, 5000); // Call the function inside the hello variable after 5000 milliseconds
@@ -80,7 +87,7 @@ It's a subtle distinction from the previous example, but the key here is that we
 
 ### Using an anonymous function as an argument
 
-Because we end up using functions like `setTimeout()` that expect a function as an argument a lot, we will very often write the anonymous function **directly** inside the argument list!
+Because we end up using functions like `setTimeout()` that expect a function as an argument a lot, we will quite often write the anonymous function definition itself **directly** inside the argument list!
 
 ```javascript
 setTimeout(function () {
@@ -88,9 +95,11 @@ setTimeout(function () {
 }, 5000); // Call the anonymous function provided after 5000 milliseconds
 ```
 
-This will have the exact same result as the previous example, popping up a "Hello!" message after 5000 milliseconds. Here, though, the function to be called by `setTimeout()` is defined **inside** the argument list of the `setTimeout()` call.
+This will have the exact same result as the previous example, popping up a "Hello!" message after 5000 milliseconds. Here, though, the function to be called by `setTimeout()` is **defined inside the argument list** of the `setTimeout()` call.
 
-This can take some getting used to - it looks quite alarming! But it's **worth** getting used to. For one thing, you'll see it a lot out there on the internet! For another, it can be a very **clear** way of programming because it puts the code you want to run exactly where you're dealing with it in the program.
+This can take some getting used to.
+
+But it's **worth** getting used to. For one thing, you'll see it a lot out there on the ol' internet! It can be a very **clear** way of programming because it puts the code that will be run exactly where you're dealing with it in the program, rather than somewhere else in a separate function definition.
 
 ---
 
@@ -102,7 +111,7 @@ There's another way to write anonymous functions in an abbreviated style called 
 
 #### Writing an arrow function
 
-Previously, we wrote out anonymous function like this...
+Previously, we wrote an anonymous function like this...
 
 ```javascript
 setTimeout(function () {
@@ -118,11 +127,28 @@ setTimeout(() => {
 }, 5000); // Call the anonymous function provided after 5000 milliseconds
 ```
 
-Hopefully you can see this is really quite similar! The key different is that we no longer write the word **function** and instead put an "arrow" (the `=>`) after the parentheses for any parameters. The code the arrow function will run is still just inside curly brackets as per usual.
+Hopefully you can see this is really quite similar! The key different is that we no longer write the word **function** and instead put an "arrow" (the `=>`) after the parentheses that would contain any parameters. The code the arrow function will run is still just inside curly brackets as per usual.
 
 #### Arrow functions and `this`
 
-One of the big potential advantages of arrow functions is that they don't change the meaning of `this` inside the block of code they run (unlike regular functions). This can be especially helpful when using something like `setTimeout()` inside a class...
+One of the big advantages of arrow functions is that they don't change the meaning of `this` inside the block of code they run (unlike regular functions). This can be especially helpful when using something like `setTimeout()` inside a class, which **doesn't** work with a method...
+
+```javascript
+class Tiger {
+  constructor() {
+    this.name = "Tony";
+
+    // Say name one second after being created?
+    setTimeout(this.sayName, 1000);
+  }
+
+  sayName() {
+    alert(this.name); // undefined! Being called by setTimeout changes the meaning of "this"
+  }
+}
+```
+
+And also doesn't work with a standard anonymous function...
 
 ```javascript
 class Tiger {
