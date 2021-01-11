@@ -89,9 +89,9 @@ Week of 25 January 2021
 ### Topics
 - (If needed) **Read** [JavaScript syntax review](../topics/javascript/syntax-review/javascript-syntax-review.md)
 - (If needed) **Watch** [Creative Computation I videos](https://www.youtube.com/channel/UCgMMSLb6Zywjhk9JW6I00Aw) and **Review** [Creative Computation I materials](https://github.com/pippinbarr/cart253-2020/blob/master/course-information/schedule.md)
-- **Watch** [Constants]() video and **read** [Constants](../topics/javascript/constants.md) notes.
-- **Watch** [Object parameters]() video and **read** [Object parameters](../topics/javascript/object-parameters.md) notes.
-- **Watch** [First-class functions]() video and **read** [First-class functions](../topics/javascript/first-class-functions.md) notes.
+- **Watch** [2.1 Constants](https://youtu.be/s5ewBmui8BU) and **read** the [notes](../topics/javascript/constants.md) notes.
+- **Watch** [2.2 Object parameters](https://youtu.be/pwx6-NSm-F0) and **read** the [notes](../topics/javascript/object-parameters.md) notes.
+- **Watch** [2.3 First-class functions](https://youtu.be/44NrX7VlErM) and **read** the [notes](../topics/javascript/first-class-functions.md) notes.
 
 ### Activity
 - **Complete** [Activity: Where's Sausage Dog?](../activities/wheres-sausage-dog.md) (**Watch** [Where's Sausage Dog? activity]() video to see Pippin doing it) ([Example final code](https://github.com/pippinbarr/cart263-2021/tree/main/activities/wheres-sausage-dog), [Play](https://pippinbarr.github.io/cart263-2021/activities/wheres-sausage-dog/))
