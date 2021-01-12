@@ -138,7 +138,7 @@ When creating projects in code, make sure you attribute all elements that are no
 
 ## Costs
 
-- See the [Department Syllabus](dcart-syllabus-fall-2020.pdf)
+- See the [Department Syllabus](dcart-syllabus-winter-2021.pdf)
 - All software students are expected to use in the class will be free.
 
 ## Technology
