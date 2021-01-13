@@ -382,6 +382,75 @@ This already feels quite different, because speech is very **personal**. Particu
 
 ---
 
+## "Splats"
+
+When we were looking at the documentation we saw the idea that we can get annyang! to recognize **arbitrary** words by using a special syntax in the command that would then send what the user said to our function as an argument.
+
+Let's try that out.
+
+In the API we see this the following example for displaying any search term from the Flickr photo service:
+
+```javascript
+const commands = {
+  // annyang will capture anything after a splat (*) and pass it to the function.
+  // e.g. saying "Show me Batman and Robin" will call showFlickr('Batman and Robin');
+  'show me *tag': showFlickr,
+};
+
+const showFlickr = function(tag) {
+  var url = 'http://api.flickr.com/services/rest/?tags='+tag;
+  $.getJSON(url);
+}
+```
+
+This opens up a larger set of expressive possibilities with annyang! than the standard commands because we don't have to know **in advance** everything that the user can say. In particular, this allows the user to provide specific data to our program with their voice, whether it's a tag to search on Flickr or information for a dating profile or something else.
+
+For a simple example, let's create the same basic idea, but instead use it to greet the user by name...
+
+```javascript
+// Default name
+let userName = `stranger`
+
+function setup() {
+  createCanvas(windowWidth, windowHeight);
+
+  if (annyang) {
+    let command = {
+      // A command that listens for "my name is..." and the captures
+      // whatever they say after that and sends it as an argument to setName()
+      'My name is *name': setName
+    }
+    annyang.addCommands(command);
+    annyang.start();
+  }
+}
+
+// Sets the current username to whatever argument is passed to it by annyang!
+function setName(name) {
+  userName = name;
+}
+
+function draw() {
+  background(0);
+
+  // Greet the user
+  push();
+  fill(255, 255, 0);
+  textSize(32);
+  rectMode(CENTER);
+  text(`Hi there, ${userName}.`, 100, 100);
+  pop();
+}
+```
+
+Fun! And opens up some new lines of potential experimentation!
+
+What if you say something ridiculous as a name? It just accepts it without question. There's some absurdity built into this which you can either fight against (by checking to make sure what is said makes sense) or not.
+
+What if you just spout gibberish? It tries to understand you! With sometimes bizarre results! Could this be a new form of divination?!
+
+---
+
 ## Frustrations
 
 annyang! is super exciting because speech recognition is exciting. But it does come with at least a couple of frustrating elements

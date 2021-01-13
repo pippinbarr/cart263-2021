@@ -135,18 +135,19 @@ Week of 1 February 2021
   * [annyang! API](https://github.com/TalAter/annyang/blob/master/docs/README.md)
 
 ### Activity
-* **Complete** [Activity: Slamina](../activities/slamina.md) (**Watch** [Slamina activity]() video to see Pippin doing it) ([Example final code](https://github.com/pippinbarr/cart263-2021/tree/main/activities/slamina), [Online](https://pippinbarr.github.io/cart263-2021/activities/slamina/))
+* **Complete** [Activity: Slamina](../activities/slamina.md) (**Watch** [3.3 Slamina activity]() video to see Pippin doing it) ([Example final code](https://github.com/pippinbarr/cart263-2021/tree/main/activities/slamina), [Online](https://pippinbarr.github.io/cart263-2021/activities/slamina/))
 
 ### Exercise
 * **Complete** [Exercise: Slamina+](../exercises/slamina-plus.md) (due the night of class)
 
 ### Examples
-* Singing
-* Nonsense Generator
-* Feelings
-* Backseat driver
-* Affirmations
-* Doctor, Doctor!
+* Singing (ResponsiveVoice)
+* Nonsense generator (ResponsiveVoice)
+* Feelings (ResponsiveVoice)
+* Backseat driver (annyang!)
+* Re:programming (annyang!)
+* Misheard dating profile (annyang!)
+* Doctor, doctor! (ResponsiveVoice, annyang!)
 
 ## Classroom (in Discord classroom channels at 13:30 on the day of class)
 * Q&A
