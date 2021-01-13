@@ -81,9 +81,6 @@ Week of 25 January 2021
 - Remembering JavaScript fundamentals
 - Remembering p5.js
 
-## Reminders
-- The [C-LAB](https://clab.concordia.ca/) is there to help you
-
 ## Before class
 
 ### Topics
@@ -124,22 +121,45 @@ Week of 1 February 2021
 ## Objectives
 - Making the computer talk with ResponsiveVoice
 - Making the computer listen with annyang!
-- Making music with p5.Gibber?
 
 ## Before class
 
 ### Topics
-- JavaScript libraries
-- ResponsiveVoice
-- annyang!
-- p5.Gibber?
- -Pizzicato?
+* **ResponsiveVoice**
+  * **Watch** [3.1 ResponsiveVoice]() ([notes](../topics/voices/responsivevoice.md))
+  * [ResponsiveVoice Homepage](https://responsivevoice.org/)
+  * [ResponsiveVoice API](https://responsivevoice.org/api/)
+* **annyang!**
+  * **Watch** [3.2 annyang!]() ([notes](../topics/voices/annyang.md))
+  * [annyang! Homepage](https://www.talater.com/annyang/)
+  * [annyang! API](https://github.com/TalAter/annyang/blob/master/docs/README.md)
 
 ### Activity
-- Slamina?
+* **Complete** [Activity: Slamina](../activities/slamina.md) (**Watch** [Slamina activity]() video to see Pippin doing it) ([Example final code](https://github.com/pippinbarr/cart263-2021/tree/main/activities/slamina), [Online](https://pippinbarr.github.io/cart263-2021/activities/slamina/))
+
+### Exercise
+* **Complete** [Exercise: Slamina+](../exercises/slamina-plus.md) (due the night of class)
 
 ### Examples
-- ...
+* Singing
+* Nonsense Generator
+* Feelings
+* Backseat driver
+* Affirmations
+* Doctor, Doctor!
+
+## Classroom (in Discord classroom channels at 13:30 on the day of class)
+* Q&A
+* Review of the week's material
+* The [C-LAB](https://clab.concordia.ca/) is there to help you
+
+## Studio (in Discord studio channels after classroom period)
+- Instructor and TA available to help
+- Work on [Exercise: Slamina+](../exercises/slamina-plus.md) (due the night of class)
+- Start work on next week's material
+
+## Homework
+- Continue work on next week's material
 
 ---
 
