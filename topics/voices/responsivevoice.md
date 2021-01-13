@@ -4,7 +4,7 @@
 
 ## Summary
 
-[ResponsiveVoice](https://responsivevoice.org/) is a JavaScript library designed to make it easier to access browser's text-to-speech functionality. That is, it facilitates making the computer talk.
+[ResponsiveVoice](https://responsivevoice.org/) is a JavaScript library designed to make it easier to access a browser's text-to-speech functionality. That is, it facilitates making the computer talk.
 
 ---
 
@@ -18,10 +18,13 @@
 
 ## What is ResponsiveVoice?
 
+It's a speech synthesis library.
 
-Most contemporary browsers (with exception) have text-to-speech built into them that we can use via JavaScript. Overall, this is known as the [Web Speech API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Speech_API). It includes text-to-speech as well as things like speech recognition. However, the Web Speech API is a little complicated to use.
+Most contemporary browsers (with exceptions) have speech built into them that we can use via JavaScript. Overall, this is known as the [Web Speech API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Speech_API). It includes text-to-speech as well as things like speech recognition.
 
-[ResponsiveVoice](https://responsivevoice.org/) is a JavaScript library designed to make it easier to access the text-to-speech part of the Web Speech API. That is, it facilitates making the computer talk! It takes care of a bunch of the underlying details and presents us with a simplified way of getting our computer to say things.
+**Important:** text-to-speech isn't available in every single browser. Check out the [Can I use Speech Synthesis API](https://caniuse.com/speech-synthesis) page. It's pretty broadly supported.
+
+The Web Speech API is a little complicated to use, however, and [ResponsiveVoice](https://responsivevoice.org/) is a JavaScript library designed to make it easier to use the text-to-speech component. That is, it facilitates making the computer talk! It takes care of a bunch of the underlying details and presents us with a simplified way of getting our computer to say things.
 
 Let's meet it.
 
@@ -30,7 +33,7 @@ Let's meet it.
 ## How to meet a library
 
 1. **Go to the homepage** and read the introductory material
-2. **Find resources** provided for learning the library, especially **examples** and **tutorials**
+2. **Find resources** provided for learning the library, especially **examples** and **tutorials** and most fundamentally the **API**
 3. **Look at examples** to get a broad sense of the usage
 4. **Read/browse the API** to get a sense of the range of the library's abilities
 5. **Obtain the library** itself and incorporate it into a blank project (may include API key)
