@@ -87,23 +87,29 @@ Now, whenever you use ResponsiveVoice you should use your API key in the same wa
 
 ## Look at examples, browse the API
 
-The ResponsiveVoice site doesn't provide a separate set of examples for how we might use the library, so we'll actually want to go directly to looking at the **API** to find some basics.
+The ResponsiveVoice homepage doesn't provide a separate set of examples for how we might use the library, so we'll actually want to go directly to looking at the **API** to find some basics.
 
-When we access the API initially, what we want to know are the basic **kinds** of things we can do with the library, and ideally some example JavaScript of how you do it. Fortunately, the ResponsiveVoice API documentation does this fairly well.
+[https://responsivevoice.org/api/](https://responsivevoice.org/api/)
+
+When we look at the API for the first time, what we want to find are the basic **kinds** of things we can do with the library, and ideally some example JavaScript of how you do it. Fortunately, the ResponsiveVoice API documentation does this fairly well.
 
 ### Script tag
 
 The first thing we see in the API is, again, the script tag needed to use the library in a project. Again, you would put your own personal API key in here. It's always nice to be reminded that we need a script tag in order to use a library.
 
-After the script tag information, we see a fairly long list of functions that the ResponsiveVoice API makes available, starting with the most important `speak()` function...
+After the script tag information, we see a fairly long list of functions that the ResponsiveVoice API makes available, starting with the most important, the `speak()` function...
 
 ### `speak()`
 
-Since the `speak()` function is really the major thing we'll end up using most of the time, let's go into some detail on how it is documented here.
+Since the `speak()` function is really the major thing we'll end up using most of the time, let's go into some detail on how it is documented here. Reading API documentation is a skill we need to build up as developers.
 
 The documentation style isn't the absolute best, but it's not bad and not dissimilar to something like p5.js's reference. It's pretty representative of the kind of information we'll tend to see when reading API documentation, so it's well worth paying attention to its structure and approach.
 
 #### Function signature
+
+```
+speak(string text, [string voice], [object parameters])
+```
 
 This is how the function is called, and tells us that it has three parameters: the text to speak, the voice to say it in, and an object with other parameters.
 
@@ -113,9 +119,19 @@ Note how the second two parameters (voice and object parameters) have **square b
 
 #### Description
 
-This tells us **very briefly** what the function does. In this case it's just "Starts speaking the text in a given voice."
+> Starts speaking the text in a given voice.
+
+This tells us **very briefly** what the function does.
 
 #### Parameter list
+
+> text: String  
+> The text to be spoken.  
+> voice: String  
+> Defaults to “UK English Female”. Choose from the available ResponsiveVoices.  
+> parameters: Object  
+> Used to add optional pitch (range 0 to 2), rate (range 0 to 1.5), volume (range 0 to 1) and callbacks.  
+> Pitch, rate and volume may not affect audio on some browser combinations, older versions of Chrome on Windows for example.
 
 Here we see the parameters listed again, this time with more detail about what each one means.
 
@@ -131,7 +147,7 @@ Finally we come to perhaps the most clearly useful part of the documentation, wh
 
 Reading these examples is great because it shows us concrete uses of the `speak()` function, including how to set the rate, pitch, and volume of the voice when it says the text.
 
-One odd thing we do **not** see here is how to combine rate, pitch, and volume settings, but that actually as simple as including all three properties when we use the function:
+One odd thing we do **not** see here is how to combine rate, pitch, and volume settings, but that is actually as simple as including all three properties when we use the function:
 
 ```javascript
 responsiveVoice.speak("hello world", "UK English Male", {
@@ -181,16 +197,28 @@ If you run the program and look in the console, you should see the message
 ResponsiveVoice r1.7.0
 ```
 
-(Or possibly a different version number than 1.7.0 if they change it!)
+(Or possibly a different version number than 1.7.0 if they update the library!)
 
 ---
 
 ## Say something
 
-Let's return to the API and run some of their examples. The very first was...
+Let's return to the API and run some of their examples. To do this, we'll need to incorporate the ResponsiveVoice code into our p5 template.
+
+Because most of the time audio only works after a user interaction, let's use a `mousePressed()` function to trigger the voice.
 
 ```javascript
-responsiveVoice.speak("hello world");
+function setup() {
+  createCanvas(500,500);
+}
+
+function draw() {
+  background(0);
+}
+
+function mousePressed() {
+  responsiveVoice.speak("hello world");
+}
 ```
 
 Well, that's nice. Depending on which browser you're using, you may hear different **default** voices being used, but you should hear your computer say "hello world"!
@@ -201,7 +229,7 @@ Well, that's nice. Depending on which browser you're using, you may hear differe
 
 It's a good idea to **experiment** with the possibilities of **any** given function or parameter that a library provides - you might find something interesting! So in the spirit of experimentation, what can we play around with here? Just the text right?
 
-But that could be interesting?
+But that could be interesting? Let's edit the string ResponsiveVoice is saying with some other options and listen...
 
 Punctuation?
 
@@ -233,7 +261,7 @@ There's already a lot to think about just from the ways that the voice responds 
 
 ## Changing voices
 
-The second `speak()` example points out we can change the voice that speaks with the second parameter, a string containing the name of a voice
+The second `speak()` example points out we can change the voice that speaks with the second parameter, a string containing the name of a voice. One possible voice is called `UK English Male`, so let's try that out...
 
 ```javascript
 responsiveVoice.speak("hello world", "UK English Male");
@@ -242,13 +270,13 @@ responsiveVoice.speak("hello world", "UK English Male");
 The choice of voice clearly changes a **lot** in terms of the experience of hearing the voice! All the qualities of a voice convey **meaning** after all. What does "UK English Male" seem to mean to you? What kind of person is he? What kinds of things "should" he say?
 
 ```javascript
-responsiveVoice.speak("Oh, I say! Pip pip! Toodle-oo!", "UK English Male");
+responsiveVoice.speak("I say! Pip pip! Toodle-oo!", "UK English Male");
 ```
 
 What kinds of things "shouldn't" he say?
 
 ```javascript
-responsiveVoice.speak("I am crawling on the ceiling just above your head right now...", "UK English Male");
+responsiveVoice.speak("I am crawling on the ceiling just above your head right now, watching you...", "UK English Male");
 ```
 
 There's a huge range of possibilities in the relationship of speech to accent, language, and gender.
@@ -273,7 +301,7 @@ So we can say something in "French" by using the "French Female" voice for examp
 responsiveVoice.speak("hello world", "French Female");
 ```
 
-Interesting! Different voices say the "same thing" differently! Clearly another site for **experimentation**. Note that not every voice is available ("Latin Male" doesn't work for me). If we really want to know what voices are available we'd need to use `getVoices()`.
+Interesting! Different voices say the "same thing" differently! Clearly another site for **experimentation**. Note that not every voice is available ("Latin Male" doesn't work for me). If we really want to know what voices are available we'd need to use `getVoices()` (by reading its documentation).
 
 And, of course, "French Female" can probably do a better job of speaking actual French?
 
@@ -295,7 +323,19 @@ responsiveVoice.speak("Hello world", "UK English Male", {
 });
 ```
 
-Another huge opportunity to **experiment**! What values can we use for `pitch` and `rate` especially? The documentation tells us `pitch` can be between `0` to `1` and `rate` can be between `0` to `1.5`, so we should really try out various combinations.
+Another huge opportunity to **experiment**! What values can we use for `pitch` and `rate` especially? The documentation tells us `pitch` can be between `0` to `1` and `rate` can be between `0` to `1.5`, so we should really try out various combinations...
+
+Fast and squeaky?
+
+```javascript
+responsiveVoice.speak("Hello world", "UK English Male", {
+  pitch: 2,
+  rate: 2,
+  volume: 1
+});
+```
+
+Slow and scary?
 
 ```javascript
 responsiveVoice.speak("Hello world", "UK English Male", {
@@ -313,40 +353,40 @@ Shudder.
 
 As we know from reading the API, ResponsiveVoice also provides two **callback** options with the `speak()` function.
 
-We can call a function when the speech **starts** with the `onstart` option, and call a function when the speech **ends** with the `onend` option. This gives us the chance to think about the relationship of time and speech...
+We can call a function when the speech **starts** with the `onstart` option, and call a function when the speech **ends** with the `onend` option. This gives us the chance to do specific things when the voice is speaking. We could display the text being spoken for example...
 
 ```javascript
+let phrase = `Hello, world!`;
 let saying = ``; // Track what is currently being said
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
 }
 
-function hello() {
-  responsiveVoice.speak("Hello, world!", "UK English Male", {
+function draw() {
+  // Display what is currently being said...
+  background(255);
+
+  push();
+  textSize(32);
+  textAlign(CENTER);
+  text(saying, width / 2, height / 2);
+  pop();
+}
+
+function mousePressed() {
+  responsiveVoice.speak(phrase, "UK English Male", {
     onstart: showSpeaking,
     onend: hideSpeaking
   });
 }
 
 function showSpeaking() {
-  saying = `Hello, world!`;
+  saying = phrase;
 }
 
 function hideSpeaking() {
   saying = ``;
-}
-
-function draw() {
-  // Display what is currently being said...
-  background(255);
-  textSize(32);
-  textAlign(CENTER);
-  text(saying, width / 2, height / 2);
-}
-
-function mousePressed() {
-  hello();
 }
 ```
 
@@ -354,8 +394,11 @@ function mousePressed() {
 
 ## Example: Random voice
 
+As mentioned earlier, we can get access to **all** the voices available on the computer by using `getVoices()`. This returns an **array** of objects representing all the available voices, and we could then pick one at random...
+
 ```javascript
 let voices; // To remember the array of voices
+let currentVoiceName = ``;
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
@@ -365,24 +408,29 @@ function setup() {
 }
 
 function draw() {
+  background(255);
 
+  push();
+  textSize(32);
+  textAlign(CENTER,CENTER);
+  text(currentVoiceName,width/2,height/2);
+  pop();
 }
 
 function mousePressed() {
-  // Choose a random voice from the list
+  // Choose a random voice object from the list
   let voice = random(voices);
+  // We need the "name" property of our
+  // randomly chosen voice object
+  let currentVoiceName = voice.name;
 
   // Say the text using the randomly chosen voice and with
-  // random rate and pitch. Note we use the "name" property of our
-  // randomly chosen voice
-  responsiveVoice.speak("Hello world", voice.name, {
-    rate: random(0.5, 1.5),
-    pitch: random(0.5, 1.5)
-  });
+  // random rate and pitch.
+  responsiveVoice.speak("Now I talk like this.", currentVoiceName);
 }
 ```
 
-**Note** that not all voices work! Annoying!
+**Note** that not all voices work!? Annoying!
 
 ---
 

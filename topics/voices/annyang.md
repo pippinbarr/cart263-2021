@@ -73,14 +73,14 @@ At this point, we should search the website for specific resources that would he
 
 ## Simple homepage code example
 
-After these examples of the functionality working, we see some code. It tells us a a lot, and its worth paying close attention to, rather than just eagerly pasting it into our code editor for example. In it we see:
+Let's look at the basic code example. It tells us a a lot, and its worth paying close attention to, rather than just eagerly pasting it into our code editor for example. In it we see:
 
 * How to include the library with a script tag
 * The idea of checking whether the annyang library is available
 * The format for listing and adding voice commands
 * How to start annyang
 
-Quite a lot to unpack here, so let's think about it quickly.
+Quite a lot to unpack here, so let's think go through it step by step.
 
 ### The script tag
 
@@ -90,7 +90,7 @@ Quite a lot to unpack here, so let's think about it quickly.
 
 This is pretty conventional. A script tag that presents a link to the annyang library hosted online.
 
-One potential oddity we see here is that there's no `http:` or `https:` in front of the `//` at the start of the URL. If you're not familiar with this, it will automatically add `http:` or `https:` depending on the current option being used on the site. Since `talater.com` uses `https:`, that's what will be used for the script tag when you're on that site.
+One potential oddity we see here is that there's no `http:` or `https:` in front of the `//` at the start of the URL. If you're not familiar with this, it will automatically add `http:` or `https:` depending on the current option being used on the site. Since the annyang! homepage on `talater.com` uses `https:`, that's what will be used for the script tag when you're on that site.
 
 ### Checking for annyang
 
@@ -115,7 +115,7 @@ else {
 
 ### Listing voice commands
 
-For now, let's just notice that there's a specific format for telling annyang! what commands to listen for.
+There's a specific format for telling annyang! what commands to listen for, demonstrated in the simple example...
 
 ```javascript
 var commands = {
@@ -125,32 +125,25 @@ var commands = {
 };
 ```
 
-Here we need to decipher a relatively complicated set of syntax, including at least one idea we may have never seen before (jQuery).
+Here we need to decipher a relatively complicated use of JavaScript syntax, including at least one idea we may have never seen before (jQuery).
+
+#### A variable
 
 We can see that we need to create a **variable** that will contain all the commands annyang! should listen for (they have called it `commands`). Your ES6 brain should be telling you to replace that `var` with a `let` when you're actually using annyang!
 
+#### A JavaScript object literal
+
 Inside this variable we should store a JavaScript object literal. And inside the object we have **one property name per command**. That is, the property names in our object correspond to the exact commands that annyang! will listen for. So we have a property called `'show tps report'` and that's why annyang! responded to us saying "Show TPS Report". (**Note** how we can have property names in an object literal composed of multiple words by putting the property name in **quotes**.)
+
+### Object properties names representing voice commands and functions to execute for them
 
 Inside the **property** corresponding to a command, we have the **function** that should be called **when that command is heard**. That's the basic nature of annyang!, we have a command text it listens for, and a function to call when it hears it. Here that function is an **anonymous function**, defined **inside** the commands object, but it could be the name of the function somewhere else in the program, too.
 
+#### jQuery inside the example function
+
 Inside the **function** for showing the TPS report, we see some code that may well look like nonsense. It's written using a specific JavaScript library called jQuery. All we need to know for now is that it will animate the image of the TPS report onto the screen, so it's what gets **done** when the voice command works.
 
-Because an object can have **more than one property** we can add **more than one command** to annyang! at once. For instance we could add another to the above example like this:
-
-```javascript
-let commands = {
-  'show tps report': function() {
-    $('#tpsreport').animate({bottom: '-100px'});
-  },
-  'hello': function() {
-    alert(`Exterminate! Exterminate!`);
-  }
-};
-```
-
-Now if I say "Hello!", the page will pop up an alert saying "Exterminate! Exterminate!".
-
-### Adding voice commands
+#### Adding voice commands
 
 There's a difference between creating an object listing the commands and actually telling annyang! about those commands, so we then need:
 
@@ -160,7 +153,7 @@ annyang.addCommands(commands);
 
 Here we're telling the `annyang` object to add the commands listed in the `commands` variable to the set of things it listens for.
 
-### Starting annyang!
+#### Starting annyang!
 
 There's a difference between telling annyang! the commands to listen for and actually telling it to start listening. For that we need to use its `start()` method:
 
@@ -194,13 +187,13 @@ As you look through, some things to take note of might be:
 * To avoid endlessly talking to our computer we can use `trigger()` to **pretend** to say something to annyang! but instead just send it as a string of text.
 * Documentation about "splats" and "variables" and optional text in commands, allowing for significantly more sophisticated voice input if we want it
 
-So there's quite a lot of noteworthy stuff in here! It's a neat little library when it works well.
+So there's quite a lot of noteworthy stuff in here! It's a neat library when it works well.
 
 ---
 
 ## FAQ
 
-The FAQ is worth a quick readthrough just in case you see some questions you might want the answer to. I was personally interested in "Can annyang be used to capture the full text spoken by the user?" because that seems delightfully dystopian.
+The FAQ is worth a quick read through just in case you see some questions you might want the answer to. I was personally interested in "Can annyang be used to capture the full text spoken by the user?" because that seems delightfully "surveillance-dystopia".
 
 ---
 
@@ -210,11 +203,15 @@ Having immersed ourselves in the basics of the documentation for the library, we
 
 There are two ways for us to use annyang! in a project. One is to use the script tag shown on the homepage:
 
+### Online version
+
 ```html
 <script src="//cdnjs.cloudflare.com/ajax/libs/annyang/2.6.0/annyang.min.js"></script>
 ```
 
 This gives us access to a version of annyang that is **hosted online**. It's nice and convenient, but its one disadvantage is that if we're not online, we won't be able to use the library.
+
+### Local version
 
 Our other option is to **download** the library file using the link at the bottom of the homepage.
 
@@ -232,18 +229,100 @@ Now it's time to get a project running and to start trying this thing out.
 
 ---
 
-## Set up a project to use ResponsiveVoice
+## Set up a project to use annyang!
 
 1. Download the [template p5 project](../../templates/template-p5-project.zip)
 2. Either add the script tag from the homepage or download the library file and put it in `js/libraries` then add a script tag linking to it
 
 ---
 
-## Try out simple commands
+## Try out a simple command
 
 We've seen the basic format for activating annyang with commands, so now we can incorporate this into our project. For now, let's assume we want to active annyang! when our program starts, so we'll put all its setup stuff in `setup()`.
 
-Let's make a basic light switch...
+Let's mimic the simple example and just have a single command that responds to the user's voice. We'll keep it ultra simple and just trigger an `alert()` message...
+
+```javascript
+function setup() {
+  createCanvas(500, 500);
+  // Check if annyang is available
+  if (annyang) {
+    // Create commands
+    let command = {
+      // If they say hello, say hi back!
+      'hello': function() {
+        alert(`Hi there!`);
+      }
+    }
+    // Add the commands and start annyang
+    annyang.addCommands(commands);
+    annyang.start();
+  }
+}
+
+function draw() {
+  background(0);
+}
+```
+
+### With named functions
+
+We don't have to use **anonymous** functions with annyang! if we don't want to, we can also use **named** functions...
+
+```javascript
+function setup() {
+  createCanvas(500, 500);
+  // Check if annyang is available
+  if (annyang) {
+    // Create commands
+    let command = {
+      // If they say hello, say hi back by calling our sayHello() function!
+      'hello': sayHello
+    }
+    // Add the commands and start annyang
+    annyang.addCommands(commands);
+    annyang.start();
+  }
+}
+
+function draw() {
+  background(0);
+}
+
+// Triggers an alert that says hello
+function sayHello() {
+  alert(`Hi there!`);
+}
+```
+
+This is really just a matter of preference the vast majority of the time, so do what you feel comfortable with.
+
+---
+
+## Try out multiple commands
+
+Because an object can have **more than one property** we can add **more than one command** to annyang! at once. For instance we could add another to the above example like this:
+
+```javascript
+let commands = {
+  'hello': function() {
+    alert(`Hi there!`);
+  },
+  'goodbye': function() {
+    alert(`Ciao for now!`);
+  }
+};
+```
+
+Now if I say "Hello!", the page will pop up an alert saying "Hi there!". And if I say "Goodbye" I'd see "Ciao for now!".
+
+---
+
+## Simple commands integrated with p5
+
+Currently we're writing out annyang! code in a p5 template, but we're not really using it to do anything very specific to p5 since `alert()` is just a generic JavaScript function.
+
+Let's make the classic light switch...
 
 ```javascript
 // Is the light on or off?
@@ -255,12 +334,10 @@ function setup() {
   if (annyang) {
     // Create commands
     let commands = {
-      // If they say on, run a function that sets the on variable to true
-      'on': function() {
+      'Turn the light on': function() {
         on = true;
       },
-      // If they say off, run a function that sets the on variable to false
-      'off': function() {
+      'Turn the light off': function() {
         on = false;
       }
     }
@@ -281,49 +358,9 @@ function draw() {
 }
 ```
 
-We could also write the same program with named functions:
+We have the power to turn an imaginary light on and off with our voice! Actually pretty nice. It's like the Clapper, but way better!
 
-```javascript
-// Is the light on or off?
-let on = false;
-
-function setup() {
-  createCanvas(500, 500);
-  // Check if annyang is available
-  if (annyang) {
-    // Create commands
-    let commands = {
-      // If they say on, run a function that sets the on variable to true
-      'on': switchOn,
-      // If they say off, run a function that sets the on variable to false
-      'off': switchOff
-    }
-    // Add the commands and start annyang
-    annyang.addCommands(commands);
-    annyang.start();
-  }
-}
-
-function draw() {
-  // If on is true, make the background white, otherwise make it black
-  if (on) {
-    background(255);
-  }
-  else {
-    background(0);
-  }
-}
-
-function switchOn() {
-  on = true;
-}
-
-function switchOff() {
-  on = false;
-}
-```
-
-We have the power to turn an imaginary light on and off with our voice! Actually pretty nice.
+We can, again, rewrite the above code with named functions if it feels more comfortable. In the above case, because the code to run for the command is so **simple**, we could argue that anonymous functions are a little clearer because they show you exactly what code gets run associated with the command.
 
 ---
 
@@ -384,7 +421,7 @@ This already feels quite different, because speech is very **personal**. Particu
 
 ## "Splats"
 
-When we were looking at the documentation we saw the idea that we can get annyang! to recognize **arbitrary** words by using a special syntax in the command that would then send what the user said to our function as an argument.
+When we were looking at the documentation we briefly saw the idea that we can get annyang! to recognize **arbitrary** words by using a special syntax in the command that would then send what the user said to our function as an argument.
 
 Let's try that out.
 
@@ -426,6 +463,7 @@ function setup() {
 }
 
 // Sets the current username to whatever argument is passed to it by annyang!
+// Now how what the user said will be passed into the parameter called name
 function setName(name) {
   userName = name;
 }
@@ -438,16 +476,20 @@ function draw() {
   fill(255, 255, 0);
   textSize(32);
   rectMode(CENTER);
-  text(`Hi there, ${userName}.`, 100, 100);
+  text(`Hi there, ${userName}!`, 100, 100);
   pop();
 }
 ```
 
 Fun! And opens up some new lines of potential experimentation!
 
-What if you say something ridiculous as a name? It just accepts it without question. There's some absurdity built into this which you can either fight against (by checking to make sure what is said makes sense) or not.
+What if you say something ridiculous as a name?
 
-What if you just spout gibberish? It tries to understand you! With sometimes bizarre results! Could this be a new form of divination?!
+It just accepts it without question. There's some absurdity built into this which you can either fight against (by checking to make sure what is said makes sense) or not.
+
+What if you just spout gibberish?
+
+It tries to understand you! With sometimes bizarre results! Could this be a new form of divination?!
 
 ---
 
@@ -455,8 +497,8 @@ What if you just spout gibberish? It tries to understand you! With sometimes biz
 
 annyang! is super exciting because speech recognition is exciting. But it does come with at least a couple of frustrating elements
 
-* You may well find that you need to make sure you only have **one** tab/window open in your browser that is using annyang!/speech recognition or they may conflict. If you're having trouble, try closing any windows using annyang! and restarting the program.
-* Speech recognition is **not** perfect. You will inevitably experience situations where it just doesn't want to work, and that is life. Sometimes it's because your environment is too noisy. Sometimes it could be the way you speak. Sometimes it might just be in a bad mood?
+* **One annyang! program running at a time**. You may well find that you need to make sure you only have one tab/window open in your browser that is using annyang!/speech recognition or they may conflict. If you're having trouble, try closing any windows using annyang! and restarting the program.
+* **Speech recognition is not perfect**. You will inevitably experience situations where it just doesn't want to work, and that is life. Sometimes it's because your environment is too noisy. Sometimes it could be the way you speak. Sometimes it might just be in a bad mood?
 
 It's still a lot of fun to play around with!
 
