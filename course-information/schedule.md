@@ -31,8 +31,8 @@
 - [Git Cheatsheet](../guides/git-cheatsheet.md)
 
 #### Projects
-- Project 1
-- Project 2
+- [Project 1: A Night at the Movies](../projects/project1/README.md)
+- Project 2 (tbd.)
 
 ---
 
@@ -94,7 +94,7 @@ Week of 25 January 2021
 - **Complete** [Activity: Where's Sausage Dog?](../activities/wheres-sausage-dog.md) (**Watch** [2.4. Activity: Where's Sausage Dog?](https://youtu.be/r9ZCFCd4mjE) video to see Pippin doing it) ([Example final code](https://github.com/pippinbarr/cart263-2021/tree/main/activities/wheres-sausage-dog), [Play](https://pippinbarr.github.io/cart263-2021/activities/wheres-sausage-dog/))
 
 ### Exercise
-- **Complete** [Exercise: Where's Sausage Dog? New Game+](../exercises/wheres-sausage-dog-new-game-plus.md) (due the night of class)
+* **Complete** [Exercise: Where's Sausage Dog? New Game+](../exercises/wheres-sausage-dog-new-game-plus.md) (due the night of class)
 
 ### Examples
 - For various examples of JavaScript and p5, refer to the [CART253 Fall 2020 repository](https://www.github.com/pippinbarr/cart253-2020/).
@@ -102,15 +102,17 @@ Week of 25 January 2021
 ## Classroom (in Discord classroom channels at 13:30 on the day of class)
 * Q&A
 * Review of the week's material
+* Introducing [Project 1: A Night at the Movies](../projects/project1/README.md)
 * The [C-LAB](https://clab.concordia.ca/) is there to help you
 
 ## Studio (in Discord studio channels after classroom period)
-- Instructor and TA available to help
-- Work on [Exercise: Where's Sausage Dog? New Game+](../exercises/wheres-sausage-dog-new-game-plus.md) (due the night of class)
-- Start work on next week's material
+* Instructor and TA available to help
+* Work on [Exercise: Where's Sausage Dog? New Game+](../exercises/wheres-sausage-dog-new-game-plus.md) (due the night of class)
+* Start work on next week's material
 
 ## Homework
-- Continue work on next week's material
+* Continue work on next week's material
+* Work on [Project 1: A Night at the Movies](../projects/project1/README.md)
 
 ---
 
@@ -126,11 +128,11 @@ Week of 1 February 2021
 
 ### Topics
 * **ResponsiveVoice**
-  * **Watch** [3.1. ResponsiveVoice]() and **read** the [notes](../topics/voices/responsivevoice.md).
+  * **Watch** [3.1. ResponsiveVoice](https://youtu.be/KwgEbGB21Xg) and **read** the [notes](../topics/voices/responsivevoice.md).
   * [ResponsiveVoice Homepage](https://responsivevoice.org/)
   * [ResponsiveVoice API](https://responsivevoice.org/api/)
 * **annyang!**
-  * **Watch** [3.2. annyang!]() and read the [notes](../topics/voices/annyang.md).
+  * **Watch** [3.2. annyang!](https://youtu.be/Zww_5hd8umo) and read the [notes](../topics/voices/annyang.md).
   * [annyang! Homepage](https://www.talater.com/annyang/)
   * [annyang! API](https://github.com/TalAter/annyang/blob/master/docs/README.md)
 
@@ -152,15 +154,17 @@ Week of 1 February 2021
 ## Classroom (in Discord classroom channels at 13:30 on the day of class)
 * Q&A
 * Review of the week's material
+* [Project 1: A Night at the Movies](../projects/project1/README.md)
 * The [C-LAB](https://clab.concordia.ca/) is there to help you
 
 ## Studio (in Discord studio channels after classroom period)
-- Instructor and TA available to help
-- Work on [Exercise: Slamina+](../exercises/slamina-plus.md) (due the night of class)
-- Start work on next week's material
+* Instructor and TA available to help
+* Work on [Exercise: Slamina+](../exercises/slamina-plus.md) (due the night of class)
+* Start work on next week's material
 
 ## Homework
-- Continue work on next week's material
+* Continue work on next week's material
+* [Project 1: A Night at the Movies](../projects/project1/README.md)
 
 ---
 
@@ -189,8 +193,10 @@ Week of 15 February 2021
 Week of 22 February 2021
 
 ## Objectives
-- Working on Project 1
-- Getting a taste of a game engine
+- Working on [Project 1: A Night at the Movies](../projects/project1/README.md)
+- Getting a taste of a game engine?
+
+## Submit [Project 1: A Night at the Movies](../projects/project1/README.md)
 
 ---
 

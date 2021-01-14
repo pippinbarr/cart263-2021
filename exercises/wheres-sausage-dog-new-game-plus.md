@@ -3,7 +3,7 @@
 #### Grade
 - 1.25% of final grade (see guidelines at bottom)  
 
-#### Deadline
+#### Deadlines
 - Section A (Tuesdays): 11:59PM, 26 January 2021.
 - Section B (Thursdays): 11:59PM, 28 January 2021.
 
