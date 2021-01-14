@@ -86,9 +86,9 @@ Week of 25 January 2021
 ### Topics
 - (If needed) **Read** [JavaScript syntax review](../topics/javascript/syntax-review/javascript-syntax-review.md)
 - (If needed) **Watch** [Creative Computation I videos](https://www.youtube.com/channel/UCgMMSLb6Zywjhk9JW6I00Aw) and **Review** [Creative Computation I materials](https://github.com/pippinbarr/cart253-2020/blob/master/course-information/schedule.md)
-- **Watch** [2.1. Constants](https://youtu.be/s5ewBmui8BU) and **read** the [notes](../topics/javascript/constants.md) notes.
-- **Watch** [2.2. Object parameters](https://youtu.be/pwx6-NSm-F0) and **read** the [notes](../topics/javascript/object-parameters.md) notes.
-- **Watch** [2.3. First-class functions](https://youtu.be/44NrX7VlErM) and **read** the [notes](../topics/javascript/first-class-functions.md) notes.
+- **Watch** [2.1. Constants](https://youtu.be/s5ewBmui8BU) and **read** the [notes](../topics/javascript/constants.md).
+- **Watch** [2.2. Object parameters](https://youtu.be/pwx6-NSm-F0) and **read** the [notes](../topics/javascript/object-parameters.md).
+- **Watch** [2.3. First-class functions](https://youtu.be/44NrX7VlErM) and **read** the [notes](../topics/javascript/first-class-functions.md).
 
 ### Activity
 - **Complete** [Activity: Where's Sausage Dog?](../activities/wheres-sausage-dog.md) (**Watch** [2.4. Activity: Where's Sausage Dog?](https://youtu.be/r9ZCFCd4mjE) video to see Pippin doing it) ([Example final code](https://github.com/pippinbarr/cart263-2021/tree/main/activities/wheres-sausage-dog), [Play](https://pippinbarr.github.io/cart263-2021/activities/wheres-sausage-dog/))
@@ -126,11 +126,11 @@ Week of 1 February 2021
 
 ### Topics
 * **ResponsiveVoice**
-  * **Watch** [3.1. ResponsiveVoice]() ([notes](../topics/voices/responsivevoice.md))
+  * **Watch** [3.1. ResponsiveVoice]() and **read** the [notes](../topics/voices/responsivevoice.md).
   * [ResponsiveVoice Homepage](https://responsivevoice.org/)
   * [ResponsiveVoice API](https://responsivevoice.org/api/)
 * **annyang!**
-  * **Watch** [3.2. annyang!]() ([notes](../topics/voices/annyang.md))
+  * **Watch** [3.2. annyang!]() and read the [notes](../topics/voices/annyang.md).
   * [annyang! Homepage](https://www.talater.com/annyang/)
   * [annyang! API](https://github.com/TalAter/annyang/blob/master/docs/README.md)
 
