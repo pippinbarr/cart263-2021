@@ -17,6 +17,7 @@ The canvas will display many random images of animals at random positions, one o
 2. Rename the folder to `wheres-sausage-dog`
 3. Move the folder into the `activities` folder in your repository folder (create it if necessary)
 4. Commit the changes to your repository with a commit message
+5. Open the project folder in Atom to start work
 
 ---
 
@@ -56,10 +57,10 @@ We want a class to represent a generic animal as just an image that can be displ
 3. Write a `constructor()` with parameters `x`, `y` and `image` and store each parameter in a property, also add an `angle` property set to `0`.
 4. Write an `update()` method that just calls a `display()` method
 5. Write a `display()` method that
-  1. Uses `push()`
-  2. Sets the image mode to center, translates to the animal's position, and rotates by its angle
-  3. Displays the animal image
-  4. Uses `pop()`
+  * Uses `push()`
+  * Sets the image mode to center, translates to the animal's position, and rotates by its angle
+  * Displays the animal image
+  * Uses `pop()`
 
 At this point our program doesn't really do anything because we're not using this wonderful `Animal` class just yet
 
@@ -72,10 +73,12 @@ Half of the magic of our program is going to be display lots of animals on the c
 1. Declare global constants (with `const`) for the number of animal images (`10`) and the number of animals to display (`100`)
 2. Declare global empty array variables for the animal images and for the animal objects
 3. In `preload()` use a `for` loop to load all the animal images by using the iterator (`i`) as part of the filename to load (that's why they're numbered from `0` to `9`), adding each image to the animal images array
-4. In `setup()` use a `for` loop to create all the animals at random positions and with a random image from the animal images array, adding each one to the animals array
+4. In `setup()`
+  * Create a canvas the size of the window (use `windowWidth` and `windowHeight`)
+  * Use a `for` loop to create all the animals at random positions and with a random image from the animal images array, adding each one to the animals array
 5. In `draw()`
-  1. Fill the background with white
-  2. use a `for` loop to go through the animals array and call the `update()` method on each animal in it
+  * Fill the background with white
+  * use a `for` loop to go through the animals array and call the `update()` method on each animal in it
 
 After this we should be able to run the program and see 100 animal images display randomly all over the canvas!
 
@@ -83,20 +86,20 @@ After this we should be able to run the program and see 100 animal images displa
 
 ## 4. The `SausageDog` class!
 
-The star of our program is going to be a single sausage dog the player is trying to find. It will just be another image, but they can click on it to make it spin as a kind of victory. Because it's very similar to the `Animal` class, we'll `extend` that class and add some extra elements that are specific to the sausage dog.
+The star of our program is going to be a single sausage dog the player is trying to find. It will just be another image, but they can click on it to make it spin as a kind of victory. Because it's very similar to the `Animal` class, we'll extend that class and add some extra elements that are specific to the sausage dog.
 
 1. Create an `SausageDog.js` file and add a `script` tag for it in `index.html` (remember to place the tag above the `script.js` one and below the `Animal.js` one)
 2. Write in the basic `class` structure for the `SausageDog`
 3. Write a `constructor()` with parameters `x`, `y` and `image` and
-  1. call the `super()` constructor, passing along the parameters
-  2. Add a `found` property set to `false` (for tracking finding!)
-  3. Add a `rotationSpeed` property set to something like `0.25` (for spinning!).
+  * call the `super()` constructor, passing along the parameters
+  * Add a `found` property set to `false` (for tracking finding!)
+  * Add a `rotationSpeed` property set to something like `0.25` (for spinning!).
 4. Write an `update()` method that
-  1. Calls the superclass's `display()` method
-  2. Checks if the `found` property is true and adds the `rotationSpeed` to the `angle` if it is (so that dog spins when it's found!)
+  * Calls the superclass's `update()` method
+  * Checks if the `found` property is true and adds the `rotationSpeed` to the `angle` if it is (so that dog spins when it's found!)
 5. Write a `mousePressed()` method that
-  1. Checks if the mouse position is inside the dimensions of the sausage dog's image (use the image's `width` and `height` properties, and remember the image is **centered** when it's displayed)
-  2. If the mouse was clicked inside the sausage dog, set its `found` property to true
+  * Checks if the mouse position is inside the dimensions of the sausage dog's image (use the image's `width` and `height` properties, and remember the image is **centered** when it's displayed)
+  * If the mouse was clicked inside the sausage dog, set its `found` property to true
 
 ---
 
@@ -106,7 +109,7 @@ The other half of the magic of our program is that when we find the sausage dog 
 
 1. Declare global variables for the sausage dog image and the sausage dog object
 2. In `preload()` load the sausage dog image into the sausage dog image variable
-3. In `setup()` create a new `SausageDog` object and store it in the sausage dog object variable
+3. In `setup()` create a new `SausageDog` object at a random position and using the loaded sausage dog image and store it in the sausage dog object variable
 4. In `draw()` call the `update()` method of the sausage dog object
 5. Define a `mousePressed()` function and call the `mousePressed()` method of the sausage dog object inside it
 
