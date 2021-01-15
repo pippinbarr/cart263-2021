@@ -175,7 +175,7 @@ class Tiger {
 }
 ```
 
-The above doesn't work because the `this` inside the anonymous function actually refers to the context of the anonymous function and __not__ to the class, thus, it will print `undefined` because `this.name` doesn't exist inside the function.
+The above doesn't work because the `this` inside the anonymous function actually refers to the context of the anonymous function and __not__ to the class, thus, it will print `undefined` because `this.name` doesn't exist inside the function. The whole question of what `this` means in different places in a program is relatively complicated! If you're really interested, consider reading [The many faces of 'this' in javascript](https://blog.pragmatists.com/the-many-faces-of-this-in-javascript-5f8be40df52e) or researching further online.
 
 We can fix this with an arrow function which does **not** change the meaning of `this`:
 
