@@ -10,6 +10,12 @@ collectible stars on the screen to give you something to do so that you
 can find out how terrible it is to try to drive a car with voice recognition
 and its inevitable lag!
 
+Commands are:
+"Drive"
+"Stop"
+"(Turn) left"
+"(Turn) right"
+
 Uses:
 
 annyang
@@ -71,10 +77,10 @@ function setupAnnyang() {
       'stop': function() {
         car.stop();
       },
-      'left': function() {
+      '(turn) left': function() {
         car.turnLeft();
       },
-      'right': function() {
+      '(turn) right': function() {
         car.turnRight();
       }
     };
