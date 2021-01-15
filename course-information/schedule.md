@@ -147,13 +147,13 @@ Week of 1 February 2021
 * **Complete** [Exercise: Slamina+](../exercises/slamina-plus.md) (due the night of class)
 
 ### Examples
-* Singing (ResponsiveVoice)
-* Nonsense generator (ResponsiveVoice)
-* Feelings (ResponsiveVoice)
-* Backseat driver (annyang!)
-* Re:programming (annyang!)
-* Misheard dating profile (annyang!)
-* Doctor, doctor! (ResponsiveVoice, annyang!)
+* [Nonsense generator]() ([Source]())
+* [Feelings](https://pippinbarr.github.io/cart263-2021/examples/voices/feelings/) ([Source](https://www.github.com/pippinbarr/cart263-2021/tree/master/examples/voices/feelings/))
+* [Perfect pitch](https://pippinbarr.github.io/cart263-2021/examples/voices/perfect-pitch/) ([Source](https://www.github.com/pippinbarr/cart263-2021/tree/master/examples/voices/perfect-pitch/))
+* [Backseat driver](https://pippinbarr.github.io/cart263-2021/examples/voices/backseat-driver/) ([Source](https://www.github.com/pippinbarr/cart263-2021/tree/master/examples/voices/backseat-/))
+* [Re:programming](https://pippinbarr.github.io/cart263-2021/examples/voices/re-programming) ([Source](https://www.github.com/pippinbarr/cart263-2021/tree/master/examples/voices/re-programming/))
+* [Misheard dating profile](https://pippinbarr.github.io/cart263-2021/examples/voices/misheard-dating-profile/) ([Source](https://www.github.com/pippinbarr/cart263-2021/tree/master/examples/voices/misheard-dating-profile/))
+* [Doctor, doctor!](https://pippinbarr.github.io/cart263-2021/examples/voices/doctor-doctor) ([Source](https://www.github.com/pippinbarr/cart263-2021/tree/master/examples/voices/doctor-doctor))
 
 ## Classroom (in Discord classroom channels at 13:30 on the day of class)
 * Q&A
