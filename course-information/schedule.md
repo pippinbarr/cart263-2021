@@ -63,6 +63,10 @@ Week of 18 January 2021
 * Reviewing the [Course Schedule](./schedule.md)
 * Time management?
 * The [C-LAB](https://clab.concordia.ca/) is there to help you
+  * Homepage: [https://clab.concordia.ca/](https://clab.concordia.ca/)
+  * Email: [computation.lab@concordia.ca](mailto:computation.lab@concordia.ca)
+  * Zoom office hours: [https://concordia-ca.zoom.us/my/the.computation.lab](https://concordia-ca.zoom.us/my/the.computation.lab) (Email first for the password)
+  * Workshops: [https://clab.concordia.ca/clab-workshops/](https://clab.concordia.ca/clab-workshops/)
 
 ## Studio (in Discord studio channels after classroom period)
 - Instructor and TA available to help
