@@ -66,6 +66,7 @@ Week of 18 January 2021
   * Homepage: [https://clab.concordia.ca/](https://clab.concordia.ca/)
   * Email: [computation.lab@concordia.ca](mailto:computation.lab@concordia.ca)
   * Zoom office hours: [https://concordia-ca.zoom.us/my/the.computation.lab](https://concordia-ca.zoom.us/my/the.computation.lab) (Email first for the password)
+  * Discord: Email for an invitation if needed
   * Workshops: [https://clab.concordia.ca/clab-workshops/](https://clab.concordia.ca/clab-workshops/)
 
 ## Studio (in Discord studio channels after classroom period)
@@ -213,7 +214,6 @@ Week of 22 February 2021
 
 ## Objectives
 - Working on [Project 1: A Night at the Movies](../projects/project1/README.md)
-- Getting a taste of a game engine?
 
 ## Submit [Project 1: A Night at the Movies](../projects/project1/README.md)
 
