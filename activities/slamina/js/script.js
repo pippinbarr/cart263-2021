@@ -7,7 +7,7 @@ Pippin Barr
 
 A guessing game in which the page pronounces the name of an animal
 backwards and the user has to figure out what it was and say the
-name forwards in order to get the next animal.
+name forwards.
 
 ******************/
 
@@ -185,12 +185,19 @@ function setup() {
 
 
 /**
-Display the current answer in red if incorrect and green if correct
-(Display nothing if no guess entered yet)
-*/
+Display the current answer.
+ */
 function draw() {
   background(0);
 
+  displayAnswer();
+}
+
+/**
+Display the current answer in red if incorrect and green if correct
+(Displays nothing if no guess entered yet)
+*/
+function displayAnswer() {
   if (currentAnswer === currentAnimal) {
     fill(0, 255, 0);
   }
@@ -201,10 +208,10 @@ function draw() {
 }
 
 /**
-Reverse the current animal name and say it with ResponsiveVoice
+Reverse the animal name and say it with ResponsiveVoice
 */
-function sayCurrentAnimal() {
-  let reverseAnimal = reverseString(currentAnimal);
+function sayAnimalBackwards(animal) {
+  let reverseAnimal = reverseString(animal);
   responsiveVoice.speak(reverseAnimal);
 }
 
@@ -225,28 +232,11 @@ function reverseString(string) {
 /**
 Called by annyang when the user make a guess.
 animal parameter contains the guess as a string.
-Checks if the guess is correct or not.
+Sets the answer text to the guess.
 */
 function guessAnimal(animal) {
-  // Conver the guess to lowercase to match the answer format
+  // Convert the guess to lowercase to match the answer format
   currentAnswer = animal.toLowerCase();
-  // Check if the answer is correct...
-  if (currentAnswer === currentAnimal) {
-    // If it is correct, go to the next question after a delay
-    setTimeout(nextQuestion, QUESTION_DELAY);
-  }
-  else {
-    // If it isn't correct, process the wrong answer
-    setTimeout(wrongAnswer, QUESTION_DELAY);
-  }
-}
-
-/**
-Reset the answer text on the canvas, and say the animal again
-*/
-function wrongAnswer() {
-  currentAnswer = ``;
-  sayCurrentAnimal();
 }
 
 /**
@@ -255,7 +245,7 @@ Reset the answer text, get a new random animal, say its name
 function nextQuestion() {
   currentAnswer = ``;
   currentAnimal = random(animals);
-  sayCurrentAnimal();
+  sayAnimalBackwards(currentAnimal);
 }
 
 /**
