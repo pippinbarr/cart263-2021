@@ -181,6 +181,14 @@ Week of 8 February 2021
 - Playing with JSON data
 - Saving and loading data in the browser
 
+## Before class
+
+### Topics
+* **JSON**
+  * [JSON Homepage](https://www.json.org/json-en.html)
+* **Web Storage API**
+  * [Web Storage API Documentation from Mozilla](https://developer.mozilla.org/en-US/docs/Web/API/Web_Storage_API/Using_the_Web_Storage_API)
+
 ---
 
 # AI
@@ -188,7 +196,14 @@ Week of 8 February 2021
 Week of 15 February 2021
 
 ## Objectives
-- Playing with ml5.js
+- Playing with ml5.js and Machine Learning
+
+## Before class
+
+### Topics
+* **ml5.js** (Machine Learning)
+  * [ml5.js Homepage](https://ml5js.org/)
+  * [ml5.js Reference](https://learn.ml5js.org/#/reference/index) (API)
 
 ---
 
@@ -216,8 +231,16 @@ Week of 8 March 2021
 
 ## Objectives
 - Understanding HTML and CSS
-- Understanding the JavaScript and the DOM
-- ... animation? Scrolling?
+- Understanding JavaScript and the DOM (Document Object Model)
+
+## Before class
+
+### Topics
+* **HTML/CSS**
+  * [HTML Documentation from Mozilla](https://developer.mozilla.org/en-US/docs/Web/HTML)
+  * [CSS Documentation from Mozilla](https://developer.mozilla.org/en-US/docs/Web/CSS)
+* The **DOM** (Document Object Model)
+  * [DOM Documentation from Mozilla](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model)
 
 ---
 
@@ -227,7 +250,14 @@ Week of 15 March 2021
 
 ## Objectives
 - Learning to use jQuery
-- Playing with user prediction
+
+## Before class
+
+### Topics
+* **jQuery**
+  * [jQuery Homepage](https://jquery.com/)
+  * [jQuery API](https://api.jquery.com/)
+  * [JQuery Learning Center](https://learn.jquery.com/)
 
 ---
 
@@ -239,6 +269,14 @@ Week of 22 March 2021
 - Learning to use jQuery UI
 - Using form input in a program
 
+## Before class
+
+### Topics
+* **jQuery UI**
+  * [jQuery UI Homepage](https://jqueryui.com/)
+  * [jQuery UI API](https://api.jqueryui.com/)
+  * [jQuery UI Demos](https://jqueryui.com/demos/)
+
 ---
 
 # A-Frame
@@ -248,6 +286,13 @@ Week of 29 March 2021
 ## Objectives
 - Learning the A-Frame library
 - Using jQuery with A-Frame
+
+## Before class
+
+### Topics
+* **A-Frame**
+  * [A-Frame Homepage](https://aframe.io/)
+  * [A-Frame Documentation](https://aframe.io/docs/1.1.0/introduction/) (includes API)
 
 ---
 
