@@ -77,7 +77,9 @@ function reverseString(string) {
 
 Finally, we need to trigger ResponsiveVoice to say the reversed animal name...
 
-1. Define a `mousePressed()` function and in it
+1. Include the ResponsiveVoice library in your project
+  * Place the script tag for the library along with your API key in `index.html` (if you can't remember it, go to [responsivevoice.org](http://responsivevoice.org/) and sign into your App Dashboard to find it)
+2. Define a `mousePressed()` function and in it
   * Assign a random animal name from the `animals` array to `currentAnimal` (remember you can use p5's `random()` function for this)
   * Declare a variable `reverseAnimal` and assign the reverse of `currentAnimal` to it by using `reverseString(currentAnimal)`
   * Use ResponsiveVoice to speak `reverseAnimal`
@@ -88,9 +90,13 @@ Now when the program starts, if the user clicks, they will hear the name of a ra
 
 ## 3. Set up annyang! to listen to guesses
 
-We want annyang! to listen to the user and hear when they make a guess. To do this we need to be able to listen to a guessing command like "I think it is..." and then capture what the actual guess is. We'll use annyang!'s "splat" feature for this. In order to give some feedback, we'll display the guess on the canvas.
+We want annyang! to listen to the user and hear when they make a guess. To do this we need to be able to listen to a guessing command like "I think it is..." and then capture what the actual guess is. We'll use annyang!'s "splat" feature for this. In order to give some feedback, we'll display the guess in the console.
 
 First we want to set up annyang...
+
+In `index.html`
+1. Include the annyang! library in your project
+  * Place the script tag for the library along in `index.html` (if you can't remember it go to [https://www.talater.com/annyang/](https://www.talater.com/annyang/) and find either download the file or use the hosted version of the library)
 
 In `setup()`:
 1. Write an `if` statement that checks if annyang is available and inside it:
@@ -106,7 +112,7 @@ At the top of the program:
 
 Below the `mousePressed()` function:
 1. Define a function called `guessAnimal()` that has a single parameter `animal` (this will be called by annyang when it gears a guess). In it:
-  * Assign the guess in `animal` to the `currentAnswer` variable
+  * Assign the guess in `animal` to the `currentAnswer` variable (use `.toLowerCase()` on `animal` to convert it to a lowercase version when assigning it so that it matches the style of the `animals` list)
   * Use `console.log()` to print out `currentAnswer` so you can see what it is
 
 Now if the user starts the program and clicks, they should be able to say "I think it is dog" (for example) and you should see "dog" in the console
