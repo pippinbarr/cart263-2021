@@ -51,8 +51,13 @@ At the heart of this experience is having the computer say an animal's name back
 
 Because it's a little more complicated that is easy to just work out, we'll have the string reversing part provided.
 
+First we need to have a way to track the current guess...
+
 1. Declare a **variable** called `currentAnimal` and set it to an empty string. This is where we'll store the animal the user is guessing.
-2. Add the following function for reversing a string to your program:
+
+Now we need to be able to reverse a string of text.
+
+1. Add the following function for reversing a string to your program:
 
 ```javascript
 /**
@@ -70,12 +75,14 @@ function reverseString(string) {
 }
 ```
 
-3. Define a `mousePressed()` function and in it
+Finally, we need to trigger ResponsiveVoice to say the reversed animal name...
+
+1. Define a `mousePressed()` function and in it
   * Assign a random animal name from the `animals` array to `currentAnimal` (remember you can use p5's `random()` function for this)
   * Declare a variable `reverseAnimal` and assign the reverse of `currentAnimal` to it by using `reverseString(currentAnimal)`
   * Use ResponsiveVoice to speak `reverseAnimal`
 
-Now when the program starts, if the user clicks, they will hear the name of a random name backwards.
+Now when the program starts, if the user clicks, they will hear the name of a random animal backwards.
 
 ---
 
@@ -106,7 +113,7 @@ Now if the user starts the program and clicks, they should be able to say "I thi
 
 ---
 
-## Display whether a guess is right or wrong
+## 4. Display whether a guess is right or wrong
 
 Finally, we want to display the user's guess to the user themselves so they can understand whether they were right or wrong!
 
@@ -139,6 +146,8 @@ As with any simple program, we can imagine all kinds of improvements and changes
 * Transform the answers in a different way than reversing them (anagrams? say them in a really hard to understand voice using ResponsiveVoice parameters?)
 * Add a time limit for the user to name their guess in
 * Completely change the dynamic away from a guess game to something else, what if the annyang! command was "I feel like a(n)..." or "I look like a(n)..."?
+* Turn it into an attempt to guess as many real animals from the array as possible?
+* Add multiple voice inputs for the user (maybe they can choose between two animals? Which is cuter?)
 * ... and many more?!
 
 ---
