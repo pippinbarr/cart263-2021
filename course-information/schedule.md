@@ -61,7 +61,9 @@ Week of 18 January 2021
 * Introductions (don't forget your pronouns!)
 * Reviewing the [Course Outline](./outline.md)
 * Reviewing the [Course Schedule](./schedule.md)
-* Time management?
+* Time management (class scheduling, office hours)
+* Waiting list? Is anyone on it?
+* Software setup? Any problems?
 * The [C-LAB](https://clab.concordia.ca/) is there to help you
   * Homepage: [https://clab.concordia.ca/](https://clab.concordia.ca/)
   * Email: [computation.lab@concordia.ca](mailto:computation.lab@concordia.ca)
@@ -186,9 +188,40 @@ Week of 8 February 2021
 
 ### Topics
 * **JSON**
+  * **Watch** [4.1. JSON]() and **read** the [notes](../topics/data/json.md).
   * [JSON Homepage](https://www.json.org/json-en.html)
 * **Web Storage API**
+  * **Watch** [4.2. Web Storage API]() and **read** the [notes](../topics/data/web-storage-api.md).
   * [Web Storage API Documentation from Mozilla](https://developer.mozilla.org/en-US/docs/Web/API/Web_Storage_API/Using_the_Web_Storage_API)
+
+### Activity
+* tbd.
+
+### Exercise
+* tbd.
+
+### Examples
+* [Imaginary sports](https://pippinbarr.github.io/cart263-2021/examples/data/imaginary-sports) ([Source](https://www.github.com/pippinbarr/cart263-2021/tree/master/examples/data/imaginary-sports))
+* [Beat poetry](https://pippinbarr.github.io/cart263-2021/examples/data/beat-poetry) ([Source](https://www.github.com/pippinbarr/cart263-2021/tree/master/examples/data/beat-poetry))
+* [Weather report](https://pippinbarr.github.io/cart263-2021/examples/data/weather-report) ([Source](https://www.github.com/pippinbarr/cart263-2021/tree/master/examples/data/weather-report))
+* [Bad Tarot forever](https://pippinbarr.github.io/cart263-2021/examples/data/bad-tarot-forever) ([Source](https://www.github.com/pippinbarr/cart263-2021/tree/master/examples/data/bad-tarot-forever))
+* [Click attack](https://pippinbarr.github.io/cart263-2021/examples/data/click-attack) ([Source](https://www.github.com/pippinbarr/cart263-2021/tree/master/examples/data/click-attack))
+
+## Classroom (in Discord classroom channels at 13:30 on the day of class)
+* Q&A
+* Review of the week's material
+* [Project 1: A Night at the Movies](../projects/project1/README.md)
+* The [C-LAB](https://clab.concordia.ca/) is there to help you
+
+## Studio (in Discord studio channels after classroom period)
+* Instructor and TA available to help
+* Work on Exercise
+* Start work on next week's material
+
+## Homework
+* Continue work on next week's material
+* [Project 1: A Night at the Movies](../projects/project1/README.md)
+
 
 ---
 
