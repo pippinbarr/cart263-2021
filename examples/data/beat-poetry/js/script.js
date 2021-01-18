@@ -93,5 +93,5 @@ function sayNextWord() {
     word = random(words);
   }
   // Say the word
-  responsiveVoice.speak(word, voice, voiceParameters);
+  responsiveVoice.speak(word, VOICE, VOICE_PARAMS);
 }
