@@ -1,4 +1,12 @@
-# localStorage {
+# Web Storage API {
+
+---
+
+## Summary
+
+---
+
+## Contents
 
 ---
 
