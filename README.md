@@ -10,7 +10,7 @@ Department of Design and Computation Arts
 
 ### TAs
 Section A: Dana Ryashy  
-Secdtion B: Samuel Paré-Chouinard
+Section B: Samuel Paré-Chouinard
 
 ### [Course Outline](https://pippinbarr.github.io/cart263-2021/course-information/outline.html)
 ### [Schedule](https://pippinbarr.github.io/cart263-2021/course-information/schedule.html)

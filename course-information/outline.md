@@ -135,7 +135,7 @@ When creating projects in code, make sure you attribute all elements that are no
 
 ## Costs
 
-- See the [Department Syllabus](dcart-syllabus-winter-2021.pdf)
+- See the [Department Syllabus](./dcart-syllabus-winter-2021.pdf)
 - All software students are expected to use in the class will be free.
 
 ## Technology
@@ -148,7 +148,7 @@ The practical work done in this class will take place on your own computer, with
 (Click through for week-by-week information about what we will cover in the course.)
 
 
-## [Design and Computation Arts Syllabus](./dcart-syllabus-fall-2020.pdf)
+## [Design and Computation Arts Syllabus](./dcart-syllabus-winter-2021.pdf)
 
 (Click through for the standardized information from D/CART that is included as part of all course outlines.)
 
