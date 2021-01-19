@@ -36,12 +36,9 @@ tbd.
 Dana Ryashy  
 Samuel Paré-Chouinard
 
-## Territorial acknowledgment
+## [Territorial acknowledgment](https://www.concordia.ca/about/indigenous/territorial-acknowledgement.html)
 
 We acknowledge that Concordia University is located on unceded Indigenous lands. The Kanien’kehá:ka Nation is recognized as the custodians of the lands and waters on which we gather today. Tiohtiá:ke/Montreal is historically known as a gathering place for many First Nations. Today, it is home to a diverse population of Indigenous and other peoples. We respect the continued connections with the past, present and future in our ongoing relationships with Indigenous and other peoples within the Montreal community.
-
-(See also: https://www.concordia.ca/about/indigenous/territorial-acknowledgement.html)
-
 
 ## Description
 
@@ -130,7 +127,7 @@ Students have the right to write in French at Concordia. Pippin can read French 
 
 The most common offense under the Academic Code of Conduct is plagiarism, which the Code defines as “the presentation of the work of another person as one’s own or without proper acknowledgement.” This includes material copied word for word from books, journals, Internet sites, professor’s course notes, etc. It refers to material that is paraphrased but closely resembles the original source. It also includes for example the work of a fellow student, an answer on a quiz, data for a lab report, a paper or assignment completed by another student. It might be a paper purchased from any source. Plagiarism does not refer to words alone – it can refer to copying images, graphs, tables and ideas. “Presentation” is not limited to written work. It includes oral presentations, computer assignments and artistic works. Finally, if you translate the work of another person into any other language and do not cite the source, this is also plagiarism.
 
-__In Simple Words:__ Do not copy, paraphrase or translate anything from anywhere without saying where you obtained it. (Source: The Academic Integrity Website: https://www.concordia.ca/students/academic-integrity)
+__In Simple Words:__ Do not copy, paraphrase or translate anything from anywhere without saying where you obtained it. (Source: [Concordia's Academic Integrity Website](https://www.concordia.ca/students/academic-integrity))
 
 ### Academic ethics when programming
 
