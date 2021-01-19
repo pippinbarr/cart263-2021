@@ -34,10 +34,8 @@ const CALLBACK = `gotWeatherData`;
 // while we're developing it
 const CORS_ANYWHERE = `https://cors-anywhere.herokuapp.com/`;
 
-// URLS for the localhost version and the production version
-// (The local host version uses the CORS anywhere application)
-const TEST_METAWEATHER_API_URL = `${CORS_ANYWHERE}${METAWEATHER_API_URL}${MONTREAL_CODE}`;
-const PRODUCTION_METAWEATHER_API_URL = `${METAWEATHER_API_URL}${MONTREAL_CODE}?callback=${CALLBACK}`
+// URLS to access the MetaWeather API via CORS Anywhere
+const METAWEATHER_API_URL = `${CORS_ANYWHERE}${METAWEATHER_API_URL}${MONTREAL_CODE}`;
 
 // Voice settings for the fake Siri (I think of him as Murray)
 const VOICE_NAME = `UK English Male`;
@@ -120,7 +118,7 @@ function getWeather() {
   }
   // Ask the API for the JSON data about the current weather
   // tell it to call our gotWeatherData function when it's loaded
-  loadJSON(PRODUCTION_METAWEATHER_API_URL, gotWeatherData);
+  loadJSON(METAWEATHER_API_URL, gotWeatherData);
 
   // Play for time...
   responsiveVoice.speak(`Let's see...`, VOICE_NAME, VOICE_PARAMS);
