@@ -119,7 +119,7 @@ function getWeather() {
   }
   // Ask the API for the JSON data about the current weather
   // tell it to call our gotWeatherData function when it's loaded
-  loadJSON(TEST_METAWEATHER_API_URL, gotWeatherData);
+  loadJSON(PRODUCTION_METAWEATHER_API_URL, gotWeatherData);
 
   // Play for time...
   responsiveVoice.speak(`Let's see...`, VOICE_NAME, VOICE_PARAMS);
