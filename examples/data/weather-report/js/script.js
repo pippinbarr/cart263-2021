@@ -26,7 +26,7 @@ http://responsivevoice.org/
 ******************/
 
 // URL for the weather API
-const METAWEATHER_API_URL = `https://www.metaweather.com/api/location/`;
+const METAWEATHER_API_BASE_URL = `https://www.metaweather.com/api/location/`;
 // Specific city code for Montreal
 const MONTREAL_CODE = `3534`;
 const CALLBACK = `gotWeatherData`;
@@ -35,7 +35,7 @@ const CALLBACK = `gotWeatherData`;
 const CORS_ANYWHERE = `https://cors-anywhere.herokuapp.com/`;
 
 // URLS to access the MetaWeather API via CORS Anywhere
-const METAWEATHER_API_URL = `${CORS_ANYWHERE}${METAWEATHER_API_URL}${MONTREAL_CODE}`;
+const METAWEATHER_API_URL = `${CORS_ANYWHERE}${METAWEATHER_API_BASE_URL}${MONTREAL_CODE}`;
 
 // Voice settings for the fake Siri (I think of him as Murray)
 const VOICE_NAME = `UK English Male`;
