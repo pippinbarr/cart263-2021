@@ -4,9 +4,15 @@
 
 ## Summary
 
+Browsers allow us to **save** and **load** data on a user's computer with the Web Storage API! This means our programs/website can be **persistent** in time by **remembering** things from the last time they were run.
+
 ---
 
 ## Contents
+
+* Memory
+* The Web Storage API
+* Using `localStorage`
 
 ---
 
@@ -28,7 +34,7 @@
 
 ---
 
-## `localStorage`
+## Using `localStorage`
 
 - In JavaScript there is an object called `localStorage` that does what we need
 - It saves data (basically like variables with values in them) in the browser so that they stick around until next time
@@ -100,45 +106,6 @@ let myArray = localStorage.getItem("myArray"); // "1,2,3" (NOT the array [1,2,3]
   - `JSON.stringify()` converts an object (or other data) to a string
   - `JSON.parse()` converts an object (or other data) from a string
 - (See the slide notes for a more extensive discussion of other approaches to saving and loading.)
-
-???
-
-#### Aside: saving and loading individual values
-
-- If you really want to, you can still save individual values and convert them back from strings as you load them
-- So for a boolean we could do something this:
-
-```javascript
-localStorage.setItem("myTruth",true);
-...
-let truthString = localStorage.getItem("myTruth"); // "true"
-let truth = (truthString === "true"); // true
-```
-
-- For an integer we could do something like this:
-
-```javascript
-localStorage.setItem("myInt",20);
-...
-let intString = localStorage.getItem("myInt"); // "20"
-let integer = parseInt(intString); // 20
-```
-
-- But this is pretty annoying because it requires __knowing__ what kind of value everything is meant to be and using the correct conversion method.
-- We could use `JSON.parse()` to get around this most of the time:
-
-```javascript
-localStorage.setItem("myTruth",true);
-localStorage.setItem("myInt",20);
-...
-let truthString = localStorage.getItem("myTruth"); // "true"
-let truth = JSON.parse(truthString); // true
-
-let intString = localStorage.getItem("myInt"); // "20"
-let integer = JSON.parse(intString); // 20
-```
-
-- In the end it's a lot easier to just wrap our data in an object
 
 ---
 
@@ -229,7 +196,7 @@ localStorage.getItem("adolescenceData"); // null
 
 ---
 
-## sessionStorage
+## `sessionStorage`
 
 - There is another place to save data called `sessionStorage`
 - It works in __exactly__ the same way as `localStorage` with one difference: the data is cleared when you close the window/tab with the page running in it

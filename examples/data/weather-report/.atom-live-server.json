@@ -1,1 +1,3 @@
-{ "cors": true }
+{
+  "cors": true
+}
