@@ -203,7 +203,7 @@ Week of 8 February 2021
 ### Examples
 * [Imaginary sports](https://pippinbarr.github.io/cart263-2021/examples/data/imaginary-sports) ([Source](https://www.github.com/pippinbarr/cart263-2021/tree/master/examples/data/imaginary-sports))
 * [Beat poetry](https://pippinbarr.github.io/cart263-2021/examples/data/beat-poetry) ([Source](https://www.github.com/pippinbarr/cart263-2021/tree/master/examples/data/beat-poetry))
-* **Currently broken** [Weather report](https://pippinbarr.github.io/cart263-2021/examples/data/weather-report) ([Source](https://www.github.com/pippinbarr/cart263-2021/tree/master/examples/data/weather-report))
+* [Weather report](https://pippinbarr.github.io/cart263-2021/examples/data/weather-report) ([Source](https://www.github.com/pippinbarr/cart263-2021/tree/master/examples/data/weather-report)) (Uses CORS anywhere proxy)
 * [Bad Tarot forever](https://pippinbarr.github.io/cart263-2021/examples/data/bad-tarot-forever) ([Source](https://www.github.com/pippinbarr/cart263-2021/tree/master/examples/data/bad-tarot-forever))
 * [Click attack](https://pippinbarr.github.io/cart263-2021/examples/data/click-attack) ([Source](https://www.github.com/pippinbarr/cart263-2021/tree/master/examples/data/click-attack))
 
