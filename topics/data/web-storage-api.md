@@ -4,7 +4,7 @@
 
 ## Summary
 
-Browsers allow us to **save** and **load** data on a user's computer with the Web Storage API! This means our programs/website can be **persistent** in time by **remembering** things from the last time they were run.
+Browsers allow us to **save** and **load** data on a user's computer with the Web Storage API! This means our programs/websites can be **persistent** in time by **remembering** things from the last time they were run.
 
 ---
 
@@ -35,9 +35,9 @@ To do any of that we need some way to **store data between sessions** on the pag
 
 The Web Storage API is the answer to our dreams in this case. It's a standard supported by every browser that allows us to save data to the user's browser and load it again within JavaScript.
 
-For the technical particulars you can consult [Mozilla's Web Storage API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Storage_API) documentation as well as their [Using the Web Storage API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Storage_API/Using_the_Web_Storage_API) demo and information.
+For the technical particulars you can consult [Mozilla's Web Storage API documentation](https://developer.mozilla.org/en-US/docs/Web/API/Web_Storage_API) as well as their [Using the Web Storage API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Storage_API/Using_the_Web_Storage_API) demo and information.
 
-Fortunately, though, the API is not essentially very complicated to work with! There are two variables, `localStorage` and `sessionStorage` that exist to let us access the Web Storage API and thus to save and load data.
+Fortunately, though, the API is not very complicated to work with! There are two variables, `localStorage` and `sessionStorage` that exist to let us access the Web Storage API and thus to save and load data.
 
 We'll talk about `localStorage` here, and mention `sessionStorage` later. They both work in the same way.
 
@@ -58,15 +58,15 @@ With it we can save data into the user's browser, and retrieve it. To save data 
 So if we want to save the string "Be excellent to each other." we need to think of a name for its **key**, such as "meaningOfLife" and then...
 
 ```javascript
-localStorage.setItem("meaningOfLife", "Be excellent to each other.");
+localStorage.setItem(`meaning-of-life`, `Be excellent to each other.`);
 ```
 
-This will **save** the string `"Be excellent to each other."` with the key `"meaningOfLife"`.
+This will **save** the string `Be excellent to each other.` with the key `meaning-of-life`.
 
 Note:
 * The key is always a **string**
-* The data is any simple JavaScript value (e.g. a string, a number, a boolean)
-* But saving arrays and JavaScript objects are special cases we'll get to later
+* The data is any simple **JavaScript value** (e.g. a string, a number, a boolean)
+* But saving **arrays and JavaScript objects are special cases** we'll get to later
 
 ### `getItem()`
 
@@ -74,35 +74,35 @@ To **load data** we use `getItem()` with one parameter:
 * the **key** of the data we want to load
 
 ```javascript
-let meaning = localStorage.getItem("meaningOfLife"); // "Be excellent to each other."
+let meaning = localStorage.getItem(`meaning-of-life`); // "Be excellent to each other."
 ```
 
-The above will load the data saved under the key "meaningOfLife" into `meaning`. Because we know we just saved data to that key with `setItem()` we know that `meaning` will end up with "Be excellent to each other." in it.
+The above will load the data saved under the key "meaning-of-life" into `meaning`. Because we know we just saved data to that key with `setItem()` we know that `meaning` will end up with "Be excellent to each other." in it.
 
 ### `getItem()` with no data
 
 If we use a key for which there is **no data** it will return `null`
 
 ```javascript
-let moaning = localStorage.getItem("moaningOfLife"); // null
+let moaning = localStorage.getItem(`moaning-of-life`); // null
 ```
 
-Because we **haven't** saved any data under the key "moaningOfLife" there's nothing to "get" and so `getItem()` will return `null`.
+Because we **haven't** saved any data under the key "meaning-of-life" there's nothing to "get" and so `getItem()` will return `null`.
 
-Importantly, that means we can **check** if some specific data has already been saved before or not by trying to load it and then checking whether the result is `null` (there is no data) or not (there is data).
+That means we can **check** if some specific data has already been saved before or not by trying to load it and then checking whether the result is `null` (there is no data) or not `null` (there is data).
 
 ### `getItem()` always returns strings!
 
 It is important to know that `localStorage` actually **saves everything as strings**! You can still save numbers and booleans etc., but when you load them they'll come back as string versions of themselves......
 
 ```javascript
-localStorage.setItem("myBoolean", true);
-localStorage.setItem("myFloat", 0.1);
-localStorage.setItem("myArray", [1,2,3]);
+localStorage.setItem(`my-boolean`, true);
+localStorage.setItem(`my-number`, 0.1);
+localStorage.setItem(`my-array`, [1,2,3]);
 
-let myBoolean = localStorage.getItem("myBoolean"); // "true" (NOT the boolean value true)
-let myFloat = localStorage.getItem("myFloat"); // "0.1" (NOT the number 0.1)
-let myArray = localStorage.getItem("myArray"); // "1,2,3" (NOT the array [1,2,3])
+let myBoolean = localStorage.getItem(`my-boolean`); // "true" (NOT the boolean value true)
+let myFloat = localStorage.getItem(`my-number`); // "0.1" (NOT the number 0.1)
+let myArray = localStorage.getItem(`my-array`); // "1,2,3" (NOT the array [1,2,3])
 ```
 
 This is kind of frustrating, because we would rather get back the exact same kind of value that we put in. But we don't.
@@ -113,9 +113,9 @@ There are different ways to cope with this, but the easiest is to always save **
 
 ## Objects to the rescue!
 
-The most consistent way to ensure we keep our data in the format we want is to save **JavaScript objects** containing our data, instead of individual values.
+So, the most consistent way to ensure we keep our data in the format we want is to save **JavaScript objects** containing our data, instead of individual values.
 
-**However**, to do this we have to **convert** the object to a string when we save it, and convert it back from a string when we load it. Luckily there are two functions for doing exactly this task.
+**However**, to do this we have to convert the object to a string when we save it, and convert it back from a string when we load it. Luckily there are two functions for performing exactly this task.
 
 * `JSON.stringify()` converts an object into a string
 * `JSON.parse()` converts a string back into an object
@@ -128,22 +128,46 @@ We save our data by storing it in an object and using `JSON.stringify()` before 
 
 ```javascript
 let data = {
-  text: "Be excellent to each other.",
+  text: `Be excellent to each other.`,
   number: 10,
   boolean: true,
   array: [1,2,3]
 };
 let dataString = JSON.stringify(data); // Convert the data to a string
-localStorage.setItem("myData", dataString); // Save the data as a string
+localStorage.setItem(`my-data`, dataString); // Save the data as a string
 ```
+
+It's just as easy to do the saving and stringifying in one step:
+
+```javascript
+let data = {
+  text: `Be excellent to each other.`,
+  number: 10,
+  boolean: true,
+  array: [1,2,3]
+};
+localStorage.setItem(`my-data`, JSON.stringify(data)); // Save the data as a string
+```
+
 
 ### `getItem()` and `JSON.parse()`
 
 We restore our data by loading (as a string) and then converting it back to an object using `JSON.parse()`:
 
 ```javascript
-let loadedDataString = localStorage.getItem("myData"); // Load the string!
+let loadedDataString = localStorage.getItem(`my-data`); // Load the string!
 let loadedData = JSON.parse(loadedDataString); // Parse the real data!
+
+console.log(loadedData.text); // "Be excellent to each other."
+console.log(loadedData.number); // 10
+console.log(loadedData.boolean); // true
+console.log(loadedData.array); // [1, 2, 3]
+```
+
+Again, it's more common to do the loading and parsing in one step:
+
+```javascript
+let loadedData = JSON.parse(localStorage.getItem(`my-data`)); // Load and parse the data!
 
 console.log(loadedData.text); // "Be excellent to each other."
 console.log(loadedData.number); // 10
@@ -158,6 +182,7 @@ console.log(loadedData.array); // [1, 2, 3]
 In order to contextualize this whole thing, let's create a very simple little "game" of clicking as many times as possible, a kind of horrible "score attack" experience...
 
 ```javascript
+// How many clicks
 let clicks = 0;
 
 function setup() {
@@ -167,6 +192,7 @@ function setup() {
 function draw() {
   background(0);
 
+  // Display the number of clicks
   push();
   textSize(64);
   textAlign(CENTER);
@@ -177,6 +203,7 @@ function draw() {
 }
 
 function mousePressed() {
+  // Track clicks
   clicks++;
 }
 ```
@@ -185,14 +212,16 @@ function mousePressed() {
 
 Now, we could imagine wanting to display a high score for this, so that each time we come back to the game we can try to beat our previous high score. To do that, we need to:
 
-* Load the current high score data if there is some (with `getItem()`)
-* Check when the user sets a high score (by comparing their current score to the high score)
-* Save the high score when the user does beat it (with `setItem()`)
+* **Load** the current high score data if there is some (with `getItem()`)
+* **Check** when the user sets a high score (by comparing their current score to the high score)
+* **Save** the high score when the user does beat it (with `setItem()`)
 
 So we might do something like this:
 
 ```javascript
+// Track clicks
 let clicks = 0;
+// A place to store the game data
 let gameData = {
   highScore: 0 // Start the high score at 0 by default
 };
@@ -201,7 +230,7 @@ function setup() {
   createCanvas(windowWidth, windowHeight);
 
   // Try to load the game data (remembering to parse it first)
-  let data = JSON.parse(localStorage.getItem("game-data"));
+  let data = JSON.parse(localStorage.getItem(`game-data`));
   // Check if there's anything there
   if (data !== null) {
     // There is data! So replace our default game data with the save data
@@ -239,7 +268,7 @@ function mousePressed() {
     // Set the new high score
     gameData.highScore = clicks;
     // Save the game data to remember for next time, remembering to stringify the data first
-    localStorage.setItem("game-data", JSON.stringify(gameData));
+    localStorage.setItem(`game-data`, JSON.stringify(gameData));
   }
 }
 ```
@@ -264,22 +293,24 @@ let childhoodData = {
   years: [1999,2000,2001,2002],
   nickname: "Geezer"
 };
-localStorage.setItem("childhood",JSON.stringify(childhoodData)); // Save it one step!
+localStorage.setItem(`childhood-data`,JSON.stringify(childhoodData)); // Save it one step!
 
 // Later on...
 
 // Load the data...
-JSON.parse(localStorage.getItem("childhood")); // The data is there and loads!
+JSON.parse(localStorage.getItem(`childhood-data`)); // The data is there and loads!
 
 // Later on...
 
 // Remove the data
-localStorage.removeItem("childhood"); // Delete the data!
+localStorage.removeItem(`childhood-data`); // Delete the data!
 // Try to load it again...
-JSON.parse(localStorage.getItem("childhood")); // null
+JSON.parse(localStorage.getItem(`childhood-data`)); // null
 ```
 
 So, when we use `removeItem()` the key and data are all gone.
+
+This is probably the **best** approach to use, because you can be more precise and avoid deleting data you didn't mean to delete.
 
 
 ### `clear()`
@@ -291,12 +322,12 @@ For the nuclear case of removing **all stored data** for our program we use `cle
 let childhood = {
   description: "Sunny, happy, good"
 }
-localStorage.setItem("childhoodData",JSON.stringify(childhood));
+localStorage.setItem(`childhood-data`,JSON.stringify(childhood));
 // Save some data in another key
 let adolescence = {
   description: "Who am I???"
 }
-localStorage.setItem("adolescenceData",JSON.stringify(adolescence));
+localStorage.setItem(`adolescence-data`,JSON.stringify(adolescence));
 
 ...
 
@@ -304,9 +335,11 @@ localStorage.setItem("adolescenceData",JSON.stringify(adolescence));
 localStorage.clear();
 
 // Check if it's still there (it's not!)
-localStorage.getItem("childhoodData"); // null
-localStorage.getItem("adolescenceData"); // null
+localStorage.getItem(`childhood-data`); // null
+localStorage.getItem(`adolescence-data`); // null
 ```
+
+Again, it's probably not smart to do this unless you really know you want to because it will delete **all** the data stored on the user's computer associated with your website, potentially including data saved by other programs!
 
 ---
 
@@ -363,6 +396,8 @@ function setup() {
   else {
     // If there isn't, ask the user their name and store it in the user data
     // prompt() brings up a simple dialog that the user can enter text in
+    // The first argument is the prompt for the user, the second argument is
+    // a default value to provide
     userData.name = prompt(`What's ya name?`, `Tony`);
     // Save the user data
     localStorage.setItem(`example-user-data`, JSON.stringify(userData));
@@ -386,7 +421,13 @@ function draw() {
 
 So, the Web Storage API allows us to save and load any kind of data we want in the user's browser. This lets us write programs that **remember** things, and this can be very **useful** as well as potentially very **interesting**.
 
-Memory has all kinds of emotional and poetic implications. We could have a program that remembers the user from visit to visit, developing a relationship with them. We could have a program that develops memory problems and forgets things if you don't visit often enough. We could have a program decides it does or doesn't like you and then sticks with that decision no matter what you do...
+Memory has all kinds of emotional and poetic implications among other things.
+
+We could have a program that remembers the user from visit to visit, developing a relationship with them.
+
+We could have a program that develops memory problems and forgets things if you don't visit often enough.
+
+We could have a program decides it does or doesn't like you and then sticks with that decision no matter what you do...
 
 Fun!
 
