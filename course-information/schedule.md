@@ -195,10 +195,10 @@ Week of 8 February 2021
   * [Web Storage API Documentation from Mozilla](https://developer.mozilla.org/en-US/docs/Web/API/Web_Storage_API/Using_the_Web_Storage_API)
 
 ### Activity
-* tbd.
+* **Complete** [Activity: Spy Profile Generator](../activities/spy-profile-generator.md) (**Watch** [4.3. Activity: Spy Profile Generator]() video to see Pippin doing it) ([Example final code](https://github.com/pippinbarr/cart263-2021/tree/main/activities/spy-profile-generator/), [Online](https://pippinbarr.github.io/cart263-2021/activities/spy-profile-generator/))
 
 ### Exercise
-* tbd.
+* **Complete** [Exercise: Spy Profile Generator++](../exercises/spy-profile-generator-plus-plus.md) (due the night of class)
 
 ### Examples
 * [Imaginary sports](https://pippinbarr.github.io/cart263-2021/examples/data/imaginary-sports) ([Source](https://www.github.com/pippinbarr/cart263-2021/tree/master/examples/data/imaginary-sports))
