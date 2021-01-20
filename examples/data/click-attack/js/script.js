@@ -38,10 +38,10 @@ function setup() {
   createCanvas(windowWidth, windowHeight);
 
   // Load the high score...
-  let savedHighScore = localStorage.getItem(HIGH_SCORE_SAVE_NAME);
+  let data = JSON.parse(localStorage.getItem(HIGH_SCORE_SAVE_NAME));
   // If we found a saved score, then set it
-  if (savedHighScore !== null) {
-    highScore = savedHighScore;
+  if (data !== null) {
+    highScore = data.highScore;
   }
   // Start the clickable in motion
   resetClickable();
@@ -132,7 +132,9 @@ function mousePressed() {
       // Set the high score
       highScore = score;
       // Save the high score
-      localStorage.setItem(HIGH_SCORE_SAVE_NAME, highScore);
+      localStorage.setItem(HIGH_SCORE_SAVE_NAME, JSON.stringify({
+        highScore: highScore
+      }));
     }
     // Increase the maximum speed of the clickable to increase difficulty
     clickable.maxSpeed += 0.5;

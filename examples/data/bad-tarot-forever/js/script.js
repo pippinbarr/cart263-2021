@@ -35,10 +35,11 @@ and then either sets that fate in place or generates a fresh one.
 function setup() {
   createCanvas(windowWidth, windowHeight);
 
-  // Get the "fate" item from storage if it's there
-  let fate = localStorage.getItem(`fate`);
-  // Check if fate is null (this means it hasn't been saved)
-  if (fate === null) {
+  // Get the "fate" data from storage if it's there
+  let fateData = JSON.parse(localStorage.getItem(`fateData`));
+
+  // Check if data is null (i.e. that it hasn't been saved)
+  if (fateData === null) {
     // If they don't have a fate yet choose a random card
     let card = random(tarot.tarot_interpretations);
     // Get a random shadow reading from the cards shadow meanings array
@@ -47,12 +48,14 @@ function setup() {
     // Make our fortune string
     fortune = `Your future is ${shadowReading}.`;
     // Save the fortune to storage so it will be there when they come back
-    localStorage.setItem(`fate`, fortune);
+    localStorage.setItem(`fateData`, JSON.stringify({
+      fate: fortune
+    }));
   }
   else {
-    // If the fate wasn't null, it means it was saved earlier and we can just
-    // tell them the same fate!
-    fortune = `${fate} And that's final.`;
+    // If the data wasn't null, it means it was saved earlier and we can just
+    // tell them the same fate we saved!
+    fortune = `${fateData.fate} And that's final.`;
   }
 }
 
