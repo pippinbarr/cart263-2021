@@ -13,7 +13,7 @@
 - Week 2 - [Review](#review) - Remembering JavaScript and p5.js
 - Week 3 - [Voices](#voices) - Working with speech output and input
 - Week 4 - [Data](#data) - Working with JSON data and browser-based storage
-- Week 4 - [AI](#ai) - Playing with machine learning models
+- Week 5 - [AI](#ai) - Playing with machine learning models
 - Week 6 - [Project 1 Studio](#project-1-studio) - Studio support for Project 1
 - Reading week
 - Week 7 - [The webpage](#the-webpage) - Introduction to HTML, CSS, and the DOM
