@@ -277,6 +277,17 @@ Now our game successfully remembers the high score between visits. Even if the u
 
 ---
 
+## Where is the data exactly?
+
+`localStorage` saves and loads data based on the **domain** the program is running on and saves it into the **browser** that is viewing the page. This has implications:
+
+* The same JavaScript running on **two different domains** cannot see each other's data. If I run the same program on `pippinbarr.com` and `pippinbarr.github.io` they are completely separate in terms of data saved, even if I use the same browser to access both programs.
+* Accessing the same URL for a program from **different browsers** will lead to different storage per browser. If I access a program from Chrome and it saves data, then I load the same page in Firefox, it will **not** be able to load that data.
+* If the page with the program is viewed through a browser's "incognito" or "private" mode, `localStorage` is cleared as soon as the window is closed.
+* Two **different** pages/programs on the same domain can share information through `localStorage` by using the same key names! Could lead to some pretty interesting possibilities, but also suggests you should name your keys quite carefully to avoid problems between programs.
+
+---
+
 ## Deletion
 
 We might want to **delete** something in `localStorage`. Maybe we offer the user the option to clear the data that has been saved, maybe we want to have a program that is "forgetful", or maybe we have other reasons.
@@ -315,7 +326,7 @@ This is probably the **best** approach to use, because you can be more precise a
 
 ### `clear()`
 
-For the nuclear case of removing **all stored data** for our program we use `clear()`.
+For the nuclear case of removing **all stored data** we use `clear()`.
 
 ```javascript
 // Save some data in a key
@@ -339,18 +350,7 @@ localStorage.getItem(`childhood-data`); // null
 localStorage.getItem(`adolescence-data`); // null
 ```
 
-Again, it's probably not smart to do this unless you really know you want to because it will delete **all** the data stored on the user's computer associated with your website, potentially including data saved by other programs!
-
----
-
-## Where is the data exactly?
-
-`localStorage` saves and loads data based on the **domain** the program is running on and saves it into the **browser** that is viewing the page. This has implications:
-
-* The same JavaScript running on **two different domains** cannot see each other's data. If I run the same program on `pippinbarr.com` and `pippinbarr.github.io` they are completely separate in terms of data saved, even if I use the same browser to access both programs.
-* Accessing the same URL for a program from **different browsers** will lead to different storage per browser. If I access a program from Chrome and it saves data, then I load the same page in Firefox, it will **not** be able to load that data.
-* If the page with the program is viewed through a browser's "incognito" or "private" mode, `localStorage` is cleared as soon as the window is closed.
-* Two **different** pages/programs on the same domain can share information through `localStorage` by using the same key names! Could lead to some pretty interesting possibilities, but also suggests you should name your keys quite carefully to avoid problems between programs.
+It's probably not smart to do this unless you really know you want to because it will delete **all** the data stored on the user's computer associated with your website, potentially including data saved by other programs! Avoid it.
 
 ---
 
