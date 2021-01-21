@@ -188,14 +188,14 @@ Week of 8 February 2021
 
 ### Topics
 * **JSON**
-  * **Watch** [4.1. JSON]() and **read** the [notes](../topics/data/json.md).
+  * **Watch** [4.1. JSON](https://youtu.be/po6d5FY9jFI) and **read** the [notes](../topics/data/json.md).
   * [JSON Homepage](https://www.json.org/json-en.html)
 * **Web Storage API**
-  * **Watch** [4.2. Web Storage API]() and **read** the [notes](../topics/data/web-storage-api.md).
+  * **Watch** [4.2. Web Storage API](https://youtu.be/6KsC13w7yf4) and **read** the [notes](../topics/data/web-storage-api.md).
   * [Web Storage API Documentation from Mozilla](https://developer.mozilla.org/en-US/docs/Web/API/Web_Storage_API/Using_the_Web_Storage_API)
 
 ### Activity
-* **Complete** [Activity: Spy Profile Generator](../activities/spy-profile-generator.md) (**Watch** [4.3. Activity: Spy Profile Generator]() video to see Pippin doing it) ([Example final code](https://github.com/pippinbarr/cart263-2021/tree/main/activities/spy-profile-generator/), [Online](https://pippinbarr.github.io/cart263-2021/activities/spy-profile-generator/))
+* **Complete** [Activity: Spy Profile Generator](../activities/spy-profile-generator.md) (**Watch** [4.3. Activity: Spy Profile Generator](https://youtu.be/0HAZGpVUdRI) video to see Pippin doing it) ([Example final code](https://github.com/pippinbarr/cart263-2021/tree/main/activities/spy-profile-generator/), [Online](https://pippinbarr.github.io/cart263-2021/activities/spy-profile-generator/))
 
 ### Exercise
 * **Complete** [Exercise: Spy Profile Generator++](../exercises/spy-profile-generator-plus-plus.md) (due the night of class)
