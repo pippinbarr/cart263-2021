@@ -32,7 +32,7 @@
 
 #### Projects
 - [Project 1: A Night at the Movies](../projects/project1/README.md)
-- Project 2 (tbd.)
+- [Project 2: Anything](../projects/project2/README.md)
 
 ---
 
