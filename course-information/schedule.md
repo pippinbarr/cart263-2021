@@ -147,7 +147,7 @@ Week of 1 February 2021
 * **Complete** [Activity: Slamina](../activities/slamina.md) (**Watch** [3.3. Activity: Slamina](https://youtu.be/RKhwJgtAlYE) video to see Pippin doing it, but be aware he **makes some impressive mistakes!** then fixes them, it's raw and truthful) ([Example final code](https://github.com/pippinbarr/cart263-2021/tree/main/activities/slamina), [Online](https://pippinbarr.github.io/cart263-2021/activities/slamina/))
 
 ### Exercise
-* **Complete** [Exercise: Slamina+](../exercises/slamina-plus.md) (due the night of class)
+* **Complete** [Exercise: Slamina New Game+](../exercises/slamina-new-game-plus.md) (due the night of class)
 
 ### Examples
 * [Nonsense generator](https://pippinbarr.github.io/cart263-2021/examples/voices/nonsense-generator/) ([Source](https://www.github.com/pippinbarr/cart263-2021/tree/master/examples/voices/nonsense-generator/))
@@ -166,7 +166,7 @@ Week of 1 February 2021
 
 ## Studio (in Discord studio channels after classroom period)
 * Instructor and TA available to help
-* Work on [Exercise: Slamina+](../exercises/slamina-new-game-plus.md) (due the night of class)
+* Work on [Exercise: Slamina New Game+](../exercises/slamina-new-game-plus.md) (due the night of class)
 * Start work on next week's material
 
 ## Homework
