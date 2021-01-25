@@ -166,7 +166,7 @@ Week of 1 February 2021
 
 ## Studio (in Discord studio channels after classroom period)
 * Instructor and TA available to help
-* Work on [Exercise: Slamina+](../exercises/slamina-plus.md) (due the night of class)
+* Work on [Exercise: Slamina+](../exercises/slamina-new-game-plus.md) (due the night of class)
 * Start work on next week's material
 
 ## Homework
