@@ -28,7 +28,7 @@ Milieux Institute for Arts, Culture, and Technology
 
 ## Office hours (on Discord)
 
-tbd.
+Wednesdays, 14:00-16:00
 
 
 ## TAs (see Moodle for contact details)

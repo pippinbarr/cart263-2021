@@ -8,6 +8,9 @@ Department of Design and Computation Arts
 [pippin.barr@concordia.ca](mailto:pippin.barr@concordia.ca)  
 [www.pippinbarr.com](http://www.pippinbarr.com/)  
 
+#### Office hours
+Wednesdays, 14:00-16:00
+
 ### TAs
 Section A: Dana Ryashy  
 Section B: Samuel Paré-Chouinard
