@@ -109,6 +109,7 @@ Week of 25 January 2021
 ## Classroom (in Discord classroom channels at 13:30 on the day of class)
 * Q&A
 * Review of the week's material
+  * Inheritance?
 * Office hours are: Wednesdays, 14:00-16:00
 * Introducing [Project 1: A Night at the Movies](../projects/project1/README.md)
 * The [C-LAB](https://clab.concordia.ca/) is there to help you
