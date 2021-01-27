@@ -12,7 +12,7 @@ The program will speak the name of a common animal backwards and the user will h
 ---
 
 ## Create a new project
-1. Download [template-p5-project.zip](../../templates/template-p5-project.zip) and unzip it
+1. Download [template-p5-project.zip](../templates/template-p5-project.zip) and unzip it
 2. Rename the folder to `slamina`
 3. Move the folder into the `activities` folder in your repository folder (create it if necessary)
 4. Commit the changes to your repository with a commit message

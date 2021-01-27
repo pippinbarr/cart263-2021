@@ -15,7 +15,7 @@ When the user first loads our program it will ask for their name in a text promp
 
 ## Create a new project
 
-1. Start a p5 template project in your `activities` folder and name it `spy-profile-generator` ([template-p5-project.zip](../../templates/template-p5-project.zip))
+1. Start a p5 template project in your `activities` folder and name it `spy-profile-generator` ([template-p5-project.zip](../templates/template-p5-project.zip))
 2. Open the project folder in Atom to start work
 3. Set the title of the project in `index.html` to something appropriate like `** TOP SECRET **`
 4. Commit the changes to your repository with a commit message

@@ -240,6 +240,7 @@ Week of 15 February 2021
 * **ml5.js** (Machine Learning)
   * [ml5.js Homepage](https://ml5js.org/)
   * [ml5.js Reference](https://learn.ml5js.org/#/reference/index) (API)
+  * [Dan Schiffman's introduction to ml5.js](https://www.youtube.com/watch?v=jmznx0Q1fP0)
 
 ---
 

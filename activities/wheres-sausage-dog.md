@@ -13,7 +13,7 @@ The canvas will display many random images of animals at random positions, one o
 ---
 
 ## Create a new project
-1. Download [template-p5-project.zip](../../templates/template-p5-project.zip) and unzip it
+1. Download [template-p5-project.zip](../templates/template-p5-project.zip) and unzip it
 2. Rename the folder to `wheres-sausage-dog`
 3. Move the folder into the `activities` folder in your repository folder (create it if necessary)
 4. Commit the changes to your repository with a commit message
