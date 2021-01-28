@@ -159,7 +159,8 @@ Week of 1 February 2021
 ### Exercise
 * **Complete** [Exercise: Slamina New Game+](../exercises/slamina-new-game-plus.md) (due the night of class)
 
-### [Examples](../examples/#voices)
+## [Examples](../examples/#voices)
+Click through for examples of the topics covered in this section
 
 ## Classroom (in Discord classroom channels at 13:30 on the day of class)
 * Q&A
@@ -207,7 +208,8 @@ Week of 8 February 2021
 ### Exercise
 * **Complete** [Exercise: Spy Profile Generator++](../exercises/spy-profile-generator-plus-plus.md) (due the night of class)
 
-### [Examples](../examples/#data)
+## [Examples](../examples/#data)
+Click through for examples of the topics covered in this section
 
 ## Classroom (in Discord classroom channels at 13:30 on the day of class)
 * Q&A
