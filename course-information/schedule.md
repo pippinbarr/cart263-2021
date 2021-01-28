@@ -239,7 +239,7 @@ Week of 15 February 2021
 ### Topics
 
 #### **ml5.js** (Machine Learning)
-* Introduction to ml5.js
+* **Watch** 5.1 Introducing ml5.js (coming soon) and **read** the [notes](../topics/ai/introducing-ml5js.md)
 * Facemesh
 * ObjectDetector
 * Handpose
