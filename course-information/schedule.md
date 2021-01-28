@@ -91,8 +91,12 @@ Week of 25 January 2021
 ## Before class
 
 ### Topics
+
+#### JavaScript Review
 - (If needed) **Read** [JavaScript syntax review](../topics/javascript/syntax-review/javascript-syntax-review.md)
 - (If needed) **Watch** [Creative Computation I videos](https://www.youtube.com/channel/UCgMMSLb6Zywjhk9JW6I00Aw) and **Review** [Creative Computation I materials](https://github.com/pippinbarr/cart253-2020/blob/master/course-information/schedule.md)
+
+#### New JavaScript Concepts
 - **Watch** [2.1. Constants](https://youtu.be/s5ewBmui8BU) and **read** the [notes](../topics/javascript/constants.md).
 - **Watch** [2.2. Object parameters](https://youtu.be/pwx6-NSm-F0) and **read** the [notes](../topics/javascript/object-parameters.md).
 - **Watch** [2.3. First-class functions](https://youtu.be/44NrX7VlErM) and **read** the [notes](../topics/javascript/first-class-functions.md).
@@ -136,12 +140,16 @@ Week of 1 February 2021
 ## Before class
 
 ### Topics
-* **ResponsiveVoice**
-  * **Watch** [3.1. ResponsiveVoice](https://youtu.be/KwgEbGB21Xg) and **read** the [notes](../topics/voices/responsivevoice.md).
+
+#### **ResponsiveVoice**
+* **Watch** [3.1. ResponsiveVoice](https://youtu.be/KwgEbGB21Xg) and **read** the [notes](../topics/voices/responsivevoice.md).
+* References
   * [ResponsiveVoice Homepage](https://responsivevoice.org/)
   * [ResponsiveVoice API](https://responsivevoice.org/api/)
-* **annyang!**
-  * **Watch** [3.2. annyang!](https://youtu.be/Zww_5hd8umo) and read the [notes](../topics/voices/annyang.md).
+
+#### **annyang!**
+* **Watch** [3.2. annyang!](https://youtu.be/Zww_5hd8umo) and read the [notes](../topics/voices/annyang.md).
+* References
   * [annyang! Homepage](https://www.talater.com/annyang/)
   * [annyang! API](https://github.com/TalAter/annyang/blob/master/docs/README.md)
 
@@ -151,14 +159,7 @@ Week of 1 February 2021
 ### Exercise
 * **Complete** [Exercise: Slamina New Game+](../exercises/slamina-new-game-plus.md) (due the night of class)
 
-### Examples
-* [Nonsense generator](https://pippinbarr.github.io/cart263-2021/examples/voices/nonsense-generator/) ([Source](https://www.github.com/pippinbarr/cart263-2021/tree/master/examples/voices/nonsense-generator/))
-* [Feelings](https://pippinbarr.github.io/cart263-2021/examples/voices/feelings/) ([Source](https://www.github.com/pippinbarr/cart263-2021/tree/master/examples/voices/feelings/))
-* [Perfect pitch](https://pippinbarr.github.io/cart263-2021/examples/voices/perfect-pitch/) ([Source](https://www.github.com/pippinbarr/cart263-2021/tree/master/examples/voices/perfect-pitch/))
-* [Backseat driver](https://pippinbarr.github.io/cart263-2021/examples/voices/back-seat-driver/) ([Source](https://www.github.com/pippinbarr/cart263-2021/tree/master/examples/voices/back-seat-driver/))
-* [Re:programming](https://pippinbarr.github.io/cart263-2021/examples/voices/re-programming) ([Source](https://www.github.com/pippinbarr/cart263-2021/tree/master/examples/voices/re-programming/))
-* [Misheard dating profile](https://pippinbarr.github.io/cart263-2021/examples/voices/misheard-dating-profile/) ([Source](https://www.github.com/pippinbarr/cart263-2021/tree/master/examples/voices/misheard-dating-profile/))
-* [Doctor, doctor!](https://pippinbarr.github.io/cart263-2021/examples/voices/doctor-doctor) ([Source](https://www.github.com/pippinbarr/cart263-2021/tree/master/examples/voices/doctor-doctor))
+### [Examples](../examples/#voices)
 
 ## Classroom (in Discord classroom channels at 13:30 on the day of class)
 * Q&A
@@ -189,11 +190,15 @@ Week of 8 February 2021
 ## Before class
 
 ### Topics
-* **JSON**
-  * **Watch** [4.1. JSON](https://youtu.be/po6d5FY9jFI) and **read** the [notes](../topics/data/json.md).
+
+#### **JSON**
+* **Watch** [4.1. JSON](https://youtu.be/po6d5FY9jFI) and **read** the [notes](../topics/data/json.md).
+* References
   * [JSON Homepage](https://www.json.org/json-en.html)
-* **Web Storage API**
-  * **Watch** [4.2. Web Storage API](https://youtu.be/6KsC13w7yf4) and **read** the [notes](../topics/data/web-storage-api.md).
+
+#### **Web Storage API**
+* **Watch** [4.2. Web Storage API](https://youtu.be/6KsC13w7yf4) and **read** the [notes](../topics/data/web-storage-api.md).
+* References
   * [Web Storage API Documentation from Mozilla](https://developer.mozilla.org/en-US/docs/Web/API/Web_Storage_API/Using_the_Web_Storage_API)
 
 ### Activity
@@ -202,12 +207,7 @@ Week of 8 February 2021
 ### Exercise
 * **Complete** [Exercise: Spy Profile Generator++](../exercises/spy-profile-generator-plus-plus.md) (due the night of class)
 
-### Examples
-* [Imaginary sports](https://pippinbarr.github.io/cart263-2021/examples/data/imaginary-sports) ([Source](https://www.github.com/pippinbarr/cart263-2021/tree/master/examples/data/imaginary-sports))
-* [Beat poetry](https://pippinbarr.github.io/cart263-2021/examples/data/beat-poetry) ([Source](https://www.github.com/pippinbarr/cart263-2021/tree/master/examples/data/beat-poetry))
-* [Weather report](https://pippinbarr.github.io/cart263-2021/examples/data/weather-report) ([Source](https://www.github.com/pippinbarr/cart263-2021/tree/master/examples/data/weather-report)) (Uses CORS anywhere proxy)
-* [Bad Tarot forever](https://pippinbarr.github.io/cart263-2021/examples/data/bad-tarot-forever) ([Source](https://www.github.com/pippinbarr/cart263-2021/tree/master/examples/data/bad-tarot-forever))
-* [Click attack](https://pippinbarr.github.io/cart263-2021/examples/data/click-attack) ([Source](https://www.github.com/pippinbarr/cart263-2021/tree/master/examples/data/click-attack))
+### [Examples](../examples/#data)
 
 ## Classroom (in Discord classroom channels at 13:30 on the day of class)
 * Q&A
@@ -237,10 +237,41 @@ Week of 15 February 2021
 ## Before class
 
 ### Topics
-* **ml5.js** (Machine Learning)
+
+#### **ml5.js** (Machine Learning)
+* Introduction to ml5.js
+* Facemesh
+* ObjectDetector
+* Handpose
+* Google Teachable Machine
+* References
   * [ml5.js Homepage](https://ml5js.org/)
   * [ml5.js Reference](https://learn.ml5js.org/#/reference/index) (API)
   * [Dan Schiffman's introduction to ml5.js](https://www.youtube.com/watch?v=jmznx0Q1fP0)
+
+### Activity
+* **Complete** [Activity: Bubble Popper](../activities/bubble-popper.md) (**Watch** [5.X. Activity: Bubble Popper](...) video to see Pippin doing it) ([Example final code](https://github.com/pippinbarr/cart263-2021/tree/main/examples/ai/bubble-popper/), [Online](https://pippinbarr.github.io/cart263-2021/examples/ai/bubble-popper/))
+
+### Exercise
+* **Complete** [Exercise: Bubble Popper++](../exercises/bubble-popper-plus-plus.md) (due the night of class)
+
+### [Examples](../examples/#ai)
+
+## Classroom (in Discord classroom channels at 13:30 on the day of class)
+* Q&A
+* Review of the week's material
+* [Project 1: A Night at the Movies](../projects/project1/README.md)
+* The [C-LAB](https://clab.concordia.ca/) is there to help you
+
+## Studio (in Discord studio channels after classroom period)
+* Instructor and TA available to help
+* Work on Exercise
+* Work on Project
+* Start work on next week's material
+
+## Homework
+* Continue work on next week's material
+* [Project 1: A Night at the Movies](../projects/project1/README.md)
 
 ---
 
