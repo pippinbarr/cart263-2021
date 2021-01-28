@@ -240,10 +240,10 @@ Week of 15 February 2021
 
 #### **ml5.js** (Machine Learning)
 * **Watch** 5.1 Introducing ml5.js (coming soon) and **read** the [notes](../topics/ai/introducing-ml5js.md)
-* Facemesh
-* ObjectDetector
-* Handpose
-* Google Teachable Machine
+* 5.2 ml5.js: ObjectDetector
+* 5.3 ml5.js: Facemesh
+* 5.4 ml5.js: Handpose
+* 5.5 ml5.js and the Google Teachable Machine
 * References
   * [ml5.js Homepage](https://ml5js.org/)
   * [ml5.js Reference](https://learn.ml5js.org/#/reference/index) (API)
@@ -255,11 +255,13 @@ Week of 15 February 2021
 ### Exercise
 * **Complete** [Exercise: Bubble Popper++](../exercises/bubble-popper-plus-plus.md) (due the night of class)
 
-### [Examples](../examples/#ai)
+## [Examples](../examples/#ai)
+Click through for examples of the topics covered in this section
 
 ## Classroom (in Discord classroom channels at 13:30 on the day of class)
 * Q&A
 * Review of the week's material
+* Example revamp
 * [Project 1: A Night at the Movies](../projects/project1/README.md)
 * The [C-LAB](https://clab.concordia.ca/) is there to help you
 
