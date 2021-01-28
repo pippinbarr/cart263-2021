@@ -12,7 +12,7 @@
 ## Objectives
 
 1. Confidence with JavaScript and p5.js
-2. Progress learning one or more new libraries
+2. Progress learning one or more new libraries/technologies
 3. Demonstration of creative programming
 
 ---
@@ -37,7 +37,7 @@ Some options:
 
 * Must be interactive
 * Must use p5.js
-* Must use at least one other library (e.g. ResponsiveVoice, annyang!, ml5, p5.sound, or something else)
+* Must use at least one other "technology"m most obviously a library (e.g. ResponsiveVoice, annyang!, ml5, p5.sound, or something else), but could also be JSON data, Web Storage, or something else entirely
 * Must include an **Artist's Statement** as a `README.md` in the project folder that explains the creative ideas behind the project (minimum 300 words)
 
 ---
