@@ -13,50 +13,79 @@
 
 ### Tile-based world
 
-[Online](p5js/tile-based-world/), [Source Code](https://www.github.com/pippinbarr/cart263-2021/blob/master/examples/p5js/tile-based-world/)
+A basic tile-based world implementation in [p5.js](http://p5js.org/).
+
+[Online](https://pippinbarr.github.io/cart263-2021/examples/p5js/tile-based-world/), [Source Code](https://www.github.com/pippinbarr/cart263-2021/blob/master/examples/p5js/tile-based-world/)
 
 ---
 
 ## Voices
 
+Example programs using voice synthesis with [ResponsiveVoice](http://responsivevoice.org/) and voice recognition with [annyang!](https://www.talater.com/annyang/).
+
 ### Nonsense generator
+Generates sentences of nonsense words out of syllables and speaks them.
+
 * [Nonsense generator](https://pippinbarr.github.io/cart263-2021/examples/voices/nonsense-generator/) ([Source](https://www.github.com/pippinbarr/cart263-2021/tree/master/examples/voices/nonsense-generator/))
 
 ### Feelings
+Talks in a way that makes you uncomfortable about its feelings in relation to the your interaction with the mouse, keyboard, and other things.
+
 * [Feelings](https://pippinbarr.github.io/cart263-2021/examples/voices/feelings/) ([Source](https://www.github.com/pippinbarr/cart263-2021/tree/master/examples/voices/feelings/))
 
 ### Perfect pitch
+Sings a song with user-controlled pitch.
+
 * [Perfect pitch](https://pippinbarr.github.io/cart263-2021/examples/voices/perfect-pitch/) ([Source](https://www.github.com/pippinbarr/cart263-2021/tree/master/examples/voices/perfect-pitch/))
 
 ### Backseat driver
+A car that collects stars and is controlled with voice commands.
+
 * [Backseat driver](https://pippinbarr.github.io/cart263-2021/examples/voices/back-seat-driver/) ([Source](https://www.github.com/pippinbarr/cart263-2021/tree/master/examples/voices/back-seat-driver/))
 
 ### Re:programming
+A program that helps you read affirmations about programming aloud.
+
 * [Re:programming](https://pippinbarr.github.io/cart263-2021/examples/voices/re-programming) ([Source](https://www.github.com/pippinbarr/cart263-2021/tree/master/examples/voices/re-programming/))
 
 ### Misheard dating profile
+A voice-based dating profile that makes mistakes on purpose.
+
 * [Misheard dating profile](https://pippinbarr.github.io/cart263-2021/examples/voices/misheard-dating-profile/) ([Source](https://www.github.com/pippinbarr/cart263-2021/tree/master/examples/voices/misheard-dating-profile/))
 
 ### Doctor, doctor!
+Two Eliza chatbots talking to each other forever.
+
 * [Doctor, doctor!](https://pippinbarr.github.io/cart263-2021/examples/voices/doctor-doctor) ([Source](https://www.github.com/pippinbarr/cart263-2021/tree/master/examples/voices/doctor-doctor))
 
 ---
 
 ## Data
 
+Examples that use JSON data and/or the Web Storage API.
+
 ### Imaginary sports
+Generate imaginary sport names courtesy of random selection from JSON data files.
+
 * [Imaginary sports](https://pippinbarr.github.io/cart263-2021/examples/data/imaginary-sports) ([Source](https://www.github.com/pippinbarr/cart263-2021/tree/master/examples/data/imaginary-sports))
 
 ### Beat poetry
+A poet that reads out its own source code randomly piece by piece.
+
 * [Beat poetry](https://pippinbarr.github.io/cart263-2021/examples/data/beat-poetry) ([Source](https://www.github.com/pippinbarr/cart263-2021/tree/master/examples/data/beat-poetry))
 
 ### Weather report
+A "personal assistant" that will only tell you the current weather in Montréal using the MetaWeather API.
+
 * [Weather report](https://pippinbarr.github.io/cart263-2021/examples/data/weather-report) ([Source](https://www.github.com/pippinbarr/cart263-2021/tree/master/examples/data/weather-report)) (Uses CORS anywhere proxy)
 
 ### Bad Tarot forever
+A fortune teller that always has bad news thanks to JSON data about tarot cards.
+
 * [Bad Tarot forever](https://pippinbarr.github.io/cart263-2021/examples/data/bad-tarot-forever) ([Source](https://www.github.com/pippinbarr/cart263-2021/tree/master/examples/data/bad-tarot-forever))
 
 ### Click attack
+A simplistic clicking "game" that tracks your high score between sessions using the Web Storage API.
 * [Click attack](https://pippinbarr.github.io/cart263-2021/examples/data/click-attack) ([Source](https://www.github.com/pippinbarr/cart263-2021/tree/master/examples/data/click-attack))
 
 ---
@@ -64,13 +93,21 @@
 ## AI
 
 ### Bubble Popper
+Pop a bubble with your index finger via the webcam!
+
 * [Bubble Popper](https://pippinbarr.github.io/cart263-2021/examples/ai/bubble-popper) ([Source](https://www.github.com/pippinbarr/cart263-2021/tree/master/examples/ai/bubble-popper))
 
 ### Hand Gun Dog
+Shoot small dogs out of your fingertip via the webcam!
+
 * [Hand Gun Dog](https://pippinbarr.github.io/cart263-2021/examples/ai/hand-gun-dog) ([Source](https://www.github.com/pippinbarr/cart263-2021/tree/master/examples/ai/hand-gun-dog))
 
 ### Fly Eater
+Eat virtual flies via the webcam!
+
 * [Fly Eater](https://pippinbarr.github.io/cart263-2021/examples/ai/fly-eater) ([Source](https://www.github.com/pippinbarr/cart263-2021/tree/master/examples/ai/fly-eater))
 
 ### Feed Me(dia)
+Show the webcam a requested object to win!
+
 * [Feed Me(dia)](https://pippinbarr.github.io/cart263-2021/examples/ai/feed-media) ([Source](https://www.github.com/pippinbarr/cart263-2021/tree/master/examples/ai/feed-media))
