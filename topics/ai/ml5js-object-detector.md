@@ -4,7 +4,7 @@
 
 ## Summary
 
-The [ObjectDetector](https://learn.ml5js.org/#/reference/object-detector) feature in [ml5.js](https://ml5js.org/) allows us to use a pre-trained or user-created model to detect objects in images (including static images, video, or a webcam feed). Depending on the model, we can detect all kinds of objects in images and respond to them with a program!
+The [ObjectDetector](https://learn.ml5js.org/#/reference/object-detector) feature in [ml5.js](https://ml5js.org/) allows us to use a pre-trained or user-created model to detect objects in images (including static images, video, or a webcam feed). Depending on the model, we can detect all kinds of objects in images and respond to them within a program!
 
 ---
 
@@ -22,7 +22,7 @@ The [ObjectDetector](https://learn.ml5js.org/#/reference/object-detector) featur
 
 ## ObjectDetector
 
-ObjectDetector is a feature of ml5.js that provides access to models which perform object detection in images. In essence it lets us provide an image (via an image or video file, or through the webcam) and the model will label objects detected in that image.
+ObjectDetector is a feature of ml5.js that provides access to models which perform object detection in images. In essence it lets us provide an image (via an image or video file, or through the webcam) and the model will label any objects detected in that image.
 
 The best way to understand this feature is, unsurprisingly, to read its documentation.
 
@@ -30,7 +30,7 @@ The best way to understand this feature is, unsurprisingly, to read its document
 
 ## Reading the documentation
 
-If we go to the [ObjectDetector](https://learn.ml5js.org/#/reference/object-detector) reference page we'll find ml5.js's standard presentation of its API. As with all API documentation, it has its own particular approach but follows general principles of providing specific descriptions of methods and properties as well as examples. Let's look at the component pieces here...
+If we go to the [ObjectDetector](https://learn.ml5js.org/#/reference/object-detector) reference page we'll find ml5.js's standard presentation of its API. As with most API documentation, it has its own particular approach but follows general principles of providing specific descriptions of methods and properties as well as examples. Let's look at the component pieces here...
 
 ### Example image
 
@@ -44,7 +44,7 @@ The description is very brief:
 
 It tells us the basic function (object detection), but also points out it can use two different **models** for this object detection (YOLO or CocoSsd). This is important because it draws our attention toward the idea that these models are **different** to one another - not all models are created equal.
 
-In particular, different models are generally trained on different **data** and so are likely to detect different objects and potentially in different ways.
+In particular, different models are likely trained on different **data** and so are would detect different objects and potentially in different ways.
 
 Perhaps one model might recognize cats, dogs, and koalas while another might recognize planes, trains, and cars.
 
@@ -54,9 +54,11 @@ While it's fine to just go ahead and play around with any model, it's worth at l
 
 ### Quickstart
 
-The Quickstart section shows us a minimal amount of code required to load an object detection model and begin recognizing objects. This is clearly useful because it shows us the usage of the model in situ, but can be awkward if we're not used to the specific way it's being achieved. With time, we'll be able to interpret this kind of "bare bones" example and translate it to our own way of working.
+The Quickstart section shows us a minimal amount of code required to load an object detection model and begin recognizing objects. This is clearly useful because it shows us the usage of the model in situ, but can be awkward if we're not used to the specific way it's being achieved.
 
 For example, we may be used to working in p5.js, but the example may present the use of the feature in a different context (such as based on the DOM).
+
+With time, we'll be able to interpret this kind of "bare bones" example and translate it to our own way of working.
 
 At the very least we can identify the key instructions and think about how we might incorporate them into our own framework.
 
@@ -76,7 +78,7 @@ This is surprisingly basic and doesn't provide information about the specifics o
 
 ### Examples
 
-Fortunately, ml5.js is great about providing examples of using its features. Even better, the examples are provided in different frameworks, including p5.js and plain JavaScript. This makes our lives a lot easier as we can get a better sense of how to actually use any given feature.
+Fortunately, ml5.js is great about providing examples of using its features. Even better, the examples are provided for different frameworks, including p5.js and plain JavaScript. This makes our lives a lot easier as we can get a better sense of how to actually use any given feature.
 
 We'll return to the examples shortly as they're a key way to get up and running with this feature. Let's keep reading for now.
 
@@ -110,7 +112,7 @@ Now that we've got our overview of what this feature is and roughly how it works
 
 In particular, looking at the versions of the examples written in the **p5 web editor** is a good option because it's immediately available and runnable. Here we can see several examples, split across the two available built-in models (YOLO and CocoSsd). So, we should look at them!
 
-For simplicity's sake, let's focus on the CocoSsd model. Thus we can look at an example with the webcam available and an example with a single loaded image.
+For simplicity's sake, let's focus on the CocoSsd model. Thus, we can look at an example with the webcam available and an example with a single loaded image.
 
 The great thing here is that we can both run the example and look at the code that makes it work at the same time. Importantly this tells us a couple of things worth remembering:
 
@@ -342,7 +344,7 @@ function highlightObject(object) {
 At this point we have the ability to start the model and access the data it provides. It's now up to us to use that for our wildest machine learning dreams! What if you...
 
 * Check for objects with the label "cat" and fill in their bounding boxes in black. Cat censorship!
-* Require that the user use a cat as a mouse pointer by only accept input from the cat's bounding box? Cat mouse!
+* Require that the user use a cat as a mouse pointer by only accepting input from the cat's bounding box? Cat mouse!
 * Demand that the user show a cat to the webcam? Cat obsessive AI!
 * Use the confidence value to tell the user their cat is of dubious quality? Cat judge!
 

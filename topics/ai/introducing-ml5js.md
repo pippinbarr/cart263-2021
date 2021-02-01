@@ -13,8 +13,6 @@
 
 * What is ml5.js?
 * Meeting ml5.js
-* Looking at examples
-* Reading documentation
 
 ---
 
@@ -28,11 +26,11 @@
 
 ### How does it work?
 
-Generally speaking, a key form of machine learning is about **teaching** a computer how to do some task by showing it lots and lots and lots of examples of that task. This is called **supervised learning**. So if you want to teach a machine to recognize images with cats in them, you show it many pictures with cats and also lots of picture without cats and you **tell it** which is which. It then generalizes (through the magic underlying machine learning, notably neural networks) from this data to be able to identify pictures with cats that it has **never seen**.
+Generally speaking, a key idea behind machine learning is **teaching** a computer how to do some task by showing it lots and lots and lots of examples of that task. The easiest version of this to understand is called **supervised learning**. So if you want to teach a machine to recognize images with cats in them, you show it many pictures with cats and also lots of picture without cats and you **tell it** which is which. It then generalizes from this data to be able to identify pictures with cats that it has **never seen**. (Through the magic underlying machine learning algorithms and structures, notably neural networks.)
 
 ### Pre-trained models
 
-For our purposes, we're not going to worry about this process too much. The beauty of ml5.js is that it provides access to **pre-trained models and algorithms** from machine learning so that we don't need to do that quite complicated step, we just get access to the results!
+For our purposes, we're not going to worry about this process much. The beauty of ml5.js is that it provides access to **pre-trained models and algorithms** from machine learning so that we don't need to do that quite complicated step, we just get access to the results!
 
 Thus, ml5.js will give us access to things like hand and face recognition, object classification, sound classification, and more. And it's comparatively easy to use!
 
@@ -40,7 +38,9 @@ Thus, ml5.js will give us access to things like hand and face recognition, objec
 
 Something to keep in mind when you're using any technology is how it relates to structures of power in society, particularly in terms of how it might interact with marginalized communities. ml5.js is particularly attuned to this in the context of machine learning, which is quite lovely.
 
-Specifically, a huge topic to think about in this domain is how the models we use were **trained** and what **data** they were trained on. If a face recognition model is only trained on pictures of white people, guess what? It is best at recognizing white people! That's "fine" if it's marketed as "White Face Recognizer", but all too often we think of technology as more general than this. If facial recognition gets out there in common use that's tuned to a specific group and excludes other groups, that's a problem. (Think about the whole [Kodak film skin color bias thing](https://www.npr.org/2014/11/13/363517842/for-decades-kodak-s-shirley-cards-set-photography-s-skin-tone-standard)!)
+Specifically, a huge topic to think about in this domain is how the models we use were **trained** and what **data** they were trained on:
+
+If a face recognition model is only trained on pictures of white people, guess what? It is best at recognizing white people! That's "fine" if it's marketed as a "White Face Recognizer", but all too often we think of technology as more general and "pure" than this. If facial recognition gets out there in common use that's tuned to a specific group and excludes other groups, that's a problem. (Think about the whole [Kodak film skin color bias thing](https://www.npr.org/2014/11/13/363517842/for-decades-kodak-s-shirley-cards-set-photography-s-skin-tone-standard)!)
 
 In short, we should care about the provenance of the data that trains our machine learning models, and should always take a critical stance toward those models especially with regard to potential socio-cultural (and other) issues.
 
@@ -74,13 +74,15 @@ However, the point of ml5.js is to "hide" these things behind a significantly ea
 
 ### Ethics
 
-As mentioned, ml5.js's has an overt commitment to the ethical, cultural, and political issues surrounding machine learning and particularly data bias:
+ml5.js has an overt commitment to the ethical, cultural, and political issues surrounding machine learning and particularly data bias:
 
 > ml5.js aims to support broader public understanding of machine learning and foster deeper engagement with ethical computing, responsible data collection, and accessibility and diversity of people and perspectives in technology and the arts.
 
+No Justice, No Peace.
+
 ### Approachable API
 
-The homepage contains a code example of using ml5.js and we can at least see just how **little** code it required to get the basics up and running. Very few lines of code for something that turns out to be an object classification AI.
+The homepage contains a code example of using ml5.js and we can at least see just how **little** code it required to get the basics up and running. Very few lines of code for something that turns out to be an object classification AI. This is very, very impressive.
 
 ### General examples
 
@@ -96,11 +98,11 @@ There's no question these are some incredibly powerful possibilities and it's wo
 
 At this point, we have the general idea and are probably fairly excited by the implied possibilities or at least the raw power on display. So, as developers we should now search the website for specific resources that would help us to use ml5.js!
 
-Fortunately this is one friendly library so it's well documented and put together. We have:
+Fortunately this is one friendly library so it's well documented and put together. We have a nice set of links on the page's main menu that handle this:
 
-* A [Getting Started](https://learn.ml5js.org/) link
-* A [Reference](https://learn.ml5js.org/#/reference/index) link
-* A [Community](https://ml5js.org/community/) link
+* [Getting Started](https://learn.ml5js.org/)
+* [Reference](https://learn.ml5js.org/#/reference/index)
+* [Community](https://ml5js.org/community/)
 
 ---
 
@@ -108,7 +110,7 @@ Fortunately this is one friendly library so it's well documented and put togethe
 
 This actually takes us to the full documentation of the library, just to a section that's about the very basics of getting set up. It gives us links to external resources like Daniel Schiffman's videos and more.
 
-It gives us the **script tag** we know we'll need to include the library in our own projects.
+It gives us the **script tag** we know we'll need to include the library in our own projects, so that's well worth remembering or saving for later.
 
 It shows both a plain JavaScript and a **p5.js specific** example of getting the library running.
 
@@ -116,23 +118,23 @@ It shows both a plain JavaScript and a **p5.js specific** example of getting the
 
 ## Tutorials
 
-In the sidebar when we're looking at the **Getting Started** page we can see some tutorials, including "Introduction to ml5.js". This has a complete example of using ml5.js with p5.js, with code and everything. It could be a good place to start understanding the general structure of working with the library.
+In the sidebar when we're looking at the **Getting Started** page we can see some tutorials, including "Introduction to ml5.js". This has a complete example of using ml5.js with p5.js, with code and everything. It could be a good place to start understanding the general structure of working with the library. Of course, here we are in the midst of our **own** tutorial, so we won't go there for now.
 
 ---
 
 ## API
 
-After the tutorials, the reference does become more complex. It provides the documentation for all the different possibilities within ml5.js, the API. The key thing for us is to focus on the actual categories of **machine learning models** that the library provides. Essentially we can treat these as somewhat magical and just **use** them in our projects.
+After the tutorials, the reference does become more complex. It provides the documentation for all the different possibilities within ml5.js. That is, the **API**. The key thing for us is to focus on the actual categories of **machine learning models** that the library provides. Essentially we can treat these as somewhat magical and just **use** them in our projects.
 
 Thus, we can choose particular models/categories of machine learning and investigate those things specifically. If we browse quickly through them, we'll find examples to look at. For example we could look at **Handpose**, notice the animated GIF of the basic idea (it locates your hand) and then scroll down to the examples to try it out live. Looking at the **p5 web editor** examples is a nice way to check things out instantly.
 
-With this in mind we can check out the other ml5.js models and algorithms that we could potentially use, getting a lay of the land before diving into it ourselves.
+With this in mind, we can check out the other ml5.js models and algorithms, getting an overall sense land before diving into it ourselves.
 
 ---
 
 ## Community
 
-The **Community** section of the ml5.js site contains much more sophisticated examples from community members. These are often **seriously** impressive. At least some of these will have their source code available, though that's not guaranteed. You could also investigate individual developers to look at their other work to find yet more examples of creative code.
+Finally, the **Community** section of the ml5.js site contains much more sophisticated examples from community members. These are often **seriously** impressive. At least some of these will hopefully have their source code available, though that's not guaranteed. You could also investigate individual developers to look at their other work to find yet more examples of creative code.
 
 ---
 

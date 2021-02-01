@@ -4,7 +4,7 @@
 
 ## Summary
 
-The [Handpose](https://learn.ml5js.org/#/reference/handpose) feature in [ml5.js](https://ml5js.org/) allows us to use a pre-trained model to detect a hand in an image (including static images, video, or a webcam feed). The output is a set of 21 points representing the positions of the fingers (by knuckle) and palm of the hand.
+The [Handpose](https://learn.ml5js.org/#/reference/handpose) feature in [ml5.js](https://ml5js.org/) allows us to use a pre-trained model to detect a hand in an image (including static images, video, or a webcam feed). The key output is a set of 21 points representing the positions of the fingers (finger tips and knuckles) and the palm of the hand.
 
 ---
 
@@ -22,7 +22,7 @@ The [Handpose](https://learn.ml5js.org/#/reference/handpose) feature in [ml5.js]
 
 ## Handpose
 
-Handpose is a feature of ml5.js that provides access to a model which perform hand detection in images. In essence it lets us provide an image (via an image or video file, or through the webcam) and the model will locate a hand and label an impressive set of points on that hand (every knuckle and base of the palm).
+Handpose is a feature of ml5.js that provides access to a model which performs hand detection in images. In essence it lets us provide an image (via an image or video file, or through the webcam) and the model will locate a hand and label an impressive set of points on that hand (fingertips, every knuckle, and the base of the palm).
 
 The best way to understand this feature is, unsurprisingly, to read its documentation.
 
@@ -30,11 +30,11 @@ The best way to understand this feature is, unsurprisingly, to read its document
 
 ## Reading the documentation
 
-If we go to the [Handpose](https://learn.ml5js.org/#/reference/handpose) reference page we'll find ml5.js's standard presentation of its API. As with all API documentation, it has its own particular approach but follows general principles of providing specific descriptions of methods and properties as well as examples. Let's look at the component pieces here...
+If we go to the [Handpose](https://learn.ml5js.org/#/reference/handpose) reference page we'll find ml5.js's standard presentation of its API. As with most API documentation, it has its own particular approach but follows general principles of providing specific descriptions of methods and properties as well as examples. Let's look at the component pieces here...
 
 ### Example image
 
-The page begins with an image that shows us precisely what the feature offers. It can **locate** a hand! We see all the little data points it can associate with and track on a hand! It is quite impressive!
+The page begins with an image that shows us precisely what the feature offers. It can **locate** a hand in serious detail! We see all the little data points it can associate with and track on a hand! It is quite impressive!
 
 ### Description
 
@@ -47,9 +47,9 @@ Sounds good! There are a couple of things here worth paying attention to:
 
 ### Quickstart
 
-The Quickstart section shows us a minimal amount of code required to load the Handpose model and begin recognizing hands. This is clearly useful because it shows us the usage of the model in situ, but can be awkward if we're not used to the specific way it's being achieved. With time, we'll be able to interpret this kind of "bare bones" example and translate it to our own way of working.
+The Quickstart section shows us a minimal amount of code required to load the Handpose model and begin recognizing hands. This is clearly useful because it shows us the usage of the model in situ, but can be awkward if we're not used to the specific way it's being achieved.
 
-For example, we may be used to working in p5.js, but the example may present the use of the feature in a different context (such as based on the DOM).
+For example, we may be used to working in p5.js, but the example may present the use of the feature in a different context (such as based on the DOM). With time, we'll be able to interpret this kind of "bare bones" example and translate it to our own way of working.
 
 At the very least we can identify the key instructions and think about how we might incorporate them into our own framework.
 
@@ -65,7 +65,7 @@ Importantly, we should always pay attention to the **output** of the prediction 
 
 > Returns an array of objects describing each detected hand. You can see all of the supported annotation in the Tensorflow source code.
 
-If we click through to the Tensorflow source code we can see the basic structure being offered, but we don't really ever get a precise description of the data format that model outputs. Once again, we'll probably have to work it out ourselves by using the Handpose feature and outputting the data so we can read through it.
+If we click through to the Tensorflow source code we can see the basic structure being offered, but we don't really ever get a truly precise description of the data format that model outputs. Once again, we'll probably have to work it out ourselves by using the Handpose feature and outputting the data so we can read through it.
 
 ### Examples
 
@@ -109,10 +109,10 @@ In particular, looking at the versions of the examples written in the **p5 web e
 
 The great thing here is that we can both run the example and look at the code that makes it work at the same time. Let's focus on the webcam version. Importantly this tells us a couple of things worth remembering:
 
-* Where the key Handpose instructions are being used (such as initializing and then listening for predict events in `setup()`)
+* Where the key Handpose instructions are being used (such as initializing and then listening for "predict" events in `setup()`)
 * At least one way to access the data (such as displaying a circle for every point)
 
-In essence these examples can give us some basic **structure** to work with in these scenarios (static image or webcam). We can mimic this basic setup and then change what we **do** with the data in order to make our projects work with this feature.
+In essence these examples can give us some basic **structure** to work with in these scenarios (static image or webcam). We can largely mimic this basic setup and then change what we **do** with the data in order to make our projects work with this feature.
 
 ---
 
@@ -122,11 +122,17 @@ With this kind of technology it's really crucial to understand how the **data** 
 
 There isn't explicit documentation in the Handpose API that tells us with total precision the nature of the output, but there are a number of useful clues.
 
+### Example code
+
 In the **example code** we see that they draw circles at each point on the hand identified by Handpose and that they do this by going through a `landmarks` array. Each element in the `landmarks` array is another array and they're using the first (`0`) and second (`1`) elements as `x` and `y` coordinates to draw the points.
 
 That's useful but makes it kind of difficult to understand exactly which point is which within the `landmarks` array. Which one is the thumb? Which one is the index finger?
 
+### Documentation
+
 Here we can return to the documentation for `.predict()` and at least get a basic picture of the object representing a detected hand. This is pretty useful, but still doesn't give us a precise map of the specific data being used to identify each point on the hand.
+
+### The JavaScript Console
 
 In the end, the best way to see the available data is often to look at it explicitly in a running program. In the ml5.js example we can use `console.log()` to actually display the `results` array that comes with a prediction. We can do this in the p5 web editor and then view the object in our JavaScript console.
 
@@ -139,9 +145,9 @@ This shows us the entire contents of the hand data, including
 
 So the `annotations` object seems like the most easily accessible form of data output, but it's still kind of obscure, because if we look at something like `annotations.indexFinger`, for instance, we'll see it contains an **array** of four elements.
 
-We can see each element contains coordinates for a point on the index finger presumably, but which point? At this stage we basically need to play around to figure out that in order in the array `annotations.indexFinger` we have points referring to the base of the finger (or thumb), the two knuckles, and then the tip of the finger.
+We can see each element contains coordinates for a point on the index finger presumably, but which point? At this stage we basically need to play around to figure out that in order in the array `annotations.indexFinger` we have points referring to the base of the finger (or thumb), the two knuckles, and then the tip of the finger. (One way to find this out would be to **number** the different points explicitly on the canvas while displaying the image feed.)
 
-So if you want to get the tip of the index finger it's a the position specified in `annotations.indexFinger[3]` for example. Yikes. Nobody said data was always organized in an easy-to-understand way.
+So if you want to get the tip of the index finger it's a the position specified in `annotations.indexFinger[3]`. Yikes. Nobody said data was always organized in an easy-to-understand way.
 
 At least we know now.
 
@@ -287,7 +293,7 @@ At this point we have the ability to start the model and access the data it prov
 * Require the user to wave their hand forwards and backwards? Waving-cat play acting!
 * Teach the user how to make specific signs with their hand like Spock's "Live Long and Prosper" or a cat's claw (accompanied with a hiss?)? Nerdschool!
 * Detect hand motion around a virtual cat? Pat that cat!
-* Let the user pick up a can by the scruff of its neck and put it somewhere in a scene? Momma cat simulator!
+* Let the user pick up a cat by the scruff of its neck and put it somewhere in a scene? Momma cat simulator!
 
 And so on. And it doesn't even have to just be cats!
 
