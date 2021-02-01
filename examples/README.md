@@ -92,6 +92,16 @@ A simplistic clicking "game" that tracks your high score between sessions using 
 
 ## AI
 
+### Object Detector Framework
+Basic framework code for using the Object Detector feature of ml5.js.
+
+* [Object Detector Framework](https://pippinbarr.github.io/cart263-2021/examples/ai/object-detector-framework) ([Source](https://www.github.com/pippinbarr/cart263-2021/tree/master/examples/ai/object-detector-framework))
+
+### Handpose Framework
+Basic framework code for using the Handpose feature of ml5.js.
+
+* [Handpose Framework](https://pippinbarr.github.io/cart263-2021/examples/ai/handpose-framework) ([Source](https://www.github.com/pippinbarr/cart263-2021/tree/master/examples/ai/handpose-framework))
+
 ### Bubble Popper
 Pop a bubble with your index finger via the webcam!
 

@@ -241,18 +241,17 @@ Week of 15 February 2021
 ### Topics
 
 #### **ml5.js** (Machine Learning)
-* **Watch** 5.1 Introducing ml5.js (coming soon) and **read** the [notes](../topics/ai/introducing-ml5js.md)
-* 5.2 ml5.js: ObjectDetector
-* 5.3 ml5.js: Facemesh
-* 5.4 ml5.js: Handpose
-* 5.5 ml5.js and the Google Teachable Machine
+* **Watch** 5.1. Introducing ml5.js (coming soon) and **read** the [notes](../topics/ai/introducing-ml5js.md)
+* **Watch** 5.2. ml5.js: ObjectDetector (coming soon) and **read** the [notes](../topics/ai/ml5js-object-detector.md)
+* 5.3. ml5.js: Handpose
+* 5.4. ml5.js and the Google Teachable Machine
 * References
   * [ml5.js Homepage](https://ml5js.org/)
   * [ml5.js Reference](https://learn.ml5js.org/#/reference/index) (API)
   * [Dan Schiffman's introduction to ml5.js](https://www.youtube.com/watch?v=jmznx0Q1fP0)
 
 ### Activity
-* **Complete** [Activity: Bubble Popper](../activities/bubble-popper.md) (**Watch** [5.X. Activity: Bubble Popper](...) video to see Pippin doing it) ([Example final code](https://github.com/pippinbarr/cart263-2021/tree/main/examples/ai/bubble-popper/), [Online](https://pippinbarr.github.io/cart263-2021/examples/ai/bubble-popper/))
+* **Complete** [Activity: Bubble Popper](../activities/bubble-popper.md) (**Watch** [5.5. Activity: Bubble Popper](...) video to see Pippin doing it) ([Example final code](https://github.com/pippinbarr/cart263-2021/tree/main/examples/ai/bubble-popper/), [Online](https://pippinbarr.github.io/cart263-2021/examples/ai/bubble-popper/))
 
 ### Exercise
 * **Complete** [Exercise: Bubble Popper++](../exercises/bubble-popper-plus-plus.md) (due the night of class)

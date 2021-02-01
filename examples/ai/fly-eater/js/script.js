@@ -15,6 +15,9 @@ Uses:
 ml5.js Facemesh:
 https://learn.ml5js.org/#/reference/facemesh
 
+Facemesh keypoints map:
+https://github.com/tensorflow/tfjs-models/tree/master/facemesh#keypoints
+
 */
 
 // Current state of the program

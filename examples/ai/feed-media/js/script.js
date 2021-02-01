@@ -51,6 +51,26 @@ function setup() {
 }
 
 /**
+Called when CocoSsd has detected at least one object in the video feed
+*/
+function gotResults(err, results) {
+  // Assume no results to begin with
+  topResult = undefined;
+  // If there's an error, report it
+  if (err) {
+    console.error(err);
+  }
+  else {
+    // Otherwise, if there are results, get the first result in the array!
+    if (results.length > 0) {
+      topResult = results[0];
+    }
+  }
+  // Ask CocoSsd to detect objects again
+  cocossd.detect(video, gotResults);
+}
+
+/**
 Changes state and chooses a random desire, then switches to the guessing
 state after a delay.
 */
@@ -60,6 +80,8 @@ function startChallenge() {
   // Choose a random object the program wants to see
   // Remember that cocossdObjects is defined in a separate file
   desire = random(cocossdObjects);
+  // Ask CocoSsd to start detecting objects
+  cocossd.detect(video, gotResults);
   // Wait two seconds, then switch to the guessing state
   setTimeout(function() {
     state = `guessing`;
@@ -143,9 +165,6 @@ function guessing() {
   // Display the webcam
   image(video, 0, 0, width, height);
 
-  // Ask CocoSsd to detect objects
-  cocossd.detect(video, gotResults);
-
   // Check if there is currently a result to compare with the desire
   if (topResult) {
     // Store the true/false value of whether the label of the top results is the
@@ -193,21 +212,6 @@ function guessing() {
     // If this was a successful object, then stop the program so they can enjoy their victory
     if (success) {
       noLoop();
-    }
-  }
-}
-
-function gotResults(err, results) {
-  // Assume no results to begin with
-  topResult = undefined;
-  // If there's an error, report it
-  if (err) {
-    console.error(err);
-  }
-  else {
-    // Otherwise, if there are results, get the first result in the array!
-    if (results.length > 0) {
-      topResult = results[0];
     }
   }
 }
