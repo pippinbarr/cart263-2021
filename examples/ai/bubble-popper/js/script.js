@@ -28,6 +28,18 @@ let predictions = [];
 
 // The bubble we will be popping
 let bubble;
+// The pin
+let pin = {
+  tip: {
+    x: undefined,
+    y: undefined
+  },
+  head: {
+    x: undefined,
+    y: undefined,
+    size: 20
+  }
+};
 
 
 /**
@@ -41,7 +53,9 @@ function setup() {
   video.hide();
 
   // Start the Handpose model and switch to our running state when it loads
-  handpose = ml5.handpose(video, {}, function() {
+  handpose = ml5.handpose(video, {
+    flipHorizontal: true
+  }, function() {
     // Switch to the running state
     state = `running`;
   });
@@ -101,20 +115,16 @@ function running() {
   // Check if there currently predictions to display
   if (predictions.length > 0) {
     // If yes, then get the positions of the tip and base of the index finger
-    const indexTipX = predictions[0].annotations.indexFinger[3][0];
-    const indexTipY = predictions[0].annotations.indexFinger[3][1];
-    const indexBaseX = predictions[0].annotations.indexFinger[0][0];
-    const indexBaseY = predictions[0].annotations.indexFinger[0][1];
+    updatePin(predictions[0]);
 
     // Check if the tip of the "pin" is touching the bubble
-    let d = dist(indexTipX, indexTipY, bubble.x, bubble.y);
+    let d = dist(pin.tip.x, pin.tip.y, bubble.x, bubble.y);
     if (d < bubble.size / 2) {
       // Pop!
       resetBubble();
     }
-    // Display the current position of the pin as a line between the tip and
-    // base of the index finger
-    displayPin(indexTipX, indexTipY, indexBaseX, indexBaseY);
+    // Display the current position of the pin
+    displayPin();
   }
 
   // Handle the bubble's movement and display (independent of hand detection
@@ -122,6 +132,16 @@ function running() {
   moveBubble();
   checkOutOfBounds();
   displayBubble();
+}
+
+/**
+Updates the position of the pin according to the latest prediction
+*/
+function updatePin(prediction) {
+  pin.tip.x = prediction.annotations.indexFinger[3][0];
+  pin.tip.y = prediction.annotations.indexFinger[3][1];
+  pin.headhead.x = prediction.annotations.indexFinger[0][0];
+  pin.headhead.y = prediction.annotations.indexFinger[0][1];
 }
 
 /**
@@ -164,18 +184,18 @@ function displayBubble() {
 Displays the pin based on the tip and base coordinates. Draws
 a line between them and adds a red pinhead.
 */
-function displayPin(tipX, tipY, baseX, baseY) {
+function displayPin() {
   // Draw pin
   push();
   stroke(255);
   strokeWeight(2);
-  line(tipX, tipY, baseX, baseY);
+  line(pin.tip.x, pin.tip.y, pin.head.x, pin.head.y);
   pop();
 
   // Draw pinhead
   push();
   fill(255, 0, 0);
   noStroke();
-  ellipse(baseX, baseY, 20);
+  ellipse(pin.head.x, pin.head.y, pin.head.size);
   pop();
 }
