@@ -130,7 +130,7 @@ function running() {
   if (predictions.length > 0) {
     // If so, update the data and handle reloading and shooting
     // based on it
-    updateFingerData();
+    updateHandData();
     handleReload();
     handleShoot();
   }

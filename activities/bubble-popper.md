@@ -64,7 +64,7 @@ Let's set up the Handpose model...
 1. Declare an undefined global `handpose` variable to store the model
 2. In `setup()` assign a handpose model to `handpose` with three arguments
   * The `video` variable containing the webcam (the source of detection)
-  * An empty options object `{}`
+  * An option object that sets `flipHorizontal` to true (to make the video a mirror)
   * An **anonymous** function that does nothing for now when it's ready (called when the model's ready)
 3. Declare a global `predictions` variable and assign an empty array
 4. In `setup()` create a listener for the "predict" event that calls an **anonymous** function that

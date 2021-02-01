@@ -53,7 +53,9 @@ function setup() {
   video.hide();
 
   // Start the Handpose model and switch to our running state when it loads
-  handpose = ml5.handpose(video, {}, function() {
+  handpose = ml5.handpose(video, {
+    flipHorizontal: true
+  }, function() {
     // Switch to the running state
     state = `running`;
   });
@@ -138,8 +140,8 @@ Updates the position of the pin according to the latest prediction
 function updatePin(prediction) {
   pin.tip.x = prediction.annotations.indexFinger[3][0];
   pin.tip.y = prediction.annotations.indexFinger[3][1];
-  pin.headhead.x = prediction.annotations.indexFinger[0][0];
-  pin.headhead.y = prediction.annotations.indexFinger[0][1];
+  pin.head.x = prediction.annotations.indexFinger[0][0];
+  pin.head.y = prediction.annotations.indexFinger[0][1];
 }
 
 /**
