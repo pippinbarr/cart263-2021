@@ -1,5 +1,3 @@
-"use strict";
-
 /**
 
 Fly Eater
@@ -20,12 +18,12 @@ https://github.com/tensorflow/tfjs-models/tree/master/facemesh#keypoints
 
 */
 
-// Current state of the program
-let state = `loading`; // loading, simulation
+"use strict";
 
+// Current state of the program
+let state = `loading`; // loading, running
 // The user's webcam
 let video;
-
 // The name of our model
 let modelName = `Facemesh`;
 // The facemesh model itself
@@ -47,15 +45,6 @@ function setup() {
   // Ah yes, a canvas
   createCanvas(640, 480);
 
-  // Create a representation of the user's mouth
-  mouth = new Mouth();
-
-  // Add the required number of flies to the array
-  for (let i = 0; i < NUM_FLIES; i++) {
-    let fly = new Fly();
-    flies.push(fly);
-  }
-
   // Start the webcam (this uses p5's DOM and so creates an actual element on the page)
   video = createCapture(VIDEO);
   // Hide the video element, so we only see the p5 canvas
@@ -67,12 +56,20 @@ function setup() {
     // Start the simulation
     state = `simulation`;
   });
-
   // Tell Facemesh we want it to save the results to our predictions variable each time
   // it is able to make a prediction about the user's face.
-  facemesh.on("predict", function(results) {
+  facemesh.on(`predict`, function(results) {
     predictions = results;
   });
+
+  // Create a representation of the user's mouth
+  mouth = new Mouth();
+
+  // Add the required number of flies to the array
+  for (let i = 0; i < NUM_FLIES; i++) {
+    let fly = new Fly();
+    flies.push(fly);
+  }
 }
 
 /**

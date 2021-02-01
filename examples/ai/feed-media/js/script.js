@@ -16,12 +16,12 @@ https://learn.ml5js.org/#/reference/object-detector
 
 */
 
-// Current state of program
-let state = `loading`; // loading, play
+"use strict";
 
+// Current state of program
+let state = `loading`; // loading, running
 // User's webcam
 let video;
-
 // The name of our model
 let modelName = `CocoSsd`;
 // ObjectDetector object (using the name of the model for clarify)
@@ -45,29 +45,7 @@ function setup() {
   video = createCapture(VIDEO);
   video.hide();
   // Start the CocoSsd model and when it's ready start the challenge
-  cocossd = ml5.objectDetector('cocossd', {}, function() {
-    startChallenge();
-  });
-}
-
-/**
-Called when CocoSsd has detected at least one object in the video feed
-*/
-function gotResults(err, results) {
-  // Assume no results to begin with
-  topResult = undefined;
-  // If there's an error, report it
-  if (err) {
-    console.error(err);
-  }
-  else {
-    // Otherwise, if there are results, get the first result in the array!
-    if (results.length > 0) {
-      topResult = results[0];
-    }
-  }
-  // Ask CocoSsd to detect objects again
-  cocossd.detect(video, gotResults);
+  cocossd = ml5.objectDetector('cocossd', {}, startChallenge);
 }
 
 /**
@@ -86,6 +64,27 @@ function startChallenge() {
   setTimeout(function() {
     state = `guessing`;
   }, 2000);
+}
+
+/**
+Called when CocoSsd has detected at least one object in the video feed
+*/
+function gotResults(err, results) {
+  // Assume no results to begin with
+  topResult = undefined;
+  // If there's an error, report it
+  if (err) {
+    console.error(err);
+    return;
+  }
+
+  // Otherwise, if there are results, get the first result in the array!
+  if (results.length > 0) {
+    topResult = results[0];
+  }
+
+  // Ask CocoSsd to detect objects again so it's continuous
+  cocossd.detect(video, gotResults);
 }
 
 /**

@@ -1,5 +1,3 @@
-"use strict";
-
 /**
 
 Bubble Popper
@@ -15,15 +13,15 @@ https://learn.ml5js.org/#/reference/handpose
 
 */
 
-// Current state of the program
-let state = `loading`; // loading, simulation
+"use strict";
 
-// The user's webcam
+// Current state of program
+let state = `loading`; // loading, running
+// User's webcam
 let video;
-
 // The name of our model
 let modelName = `Handpose`;
-// The handpose model itself
+// Handpose object (using the name of the model for clarity)
 let handpose;
 // The current set of predictions made by Handpose once it's running
 let predictions = [];
@@ -31,27 +29,26 @@ let predictions = [];
 // The bubble we will be popping
 let bubble;
 
+
 /**
-Creates a canvas, starts the webcam, and starts up Handpose
-Creates the bubble
+Starts the webcam and the Handpose, creates a bubble object
 */
 function setup() {
   createCanvas(640, 480);
 
-  // Start the user's webcam and hide the resulting HTML element
+  // Start webcam and hide the resulting HTML element
   video = createCapture(VIDEO);
   video.hide();
 
-  // Start up handpose and start the simulation when it's loaded
-  handpose = ml5.handpose(video, {
-    flipHorizontal: true
-  }, function() {
-    state = `simulation`;
+  // Start the Handpose model and switch to our running state when it loads
+  handpose = ml5.handpose(video, {}, function() {
+    // Switch to the running state
+    state = `running`;
   });
 
-  // Ask handpose to tell us when it makes predictions and store the
-  // results in our predictions array
-  handpose.on("predict", function(results) {
+  // Listen for prediction events from Handpose and store the results in our
+  // predictions array when they occur
+  handpose.on(`predict`, function(results) {
     predictions = results;
   });
 
@@ -66,14 +63,14 @@ function setup() {
 }
 
 /**
-Runs the appropriate function for loading state or simulation state
+Handles the two states of the program: loading, running
 */
 function draw() {
   if (state === `loading`) {
     loading();
   }
-  else if (state === `simulation`) {
-    simulation();
+  else if (state === `running`) {
+    running();
   }
 }
 
@@ -90,9 +87,10 @@ function loading() {
 }
 
 /**
-Handles popping the bubble with the pin as well as moving the bubble
+Displays the webcam.
+If there is a hand it outlines it and highlights the tip of the index finger
 */
-function simulation() {
+function running() {
   // Use these lines to see the video feed
   // const flippedVideo = ml5.flipImage(video);
   // image(flippedVideo, 0, 0, width, height);
@@ -100,7 +98,7 @@ function simulation() {
   // Use this line to just see a black background. More theatrical!
   background(0);
 
-  // Check if there's a current prediction from Handpose
+  // Check if there currently predictions to display
   if (predictions.length > 0) {
     // If yes, then get the positions of the tip and base of the index finger
     const indexTipX = predictions[0].annotations.indexFinger[3][0];
@@ -119,7 +117,8 @@ function simulation() {
     displayPin(indexTipX, indexTipY, indexBaseX, indexBaseY);
   }
 
-  // Handle the bubble's movement and display
+  // Handle the bubble's movement and display (independent of hand detection
+  // so it doesn't need to be inside the predictions check)
   moveBubble();
   checkOutOfBounds();
   displayBubble();

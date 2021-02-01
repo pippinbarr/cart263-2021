@@ -33,7 +33,9 @@ function setup() {
   video.hide();
 
   // Start the Handpose model and switch to our running state when it loads
-  handpose = ml5.handpose(video, {}, function() {
+  handpose = ml5.handpose(video, {
+    flipHorizontal: true
+  }, function() {
     // Switch to the running state
     state = `running`;
   });

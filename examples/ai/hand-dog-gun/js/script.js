@@ -1,5 +1,3 @@
-"use strict";
-
 /**
 
 Hand Dog Gun
@@ -17,15 +15,15 @@ https://learn.ml5js.org/#/reference/handpose
 
 */
 
-// Current state of the program
-let state = `loading`; // loading, simulation
+"use strict";
 
-// The user's webcam
+// Current state of program
+let state = `loading`; // loading, running
+// User's webcam
 let video;
-
 // The name of our model
 let modelName = `Handpose`;
-// The handpose model itself
+// Handpose object (using the name of the model for clarity)
 let handpose;
 // The current set of predictions made by Handpose once it's running
 let predictions = [];
@@ -69,38 +67,39 @@ function preload() {
 }
 
 /**
-Creates a canvas, starts the webcam, and starts up Handpose
+Starts the webcam and the Handpose
 */
 function setup() {
   createCanvas(640, 480);
 
-  // Start the user's webcam and hide the resulting HTML element
+  // Start webcam and hide the resulting HTML element
   video = createCapture(VIDEO);
   video.hide();
 
-  // Start up handpose and start the simulation when it's loaded
+  // Start the Handpose model and switch to our running state when it loads
   handpose = ml5.handpose(video, {
     flipHorizontal: true
   }, function() {
-    state = `simulation`;
+    // Switch to the running state
+    state = `running`;
   });
 
-  // Ask handpose to tell us when it makes predictions and store the
-  // results in our predictions array
-  handpose.on("predict", function(results) {
+  // Listen for prediction events from Handpose and store the results in our
+  // predictions array when they occur
+  handpose.on(`predict`, function(results) {
     predictions = results;
   });
 }
 
 /**
-Runs the appropriate function for loading state or simulation state
+Handles the two states of the program: loading, running
 */
 function draw() {
   if (state === `loading`) {
     loading();
   }
-  else if (state === `simulation`) {
-    simulation();
+  else if (state === `running`) {
+    running();
   }
 }
 
@@ -108,6 +107,8 @@ function draw() {
 Displays a simple loading screen with the loading model's name
 */
 function loading() {
+  background(255);
+
   push();
   textSize(32);
   textStyle(BOLD);
@@ -116,10 +117,11 @@ function loading() {
   pop();
 }
 
+
 /**
 Checks for user firing the gun and fires a bullet if so.
 */
-function simulation() {
+function running() {
   // Display user's webcam
   const flippedVideo = ml5.flipImage(video);
   image(flippedVideo, 0, 0, width, height);
@@ -132,7 +134,8 @@ function simulation() {
     handleReload();
     handleShoot();
   }
-  // Update any dogs on screen
+
+  // Update any dogs on screen (independent of hand prediction)
   updateDogs();
 }
 
