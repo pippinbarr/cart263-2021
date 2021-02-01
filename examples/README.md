@@ -11,8 +11,12 @@
 
 ## p5.js
 
-### Tile-based world
+### Where's Sausage Dog?
+Find a sausage dog amongst a bunch of other animals.
 
+* [Where's Sausage Dog?](https://pippinbarr.github.io/cart263-2021/examples/p5js/wheres-sausage-dog/) ([Source](https://www.github.com/pippinbarr/cart263-2021/tree/master/examples/p5js/wheres-sausage-dog/))
+
+### Tile-based world
 A basic tile-based world implementation in [p5.js](http://p5js.org/).
 
 [Online](https://pippinbarr.github.io/cart263-2021/examples/p5js/tile-based-world/), [Source Code](https://www.github.com/pippinbarr/cart263-2021/blob/master/examples/p5js/tile-based-world/)
@@ -22,6 +26,12 @@ A basic tile-based world implementation in [p5.js](http://p5js.org/).
 ## Voices
 
 Example programs using voice synthesis with [ResponsiveVoice](http://responsivevoice.org/) and voice recognition with [annyang!](https://www.talater.com/annyang/).
+
+### Slamina
+Guess animal names pronounced backwards! With your voice!
+
+* [Slamina](https://pippinbarr.github.io/cart263-2021/examples/voices/slamina/) ([Source](https://www.github.com/pippinbarr/cart263-2021/tree/master/examples/voices/slamina/))
+
 
 ### Nonsense generator
 Generates sentences of nonsense words out of syllables and speaks them.
@@ -63,6 +73,12 @@ Two Eliza chatbots talking to each other forever.
 ## Data
 
 Examples that use JSON data and/or the Web Storage API.
+
+### Spy Profile Generator
+Generates a spy profile and saves it with a password for future access.
+
+* [Spy Profile Generator](https://pippinbarr.github.io/cart263-2021/examples/data/spy-profile-generator) ([Source](https://www.github.com/pippinbarr/cart263-2021/tree/master/examples/data/spy-profile-generator))
+
 
 ### Imaginary sports
 Generate imaginary sport names courtesy of random selection from JSON data files.

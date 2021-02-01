@@ -36,6 +36,14 @@ For our purposes, we're not going to worry about this process too much. The beau
 
 Thus, ml5.js will give us access to things like hand and face recognition, object classification, sound classification, and more. And it's comparatively easy to use!
 
+### Ethics and bias
+
+Something to keep in mind when you're using any technology is how it relates to structures of power in society, particularly in terms of how it might interact with marginalized communities. ml5.js is particularly attuned to this in the context of machine learning, which is quite lovely.
+
+Specifically, a huge topic to think about in this domain is how the models we use were **trained** and what **data** they were trained on. If a face recognition model is only trained on pictures of white people, guess what? It is best at recognizing white people! That's "fine" if it's marketed as "White Face Recognizer", but all too often we think of technology as more general than this. If facial recognition gets out there in common use that's tuned to a specific group and excludes other groups, that's a problem. (Think about the whole [Kodak film skin color bias thing](https://www.npr.org/2014/11/13/363517842/for-decades-kodak-s-shirley-cards-set-photography-s-skin-tone-standard)!)
+
+In short, we should care about the provenance of the data that trains our machine learning models, and should always take a critical stance toward those models especially with regard to potential socio-cultural (and other) issues.
+
 ---
 
 ## Meeting ml5.js
@@ -66,7 +74,7 @@ However, the point of ml5.js is to "hide" these things behind a significantly ea
 
 ### Ethics
 
-Also very important is ml5.js's commitment to the ethical, cultural, and political issues surrounding machine learning and particularly data bias:
+As mentioned, ml5.js's has an overt commitment to the ethical, cultural, and political issues surrounding machine learning and particularly data bias:
 
 > ml5.js aims to support broader public understanding of machine learning and foster deeper engagement with ethical computing, responsible data collection, and accessibility and diversity of people and perspectives in technology and the arts.
 

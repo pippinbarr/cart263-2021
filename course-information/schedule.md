@@ -102,7 +102,7 @@ Week of 25 January 2021
 - **Watch** [2.3. First-class functions](https://youtu.be/44NrX7VlErM) and **read** the [notes](../topics/javascript/first-class-functions.md).
 
 ### Activity
-- **Complete** [Activity: Where's Sausage Dog?](../activities/wheres-sausage-dog.md) (**Watch** [2.4. Activity: Where's Sausage Dog?](https://youtu.be/r9ZCFCd4mjE) video to see Pippin doing it) ([Example final code](https://github.com/pippinbarr/cart263-2021/tree/main/activities/wheres-sausage-dog), [Play](https://pippinbarr.github.io/cart263-2021/activities/wheres-sausage-dog/))
+- **Complete** [Activity: Where's Sausage Dog?](../activities/wheres-sausage-dog.md) (**Watch** [2.4. Activity: Where's Sausage Dog?](https://youtu.be/r9ZCFCd4mjE) video to see Pippin doing it) ([Example final code](https://github.com/pippinbarr/cart263-2021/tree/main/examples/p5js/wheres-sausage-dog), [Play](https://pippinbarr.github.io/cart263-2021/examples/p5js/wheres-sausage-dog/))
 
 ### Exercise
 * **Complete** [Exercise: Where's Sausage Dog? New Game+](../exercises/wheres-sausage-dog-new-game-plus.md) (due the night of class)
@@ -154,7 +154,7 @@ Week of 1 February 2021
   * [annyang! API](https://github.com/TalAter/annyang/blob/master/docs/README.md)
 
 ### Activity
-* **Complete** [Activity: Slamina](../activities/slamina.md) (**Watch** [3.3. Activity: Slamina](https://youtu.be/RKhwJgtAlYE) video to see Pippin doing it, but be aware he **makes some impressive mistakes!** then fixes them, it's raw and truthful) ([Example final code](https://github.com/pippinbarr/cart263-2021/tree/main/activities/slamina), [Online](https://pippinbarr.github.io/cart263-2021/activities/slamina/))
+* **Complete** [Activity: Slamina](../activities/slamina.md) (**Watch** [3.3. Activity: Slamina](https://youtu.be/RKhwJgtAlYE) video to see Pippin doing it, but be aware he **makes some impressive mistakes!** then fixes them, it's raw and truthful) ([Example final code](https://github.com/pippinbarr/cart263-2021/tree/main/examples/voices/slamina), [Online](https://pippinbarr.github.io/cart263-2021/examples/voices/slamina/))
 
 ### Exercise
 * **Complete** [Exercise: Slamina New Game+](../exercises/slamina-new-game-plus.md) (due the night of class)
@@ -165,16 +165,18 @@ Click through for examples of the topics covered in this section
 ## Classroom (in Discord classroom channels at 13:30 on the day of class)
 * Q&A
 * Review of the week's material
-* [Project 1: A Night at the Movies](../projects/project1/README.md)
+* Example revamp
+* [Project 1: A Night at the Movies](../projects/project1/README.md) (ongoing)
 * The [C-LAB](https://clab.concordia.ca/) is there to help you
 
 ## Studio (in Discord studio channels after classroom period)
 * Instructor and TA available to help
 * Work on [Exercise: Slamina New Game+](../exercises/slamina-new-game-plus.md) (due the night of class)
+* Work on [Project 1: A Night at the Movies](../projects/project1/README.md)
 * Start work on next week's material
 
 ## Homework
-* Continue work on next week's material
+* Work on next week's material
 * [Project 1: A Night at the Movies](../projects/project1/README.md)
 
 ---
@@ -203,7 +205,7 @@ Week of 8 February 2021
   * [Web Storage API Documentation from Mozilla](https://developer.mozilla.org/en-US/docs/Web/API/Web_Storage_API/Using_the_Web_Storage_API)
 
 ### Activity
-* **Complete** [Activity: Spy Profile Generator](../activities/spy-profile-generator.md) (**Watch** [4.3. Activity: Spy Profile Generator](https://youtu.be/0HAZGpVUdRI) video to see Pippin doing it) ([Example final code](https://github.com/pippinbarr/cart263-2021/tree/main/activities/spy-profile-generator/), [Online](https://pippinbarr.github.io/cart263-2021/activities/spy-profile-generator/))
+* **Complete** [Activity: Spy Profile Generator](../activities/spy-profile-generator.md) (**Watch** [4.3. Activity: Spy Profile Generator](https://youtu.be/0HAZGpVUdRI) video to see Pippin doing it) ([Example final code](https://github.com/pippinbarr/cart263-2021/tree/main/examples/data/spy-profile-generator/), [Online](https://pippinbarr.github.io/cart263-2021/examples/data/spy-profile-generator/))
 
 ### Exercise
 * **Complete** [Exercise: Spy Profile Generator++](../exercises/spy-profile-generator-plus-plus.md) (due the night of class)
@@ -263,7 +265,6 @@ Click through for examples of the topics covered in this section
 ## Classroom (in Discord classroom channels at 13:30 on the day of class)
 * Q&A
 * Review of the week's material
-* Example revamp
 * [Project 1: A Night at the Movies](../projects/project1/README.md)
 * The [C-LAB](https://clab.concordia.ca/) is there to help you
 
