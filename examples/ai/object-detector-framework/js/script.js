@@ -119,7 +119,8 @@ function highlightObject(object) {
   pop();
   // Display the label and confidence in the center of the box
   push();
-  textSize(18);
+  textSize(48);
+  textStyle(BOLD);
   fill(255, 255, 0);
   textAlign(CENTER, CENTER);
   text(`${object.label}, ${object.confidence.toFixed(2)}`, object.x + object.width / 2, object.y + object.height / 2);
