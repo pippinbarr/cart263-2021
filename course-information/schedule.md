@@ -105,7 +105,7 @@ Week of 25 January 2021
 - **Complete** [Activity: Where's Sausage Dog?](../activities/wheres-sausage-dog.md) (**Watch** [2.4. Activity: Where's Sausage Dog?](https://youtu.be/r9ZCFCd4mjE) video to see Pippin doing it) ([Example final code](https://github.com/pippinbarr/cart263-2021/tree/main/examples/p5js/wheres-sausage-dog), [Play](https://pippinbarr.github.io/cart263-2021/examples/p5js/wheres-sausage-dog/))
 
 ### Exercise
-* **Complete** [Exercise: Where's Sausage Dog? New Game+](../exercises/wheres-sausage-dog-new-game-plus.md) (due the night of class)
+* **Complete** [Exercise 1: Where's Sausage Dog? New Game+](../exercises/wheres-sausage-dog-new-game-plus.md) (due the night of class)
 
 ### Examples
 - For various examples of JavaScript and p5, refer to the [CART253 Fall 2020 repository](https://www.github.com/pippinbarr/cart253-2020/).
@@ -120,7 +120,7 @@ Week of 25 January 2021
 
 ## Studio (in Discord studio channels after classroom period)
 * Instructor and TA available to help
-* Work on [Exercise: Where's Sausage Dog? New Game+](../exercises/wheres-sausage-dog-new-game-plus.md) (due the night of class)
+* Work on [Exercise 1: Where's Sausage Dog? New Game+](../exercises/wheres-sausage-dog-new-game-plus.md) (due the night of class)
 * Start work on next week's material
 
 ## Homework
@@ -157,7 +157,7 @@ Week of 1 February 2021
 * **Complete** [Activity: Slamina](../activities/slamina.md) (**Watch** [3.3. Activity: Slamina](https://youtu.be/RKhwJgtAlYE) video to see Pippin doing it, but be aware he **makes some impressive mistakes!** then fixes them, it's raw and truthful) ([Example final code](https://github.com/pippinbarr/cart263-2021/tree/main/examples/voices/slamina), [Online](https://pippinbarr.github.io/cart263-2021/examples/voices/slamina/))
 
 ### Exercise
-* **Complete** [Exercise: Slamina New Game+](../exercises/slamina-new-game-plus.md) (due the night of class)
+* **Complete** [Exercise 2: Slamina New Game+](../exercises/slamina-new-game-plus.md) (due the night of class)
 
 ## [Examples](../examples/#voices)
 Click through for examples of the topics covered in this section
@@ -171,7 +171,7 @@ Click through for examples of the topics covered in this section
 
 ## Studio (in Discord studio channels after classroom period)
 * Instructor and TA available to help
-* Work on [Exercise: Slamina New Game+](../exercises/slamina-new-game-plus.md) (due the night of class)
+* Work on [Exercise 2: Slamina New Game+](../exercises/slamina-new-game-plus.md) (due the night of class)
 * Work on [Project 1: A Night at the Movies](../projects/project1/README.md)
 * Start work on next week's material
 
@@ -208,7 +208,7 @@ Week of 8 February 2021
 * **Complete** [Activity: Spy Profile Generator](../activities/spy-profile-generator.md) (**Watch** [4.3. Activity: Spy Profile Generator](https://youtu.be/0HAZGpVUdRI) video to see Pippin doing it) ([Example final code](https://github.com/pippinbarr/cart263-2021/tree/main/examples/data/spy-profile-generator/), [Online](https://pippinbarr.github.io/cart263-2021/examples/data/spy-profile-generator/))
 
 ### Exercise
-* **Complete** [Exercise: Spy Profile Generator++](../exercises/spy-profile-generator-plus-plus.md) (due the night of class)
+* **Complete** [Exercise 3: Spy Profile Generator++](../exercises/spy-profile-generator-plus-plus.md) (due the night of class)
 
 ## [Examples](../examples/#data)
 Click through for examples of the topics covered in this section
@@ -257,7 +257,7 @@ Week of 15 February 2021
 * **Complete** [Activity: Bubble Popper](../activities/bubble-popper.md) (**Watch** [5.5. Activity: Bubble Popper](...) video to see Pippin doing it) ([Example final code](https://github.com/pippinbarr/cart263-2021/tree/main/examples/ai/bubble-popper/), [Online](https://pippinbarr.github.io/cart263-2021/examples/ai/bubble-popper/))
 
 ### Exercise
-* **Complete** [Exercise: Bubble Popper++](../exercises/bubble-popper-plus-plus.md) (due the night of class)
+* **Complete** [Exercise 4: Bubble Popper++](../exercises/bubble-popper-plus-plus.md) (due the night of class)
 
 ## [Examples](../examples/#ai)
 Click through for examples of the topics covered in this section
