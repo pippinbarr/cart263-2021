@@ -78,8 +78,9 @@ Displays the webcam.
 If there is a hand it outlines it and highlights the tip of the index finger
 */
 function running() {
-  // Display the webcam
-  image(video, 0, 0, width, height);
+  // Display the webcam with reveresd image so it's a mirror
+  let flippedVideo = ml5.flipImage(video);
+  image(flippedVideo, 0, 0, width, height);
 
   // Check if there currently predictions to display
   if (predictions) {

@@ -17,7 +17,7 @@ Find a sausage dog amongst a bunch of other animals.
 * [Where's Sausage Dog?](https://pippinbarr.github.io/cart263-2021/examples/p5js/wheres-sausage-dog/) ([Source](https://www.github.com/pippinbarr/cart263-2021/tree/master/examples/p5js/wheres-sausage-dog/))
 
 ### Tile-based world
-A basic tile-based world implementation in [p5.js](http://p5js.org/).
+A basic tile-based world implementation in p5.js.
 
 [Online](https://pippinbarr.github.io/cart263-2021/examples/p5js/tile-based-world/), [Source Code](https://www.github.com/pippinbarr/cart263-2021/blob/master/examples/p5js/tile-based-world/)
 
