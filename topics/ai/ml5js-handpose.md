@@ -209,7 +209,9 @@ function setup() {
   video.hide();
 
   // Start the Handpose model and switch to our running state when it loads
-  handpose = ml5.handpose(video, {}, function() {
+  handpose = ml5.handpose(video, {
+    flipHorizontal: true
+  }, function() {
     // Switch to the running state
     state = `running`;
   });
@@ -252,19 +254,17 @@ Displays the webcam.
 If there is a hand it outlines it and highlights the tip of the index finger
 */
 function running() {
-  // Display the webcam
-  image(video, 0, 0, width, height);
+  // Display the webcam with reveresd image so it's a mirror
+  let flippedVideo = ml5.flipImage(video);
+  image(flippedVideo, 0, 0, width, height);
 
   // Check if there currently predictions to display
-  if (predictions) {
-    // If so run through the array of predictions
+  if (predictions.length > 0) {
     // Technically there will only be ONE because it only detects ONE hand
-    for (let i = 0; i < predictions.length; i++) {
-      // Get the hand predicted
-      let hand = predictions[i];
-      // Highlight it on the canvas
-      highlightHand(hand);
-    }
+    // Get the hand predicted
+    let hand = predictions[0];
+    // Highlight it on the canvas
+    highlightHand(hand);
   }
 }
 

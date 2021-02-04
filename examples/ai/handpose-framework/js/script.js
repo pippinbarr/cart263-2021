@@ -83,15 +83,12 @@ function running() {
   image(flippedVideo, 0, 0, width, height);
 
   // Check if there currently predictions to display
-  if (predictions) {
-    // If so run through the array of predictions
+  if (predictions.length > 0) {
     // Technically there will only be ONE because it only detects ONE hand
-    for (let i = 0; i < predictions.length; i++) {
-      // Get the hand predicted
-      let hand = predictions[i];
-      // Highlight it on the canvas
-      highlightHand(hand);
-    }
+    // Get the hand predicted
+    let hand = predictions[0];
+    // Highlight it on the canvas
+    highlightHand(hand);
   }
 }
 
