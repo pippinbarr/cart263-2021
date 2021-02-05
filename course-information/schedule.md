@@ -285,9 +285,26 @@ Click through for examples of the topics covered in this section
 Week of 22 February 2021
 
 ## Objectives
-- Working on [Project 1: A Night at the Movies](../projects/project1/README.md)
+* Work on [Project 1: A Night at the Movies](../projects/project1/README.md)
+
+## Before class
+* Work on [Project 1: A Night at the Movies](../projects/project1/README.md)
+
+## Classroom (in Discord classroom channels at 13:30 on the day of class)
+* Q&A
+* [Project 1: A Night at the Movies](../projects/project1/README.md)
+* Remember to prepare for The Webpage now or during reading week
+* The [C-LAB](https://clab.concordia.ca/) is there to help you
+
+## Studio (in Discord studio channels after classroom period)
+* Instructor and TA available to help
+* Work on [Project 1: A Night at the Movies](../projects/project1/README.md)
+* Start work on next week's material
 
 ## Submit [Project 1: A Night at the Movies](../projects/project1/README.md)
+
+## Homework
+* Remember to prepare for The Webpage now or during reading week
 
 ---
 
