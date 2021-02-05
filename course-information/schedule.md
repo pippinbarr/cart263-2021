@@ -293,6 +293,7 @@ Week of 22 February 2021
 ## Classroom (in Discord classroom channels at 13:30 on the day of class)
 * Q&A
 * [Project 1: A Night at the Movies](../projects/project1/README.md)
+* Project 2
 * Remember to prepare for The Webpage now or during reading week
 * The [C-LAB](https://clab.concordia.ca/) is there to help you
 
@@ -305,6 +306,7 @@ Week of 22 February 2021
 
 ## Homework
 * Remember to prepare for The Webpage now or during reading week
+* Start on Project 2
 
 ---
 
@@ -320,16 +322,48 @@ Week of 8 March 2021
 
 ## Objectives
 - Understanding HTML and CSS
-- Understanding JavaScript and the DOM (Document Object Model)
+- Understanding the DOM (Document Object Model)
 
 ## Before class
 
 ### Topics
-* **HTML/CSS**
+
+#### HTML
+* References
   * [HTML Documentation from Mozilla](https://developer.mozilla.org/en-US/docs/Web/HTML)
+
+#### CSS
+* References
   * [CSS Documentation from Mozilla](https://developer.mozilla.org/en-US/docs/Web/CSS)
-* The **DOM** (Document Object Model)
+
+#### The DOM (Document Object Model)
+* References
   * [DOM Documentation from Mozilla](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model)
+
+### Activity
+* tbd.
+
+### Exercise
+* tbd.
+
+## [Examples](../examples/#the-webpage)
+Click through for examples of the topics covered in this section
+
+## Classroom (in Discord classroom channels at 13:30 on the day of class)
+* Q&A
+* Review of the week's material
+* Project 2
+* The [C-LAB](https://clab.concordia.ca/) is there to help you
+
+## Studio (in Discord studio channels after classroom period)
+* Instructor and TA available to help
+* Work on Exercise
+* Work on Project
+* Start work on next week's material
+
+## Homework
+* Continue work on next week's material
+* Project 2
 
 ---
 
