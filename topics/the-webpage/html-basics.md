@@ -1,5 +1,14 @@
 # UNDER CONSTRUCTION
 
+## To do
+
+* Keep it super simple. We only need to understand/use enough HTML to lay out a basic page that we can then manipulate via JavaScript, not solve world hunger
+* More generic example
+* Be explicit about attributes and documentation
+* Build example in pieces rather than present it in totality
+* Decide whether to use new HTML5 sectioning/semantic tags (I suspect just mention but don't use as div is more versatile and easier to remember when just getting creative work done)
+* Add a couple of basic input elements (button, slider, color, text) and other like progress (not actually interactive yet! but do look at attributes)
+
 # HTML Basics {
 
 ---
@@ -12,6 +21,8 @@ HTML (HyperText Markup Language) is the language we use to express the **structu
 
 ## Contents
 
+* ...
+
 ---
 
 ## HTML
@@ -23,6 +34,8 @@ HTML (HyperText Markup Language) is the language we use to express the **structu
 - Generally lives in a text file with extension `.html`
 
 ---
+
+**START with a document or build one over a series of slides. Probably better to build one up to introduce the different elements. Even switch from div to more sensible tags? Or stick with div?**
 
 ## A document
 

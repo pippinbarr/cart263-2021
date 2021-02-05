@@ -1,5 +1,9 @@
 # UNDER CONSTRUCTION
 
+## To do
+
+* Consider at least a teeny bit of CSS animations? Just the raw basics?
+
 # CSS Basics {
 
 ---
