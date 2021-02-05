@@ -243,10 +243,10 @@ Week of 15 February 2021
 ### Topics
 
 #### **ml5.js** (Machine Learning)
-* **Watch** 5.1. Introducing ml5.js (coming soon) and **read** the [notes](../topics/ai/introducing-ml5js.md)
-* **Watch** 5.2. ml5.js: ObjectDetector (coming soon) and **read** the [notes](../topics/ai/ml5js-object-detector.md)
-* **Watch** 5.3. ml5.js: Handpose (coming soon) and **read** the [notes](../topics/ai/ml5js-handpose.md)
-* (Optional) **Watch** 5.4. ml5.js and Teachable Machine (Pippin following the [Getting Started](https://teachablemachine.withgoogle.com/train) process of Teachable Machine and connecting it to ml5.js)
+* **Watch** [5.1. Introducing ml5.js](https://youtu.be/9OeGm15qHTE) and **read** the [notes](../topics/ai/introducing-ml5js.md)
+* **Watch** ]5.2. ml5.js: ObjectDetector](https://youtu.be/L3pek0nNpK8) and **read** the [notes](../topics/ai/ml5js-object-detector.md)
+* **Watch** ]5.3. ml5.js: Handpose](https://youtu.be/A2yFBDBq9UY) and **read** the [notes](../topics/ai/ml5js-handpose.md)
+* (Optional) **Follow** the the [Getting Started](https://teachablemachine.withgoogle.com/train) process of Teachable Machine and connect the results to ml5.js by using the p5.js download option
 * References
   * [ml5.js Homepage](https://ml5js.org/)
   * [ml5.js Reference](https://learn.ml5js.org/#/reference/index) (API)
@@ -254,7 +254,7 @@ Week of 15 February 2021
   * [Teachable Machine](https://teachablemachine.withgoogle.com/) from Google
 
 ### Activity
-* **Complete** [Activity: Bubble Popper](../activities/bubble-popper.md) (**Watch** [5.5. Activity: Bubble Popper](...) video to see Pippin doing it) ([Example final code](https://github.com/pippinbarr/cart263-2021/tree/main/examples/ai/bubble-popper/), [Online](https://pippinbarr.github.io/cart263-2021/examples/ai/bubble-popper/))
+* **Complete** [Activity: Bubble Popper](../activities/bubble-popper.md) (**Watch** [5.4. Activity: Bubble Popper](https://youtu.be/zx0pNnoHp4Y) video to see Pippin doing it) ([Example final code](https://github.com/pippinbarr/cart263-2021/tree/main/examples/ai/bubble-popper/), [Online](https://pippinbarr.github.io/cart263-2021/examples/ai/bubble-popper/))
 
 ### Exercise
 * **Complete** [Exercise 4: Bubble Popper++](../exercises/bubble-popper-plus-plus.md) (due the night of class)
