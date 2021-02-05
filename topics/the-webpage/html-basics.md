@@ -1,10 +1,12 @@
+# UNDER CONSTRUCTION
+
 # HTML Basics {
 
 ---
 
 ## Summary
 
-HTML (HyperText Markup Language) is the language we use to express the **structure** and **content** of web pages. It uses **tags** to express structural parts of a webpage such as headings, numbered lists, paragraphs, buttons, and so on.
+HTML (HyperText Markup Language) is the language we use to express the **structure** and **content** of web pages. It uses **tags** to express structural parts of a webpage such as headings, numbered lists, paragraphs, images, buttons, navigation, and so on.
 
 ---
 
@@ -28,22 +30,28 @@ HTML (HyperText Markup Language) is the language we use to express the **structu
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Chess-a-likes</title>
-  <link rel="stylesheet" type="text/css" href="css/style.css" />
-  <script src="js/script.js"></script>
+  <title>The title of the webpage</title>
 </head>
 <body>
-  <h1 id="main-heading">Pippin Barr's Chess-a-likes!</h1>
-  <div id="introduction">
-    <h2 id="introduction-heading">Feeling the love</h2>
-    <p id="introduction-text" class="introduction-paragraph">
-      Pippin Barr <em>loves</em> making <a href="https://www.pippinbarr.com/category/games/">games</a> based on <strong>chess</strong>.
+  <h1>An h1 header</h1>
+  <div>
+    <h2>An h2 header</h2>
+    <p>
+      This is a paragraph of text.
     </p>
+    <p>
+      This is a paragraph with a <a href="https://thi.cc">link to another website</a>.
+    </p>
+    <p>
+      This is a paragraph with <strong>bold</strong> and <em>emphasized</em> text in it.
   </div>
-  <div id="images">
-    <h2 id="images-heading">Game images</h2>
-    <img class="game-icon"src="https://www.pippinbarr.com/assets/images/game_icons/chesses-300x300.png" alt="Image of chesses chess position">
-    <img class="game-icon" src="https://www.pippinbarr.com/assets/images/game_icons/mobile-chogue-300x300.png" alt="Image of mobile chogue chess position">
+  <div>
+    <h2>Another h2 header</h2>
+    <p>
+      This is a paragraph announcing that we will now see two images using the img tag.
+    </p>
+    <img src="assets/images/clown.png" alt="Image of a clown">
+    <img src="assets/images/clown.png" alt="Image of a clown">
   </div>
 </body>
 </html>
@@ -94,7 +102,7 @@ HTML (HyperText Markup Language) is the language we use to express the **structu
 </div>
 ```
 
-- Here the `<p>` tag is inside (a child of) a `<div>`
+- Here the `<h2>` and `<p>` tags are inside (a child of) a `<div>`
 - A `<div>` doesn't do a whole lot on its own, but we frequently use CSS to style them (and everything in them)
 
 ---
@@ -140,6 +148,7 @@ HTML (HyperText Markup Language) is the language we use to express the **structu
 </p>
 ```
 
+* First mention of **attributes** here
 - The `href` attribute in the `<a>` tag provides the destination of the link
 
 ---
@@ -162,6 +171,8 @@ HTML (HyperText Markup Language) is the language we use to express the **structu
 ---
 
 ## `id` and `class`
+
+**MOVE THIS TO CSS?**
 
 - As with `<a>` and `<img>`, HTML tags can have a variety of extra information inside the opening tag called **attributes**
 - Two of the most important attributes to know about are `id` and `class`
