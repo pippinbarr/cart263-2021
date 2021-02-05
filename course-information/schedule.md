@@ -329,14 +329,21 @@ Week of 8 March 2021
 ### Topics
 
 #### HTML
+* Video and notes to come
 * References
   * [HTML Documentation from Mozilla](https://developer.mozilla.org/en-US/docs/Web/HTML)
+  * [freeCodeCamp Introduction to Basic HTML & HTML5](https://www.freecodecamp.org/learn/responsive-web-design/basic-html-and-html5/)
+  * [codecademy Learn HTML](https://www.codecademy.com/learn/learn-html)
 
 #### CSS
+* Video and notes to come
 * References
   * [CSS Documentation from Mozilla](https://developer.mozilla.org/en-US/docs/Web/CSS)
+  * [freeCodeCamp Introduction to Basic CSS](https://www.freecodecamp.org/learn/responsive-web-design/basic-css/)
+  * [codecademy Learn CSS](https://www.codecademy.com/learn/learn-css)
 
 #### The DOM (Document Object Model)
+* Video and notes to come
 * References
   * [DOM Documentation from Mozilla](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model)
 
