@@ -1,218 +1,517 @@
-# UNDER CONSTRUCTION
-
-## To do
-
-* Keep it super simple. We only need to understand/use enough HTML to lay out a basic page that we can then manipulate via JavaScript, not solve world hunger
-* More generic example
-* Be explicit about attributes and documentation
-* Build example in pieces rather than present it in totality
-* Decide whether to use new HTML5 sectioning/semantic tags (I suspect just mention but don't use as div is more versatile and easier to remember when just getting creative work done)
-* Add a couple of basic input elements (button, slider, color, text) and other like progress (not actually interactive yet! but do look at attributes)
-
 # HTML Basics {
 
 ---
 
 ## Summary
 
-HTML (HyperText Markup Language) is the language we use to express the **structure** and **content** of web pages. It uses **tags** to express structural parts of a webpage such as headings, numbered lists, paragraphs, images, buttons, navigation, and so on.
+HTML (HyperText Markup Language) is the language we use to express the **structure** and **content** of web pages. It uses **tags** to express structural parts of a webpage such as headings, numbered lists, paragraphs, images, buttons, navigation, and so on. Excellent documentation is available from [Mozilla](https://developer.mozilla.org/en-US/docs/Web/HTML).
 
 ---
 
 ## Contents
 
-* ...
+* What is HTML?
+* Creating a simple webpage in HTML
+* Input elements
 
 ---
 
-## HTML
+## What is HTML?
 
-- Stands for **HyperText Markup Language**
-- It is the language we use to express the **structure** and **content** of web pages
-- Premised on the idea of a web page as a **document**
-- Uses a very recognizable style of **tags**
-- Generally lives in a text file with extension `.html`
+HTML stands for (**H**)yper(**T**)ext (**M**)arkup (**L**)anguage. It's the language we use to express **structure** and **content** and is the most basic part of a webpage. It's fundamentally premised on the idea of a webpage as a **document** and thus privileges the idea of a **linear presentation of formatted text**.
+
+HTML is recognizable for its use of specific **tags** like `<html>`, `<p>`, `<img>` to indicate the structure of a document. These tags essentially **are** HTML, they are the **markup**.
+
+HTML generally lives in a text file with extension `.html` (sometimes you'll see `.htm`).
+
+What we're really interested in it building toward doing things with HTML via JavaScript! So, this discussion is not intended to make anyone a master of HTML, but rather to get the basics of its structure and use.
+
+Let's put together a very simple webpage using HTML to illustrate key component parts.
 
 ---
 
-**START with a document or build one over a series of slides. Probably better to build one up to introduce the different elements. Even switch from div to more sensible tags? Or stick with div?**
+## The file
 
-## A document
+We write HTML inside a plain text file with the extension `.html`. You're probably familiar with the typical file called `index.html` that represents the main page in a website's structure. `index.html` is a special name because it will **automatically** load if you navigate to the folder it's in with a browser.
+
+You can name HTML files other names too, but let's work with `index.html`. If you want to really get down to basics, make a folder and create a single `index.html` file inside it and run a local server to check it out. While the file is empty you will unsurprisingly see nothing!
+
+---
+
+## The `DOCTYPE`
+
+These days, every HTML file must begin with the "document type" declaration:
+
+```html
+<!DOCTYPE html>
+```
+
+This tells the user's browser what kind of information is in the file (HTML!).
+
+---
+
+## The `<html>` tag
+
+We use the `<html>` tag around the entire webpage's contents. Make sense, it tells the browser "here is the HTML to render this page with!"
 
 ```html
 <!DOCTYPE html>
 <html>
-<head>
-  <title>The title of the webpage</title>
-</head>
-<body>
-  <h1>An h1 header</h1>
-  <div>
-    <h2>An h2 header</h2>
-    <p>
-      This is a paragraph of text.
-    </p>
-    <p>
-      This is a paragraph with a <a href="https://thi.cc">link to another website</a>.
-    </p>
-    <p>
-      This is a paragraph with <strong>bold</strong> and <em>emphasized</em> text in it.
-  </div>
-  <div>
-    <h2>Another h2 header</h2>
-    <p>
-      This is a paragraph announcing that we will now see two images using the img tag.
-    </p>
-    <img src="assets/images/clown.png" alt="Image of a clown">
-    <img src="assets/images/clown.png" alt="Image of a clown">
-  </div>
-</body>
+  <!-- Webpage contents go in here -->
 </html>
 ```
 
-???
+A very important point to know with the vast majority of HTML tags is that we need to **open** and **close** them explicitly. The same basic pattern is repeated each time:
 
-- Mostly importantly, note how we use **tags** to indicate special types of content
-- Also note how tags (almost) always open and close around their content, e.g. `<h1>` is matched by `</h1>`
-- In this simple webpage we can see a few of the key features of an HTML document
-- The `<!DOCTYPE html>` tag at the top is there to tell the browser that this file contains HTML markup so that it can process it appropriately
-- The `<html>` tag surrounds all the HTML content on the page
-- The `<head>` tag surrounds information **about** the page that won't actually be displayed on the page
-- Such as the `<title>` tag which sets the title displayed by the browser (and bookmarks)
-- And the `<link>` tag we can use to point to a CSS file that will style the page visually
-- And the `<script>` tag we use to point to JavaScript files to be included and run on this page
-- The `<body>` tag surrounds the actual content to be displayed on the page itself
-- The `<h1>` tag denotes a first (top) level heading
-- The `<div>` tag surrounds related content
-- The `<p>` tag denotes a paragraph of text
-- The `<a>` tag denotes a link
-- The `<img>` tag denotes an image
-- All the tags open with their tag name in angle brackets `<name>` and close with their name prefixed with a forward slash in angle brackets `</name>`
-- There are exceptions to this, including `<link>`, but generally speaking it's the rule
+* We **open** a tag by writing the name of the tag inside angle brackets, e.g. `<html>`.
+* We **close** a tag by doing the same thing, but with a forward slash in front of the name, e.g. `</html>`.
+
+### Comments
+
+Note how in the above example we also have a **comment** tag that allows us to write things in our HTML that won't be processed by the browser. As you can see it begins with `<!--` and ends with `-->`. We can use this to make notes in our HTML about what different parts mean.
 
 ---
 
-## Structure, not style
+## The `<head>` and `<title>` tags
 
-- Generally speaking HTML these days is used to represent the **content** of the page and its **structure**, not what it will actually look like
-- Thus, the vast majority of tags are about structuring your content
-- When we look at the page, we don't see an especially gorgeous webpage, just the absolute default settings that a browser renders with
-
----
-
-## High level structure
-
-- The classic tag for grouping together content on a webpage is the `<div>` tag
-- It's kind of like an imaginary box
+The `<head>` tag is used to include **information** about the webpage that won't actually be displayed as part of the webpage itself. This perhaps most importantly includes the `<title>` tag:
 
 ```html
-<h1 id="main-heading">Pippin Barr's Chess-a-likes!</h1>
-<div id="introduction">
-  <h2 id="introduction-heading">Feeling the love</h2>
-  <p id="introduction-text" class="introduction-paragraph">
-    Pippin Barr <em>loves</em> making <a href="https://www.pippinbarr.com/category/games/">games</a> based on <strong>chess</strong>.
-  </p>
-</div>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Title of webpage</title>
+  </head>
+</html>
 ```
 
-- Here the `<h2>` and `<p>` tags are inside (a child of) a `<div>`
-- A `<div>` doesn't do a whole lot on its own, but we frequently use CSS to style them (and everything in them)
+Including the `<title>` tag sets the title of the webpage that will appear in the browser, as well as its title when bookmarked etc.
+
+There are **many** other things we can and will put inside the `<head>` tag. This includes things like links to the **CSS** the page uses, links to **JavaScript** the page uses, various `<meta>` tags, and more (see the [`<head>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/head) documentation).
+
+For now, we will just stick with the title.
+
+### Hierarchy
+
+Our example here demonstrates an important feature of HTML, which is that it is **hierarchical**. Most good text editors will make this explicit through indentation. You can see that the `<title>` tag is **inside** the `<head>` tag, which is itself **inside** the `<html>` tag.
+
+This idea is what allows us to really **structure** our webpage content quite carefully.
 
 ---
 
-## More specific high level structure
+## The `<body>` tag
 
-- Since HTML5, we have a number of more specifically named tags that function more or less the same way as `<div>` tags, but just help to make our HTML more readable
-- Some examples of these are
-- `<article>` - to group the content of a specific article
-- `<section>` - to group the content of a specific section (such as in an article)
-- `<header>` and `<footer>` - to group content for the top or bottom of the page
-- `<nav>` - to group content for navigating the website
-
----
-
-## Mid-level structure
-
-- In terms of the actual texts being displayed, we might often think in terms of headings and paragraphs
-- `<h1>`, `<h2>`, `<h3>`, `<h4>`, `<h5>`, and `<h6>` represent diminishing headings
-- We use `<p>` to surround paragraphs of text
+The actual content of a webpage goes inside a `<body>` tag:
 
 ```html
-<h1 id="main-heading">Pippin Barr's Chess-a-likes!</h1>
-<div id="introduction">
-  <h2 id="introduction-heading">Feeling the love</h2>
-  <p id="introduction-text" class="introduction-paragraph">
-    Pippin Barr <em>loves</em> making <a href="https://www.pippinbarr.com/category/games/">games</a> based on <strong>chess</strong>.
-  </p>
-</div>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Title of webpage</title>
+  </head>
+  <body>
+    <!-- The actual page content goes in here -->
+  </body>
+</html>
+```
+
+If we wanted to, we could start writing plain text inside the `<body>` tag and it would appear on the webpage. It's more likely, though, that we want to **structure** the content of our page more than just plain text.
+
+---
+
+## Paragraphs
+
+We can create a paragraph of text using the `<p>` tag:
+
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Title of webpage</title>
+  </head>
+  <body>
+    <p>A paragraph of text.</p>
+    <p>Another paragraph of text.</p>
+  </body>
+</html>
+```
+
+Note how the two paragraphs are separated nicely from one another. `<p>` tags are the most basic way to include text on our page that connects with the idea of a document.
+
+---
+
+## Headings
+
+We can create headings in our page using the heading tags. These allow us to specify different levels of headings using numbers. The `<h1>` tag is the highest level heading, generally used at the start of a page for its (visible) title. The `<h2>` tag is for sub-headings, the `<h3>` tag is for sub-sub-headings, all the way down to the `<h6>` tag.
+
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Title of webpage</title>
+  </head>
+  <body>
+    <h1>Main heading</h1>
+
+    <h2>Sub-heading</h2>
+    <p>A paragraph of text.</p>
+
+    <h2>Another sub-heading</h2>
+    <p>Another paragraph of text.</p>
+  </body>
+</html>
+```
+
+As you can see, we're now building up a nicely structured, if not very interesting, document on our webpage. You could write a book this way! It's all about the content!
+
+---
+
+## Emphasis
+
+There are two tags, `<em>` (for emphasis) and `<strong>` (for importance) that we can use around text we want to particularly stress.
+
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Title of webpage</title>
+  </head>
+  <body>
+    <h1>Main heading</h1>
+
+    <h2>Sub-heading</h2>
+    <p>A paragraph of text. Here is an <em>emphasized</em> word.</p>
+
+    <h2>Another sub-heading</h2>
+    <p>Another paragraph of text. <strong>This is important</strong>.</p>
+  </body>
+</html>
 ```
 
 ---
 
-## Low-level structure
+## Links
 
-- At the level of specific text, we can think in terms of things like emphasis and linking
-- We use `<em>` tags to represent emphasis and `<strong>` to represent importance
-- We use the `<a>` tag to represent text that is a link
+One of the most important features of HTML is the **hypertext** part. A text becomes a hypertext thanks to its ability to **link** to other texts. So, a webpage is a hypertext when you include links to other webpages. We do this with the `<a>` tag.
 
 ```html
-<p id="introduction-text" class="introduction-paragraph">
-  Pippin Barr <em>loves</em> making <a href="https://www.pippinbarr.com/category/games/">games</a> based on <strong>chess</strong>.
-</p>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Title of webpage</title>
+  </head>
+  <body>
+    <h1>Main heading</h1>
+
+    <h2>Sub-heading</h2>
+    <p>A paragraph of text. Here is an <em>emphasized</em> word.</p>
+
+    <h2>Another sub-heading</h2>
+    <p>Another paragraph of text. <strong>This is important</strong>.</p>
+    <p>Here is a <a href="https://thi.cc/">thicc link</a>.</p>
+  </body>
+</html>
 ```
 
-* First mention of **attributes** here
-- The `href` attribute in the `<a>` tag provides the destination of the link
+Here we see a link to the website https://thi.cc/. Note that the text that will become the link is **inside** the `<a>` tag. Note that the website linked to is specified using the `href` attribute.
+
+### Attributes
+
+Many HTML tags are complex enough that you can't just specify them with the tag and nothing else. The `<a>` tag **requires** that you specify the website to link to, for example. To achieve this, many tags include **attributes** for specifying extra information. It's a lot like the **arguments** we give to a function in programming.
+
+Attributes are written **inside** the angle brackets of the **opening** tag, **after** the tag name itself. Attributes are written by writing the attribute name (e.g. `href`), an equals side (`=`), and then the value to set the attribute to inside quote marks (e.g. `"https://thi.cc/"`).
+
+The documentation for a tag will tell you the possible attributes you can use with that tag. See the [`<a>` tag documentation](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a) for an example.
 
 ---
 
 ## Images
 
-- The internet is a visual place, so HTML includes the ability to include images with the `<img>` tag
+Everyone loves images! We can include images in a webpage in a couple of ways, but most obviously with the `<img>` tag:
 
 ```html
-<div id="images">
-  <h2 id="images-heading">Game images</h2>
-  <img class="game-icon"src="https://www.pippinbarr.com/assets/images/game_icons/chesses-300x300.png" alt="Image of chesses chess position">
-  <img class="game-icon" src="https://www.pippinbarr.com/assets/images/game_icons/mobile-chogue-300x300.png" alt="Image of mobile chogue chess position">
-</div>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Title of webpage</title>
+  </head>
+  <body>
+    <h1>Main heading</h1>
+
+    <h2>Sub-heading</h2>
+    <p>A paragraph of text. Here is an <em>emphasized</em> word.</p>
+    <img src="assets/images/clown.png" alt="A clown emoji.">
+
+    <h2>Another sub-heading</h2>
+    <p>Another paragraph of text. <strong>This is important</strong>.</p>
+    <p>Here is a <a href="https://thi.cc/">thicc link</a>.</p>
+    <img src="assets/images/clown.png" alt="A clown emoji.">
+  </body>
+</html>
 ```
 
-- The `src` attribute provides the path (or link) to the image file
-- The `alt` attribute provides an alternate text for the image (for browsers that can't load them or people who can't see them)
+As you can see, the `<img>` tag requires at least two **attributes**:
+
+* The `src` attribute lets us specify the location of the image (either a relative path in our project folder, as above, or a URL linking to an image)
+* The `alt` attribute lets us specify a description of the image, particularly for accessibility reasons such as someone using a screen-reader
+
+### No closing tag
+
+You may have noticed that the `<img>` tag is one of the few HTML tags that doesn't require a closing tag. This is presumably because it wouldn't really make much sense to put something "inside" an image?
+
+### Images as links
+
+We can turn an image into a link by putting an `<img>` tag inside an `<a>` tag:
+
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Title of webpage</title>
+  </head>
+  <body>
+    <h1>Main heading</h1>
+
+    <h2>Sub-heading</h2>
+    <p>A paragraph of text. Here is an <em>emphasized</em> word.</p>
+    <img src="assets/images/clown.png" alt="A clown emoji.">
+
+    <h2>Another sub-heading</h2>
+    <p>Another paragraph of text. <strong>This is important</strong>.</p>
+    <p>Here is a <a href="https://thi.cc/">thicc link</a>.</p>
+    <a href="https://thi.cc/">
+      <img src="assets/images/clown.png" alt="A clown emoji.">
+    </a>
+  </body>
+</html>
+```
+
+Now the second clown image links to https://thi.cc/.
 
 ---
 
-## `id` and `class`
+## Structure, not style
 
-**MOVE THIS TO CSS?**
+When we look at the page we've built up, we don't see something especially gorgeous. We see the absolute default settings that a browser renders HTML with, but it's not nothing. There are paragraph breaks, different font sizes for headings, italics for emphasis, underlined links that highlight when clicked, and so on.
 
-- As with `<a>` and `<img>`, HTML tags can have a variety of extra information inside the opening tag called **attributes**
-- Two of the most important attributes to know about are `id` and `class`
-- The `id` attribute provides an identifier for a tag that is **unique** on the page
-- The `class` attribute provides a class name for a tag that is (usually) **shared** with other tags on the page
+Still, generally speaking HTML these days is used to represent the **content** and **structure** of your webpage, and not so much what it will actually look like in the browser.
+
+Thus, the vast majority of tags are about structuring your content, as we've seen.
+
+---
+
+## More structure
+
+You may have heard of the `<div>` tag, which is a generic way of dividing up parts of your webpage into meaningful units. We might do something like the following to create two individual sections of our page, thinking of the `<h2>` tags as denoting sections:
 
 ```html
-<div id="images">
-  <h2 id="images-heading">Game images</h2>
-  <img class="game-icon"src="https://www.pippinbarr.com/assets/images/game_icons/chesses-300x300.png" alt="Image of chesses chess position">
-  <img class="game-icon" src="https://www.pippinbarr.com/assets/images/game_icons/mobile-chogue-300x300.png" alt="Image of mobile chogue chess position">
-</div>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Title of webpage</title>
+  </head>
+  <body>
+    <h1>Main heading</h1>
+
+    <div>
+      <h2>Sub-heading</h2>
+      <p>A paragraph of text. Here is an <em>emphasized</em> word.</p>
+      <img src="assets/images/clown.png" alt="A clown emoji.">
+    </div>
+
+    <div>
+      <h2>Another sub-heading</h2>
+      <p>Another paragraph of text. <strong>This is important</strong>.</p>
+      <p>Here is a <a href="https://thi.cc/">thicc link</a>.</p>
+      <a href="https://thi.cc/">
+        <img src="assets/images/clown.png" alt="A clown emoji.">
+      </a>
+    </div>
+  </body>
+</html>
 ```
 
-- `id` and `class` are how we chiefly style our HTML with CSS
+Adding these `<div>` tags didn't do anything we can see to the webpage, it's **purely** structural (and useful later on with **CSS**).
+
+---
+
+## HTML section and outlines
+
+With HTML5 we have better named structuring tags than `<div>`! They are:
+
+* `<nav>` for denoting the navigation component of your page (like its menu system)
+* `<header>` to denote the header of the page (like the logo and probably the navigation)
+* `<section>` for denoting a section of a page
+* `<article>` for denoting an article on your page
+* `<aside>` for denoting information related to a section/article/part of the page that isn't the main idea
+* `<footer>` for denoting the information at the bottom of the page (things like contact details etc.)
+
+So we could use some of these in our page as better human beings:
+
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Title of webpage</title>
+  </head>
+  <body>
+    <header>
+      <h1>Main heading</h1>
+    </header>
+
+    <section>
+      <h2>Sub-heading</h2>
+      <p>A paragraph of text. Here is an <em>emphasized</em> word.</p>
+      <img src="assets/images/clown.png" alt="A clown emoji.">
+    </section>
+
+    <section>
+      <h2>Another sub-heading</h2>
+      <p>Another paragraph of text. <strong>This is important</strong>.</p>
+      <p>Here is a <a href="https://thi.cc/">thicc link</a>.</p>
+      <a href="https://thi.cc/">
+        <img src="assets/images/clown.png" alt="A clown emoji.">
+      </a>
+    </section>
+
+    <footer>
+      <strong>Contact details</strong>: don't call me, I'll call you.
+    </footer>
+  </body>
+</html>
+```
+
+Again, the page doesn't look any different, but we've structured it better in the HTML so that it's a bit easier to read, and it will be easier to understand and use with CSS later on.
+
+---
+
+## Input
+
+One thing we almost certainly will end up wanting to do is to get user input. Beyond things like clicking on links, we can achieve a lot using **input** related HTML elements and their associated tags. Let's look at a couple of these tags to get the idea.
+
+### The `<input>` tag
+
+The majority of input can be achieved using HTML's `<input>` tag and specifying different kinds of input element with the `type` attribute.
+
+### Text
+
+We can let the user type text into the page using the `text` input type:
+
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Input examples</title>
+  </head>
+  <body>
+    <section>
+      <!-- A text entry field -->
+      <input type="text">
+    </section>
+  </body>
+</html>
+```
+
+Voilà, a text-input box.
+
+Note that the `<input>` tag is another that we don't need a closing tag for.
+
+Again, there are many other attributes available to make our text input box more specific, such as a default (`value`) or specifying a maximum length (`maxlength`):
+
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Input examples</title>
+  </head>
+  <body>
+    <section>
+      <!-- A text entry field with default text and a character limit -->
+      <input type="text" value="Enter your name" maxlength="10">
+    </section>
+  </body>
+</html>
+```
+
+### A button
+
+Buttons are a classic way to show users they can interact with your page. We just need an input of type `button`:
+
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Input examples</title>
+  </head>
+  <body>
+    <section>
+      <!-- A text entry field with default text and a character limit -->
+      <input type="text" value="Enter your name" maxlength="10">
+      <!-- A button with a label -->
+      <input type="button" value="Button label"></input>
+    </section>
+  </body>
+</html>
+```
+
+Buttons are sufficiently popular that you can also create one using the `<button>` tag instead:
+
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Input examples</title>
+  </head>
+  <body>
+    <section>
+      <!-- A text entry field with default text and a character limit -->
+      <input type="text" value="Enter your name" maxlength="10">
+      <!-- A button with a label -->
+      <input type="button" value="Button label"></input>
+      <!-- A button using the button tag -->
+      <button>Another button label</button>
+    </section>
+  </body>
+</html>
+
+```
+
+### A range slider
+
+Sliders are fun! They let us choose numbers from a range with an interactive element. The type name for a slider is `range` and important attributes are the `min` and `max` values the slider represents!
+
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Input examples</title>
+  </head>
+  <body>
+    <section>
+      <!-- A text entry field with default text and a character limit -->
+      <input type="text" value="Enter your name" maxlength="10">
+      <!-- A button with a label -->
+      <input type="button" value="Button label"></input>
+      <!-- A button using the button tag -->
+      <button>Another button label</button>
+      <!-- A slider from 0-100 with a default of 0 -->
+      <input type="range" value="0" min="0" max="100">
+    </section>
+  </body>
+</html>
+```
+
+### And many, many more
+
+There are a lot of input types, including color pickers, date entry, checkboxes, radio buttons, file selection, and on and on. See the documentation!
 
 ---
 
 ## There is a lot more to HTML
 
-- HTML is a whole thing
-- The key is to remember it's there to structure your content (not style it)
-- There are many resources to learn more, such as
-  - Reference lists like the [W3 Schools HTML Reference](https://www.w3schools.com/tags/ref_byfunc.asp)
-  - Tutorials like the [freeCodeCamp HTML lessons](https://www.freecodecamp.org/learn/responsive-web-design/basic-html-and-html5/)
-  - Googling specific tag names or questions and reading the documentation
-  - Using your browser's "View Source" option to look at the HTML of pages you're browsing
+We're now in a position to write simple HTML documents! This is the backbone of creating any webpage, so understanding these fundamentals is really important once we start wanting to do **dynamic** things with the HTML via JavaScript.
+
+Again, there are many, many more tags to explore within HTML, we've only scratched the surface. Take a look at Mozilla's [HTML elements reference](https://developer.mozilla.org/en-US/docs/Web/HTML/Element) and [`<input>` reference](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input) to learn more.
 
 ---
 
