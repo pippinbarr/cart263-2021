@@ -86,11 +86,11 @@ function generateSpyProfile() {
   // Ask for the user's name and store it
   spyProfile.name = prompt(`What's ya name?`);
   // Generate an alias from a random instrument
-  spyProfile.alias = `The ${random(instruments.instruments)}`;
+  spyProfile.alias = `The ${random(instrumentsData.instruments)}`;
   // Generate a secret weapon from a random object
-  spyProfile.secretWeapon = random(objects.objects);
+  spyProfile.secretWeapon = random(objectsData.objects);
   // Generate a password from a random keyword for a random tarot card
-  let card = random(tarot.tarot_interpretations);
+  let card = random(tarotData.tarot_interpretations);
   spyProfile.password = random(card.keywords);
   // Save the resulting profile to local storage
   localStorage.setItem(PROFILE_DATA_KEY, JSON.stringify(spyProfile));
