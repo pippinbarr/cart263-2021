@@ -244,8 +244,8 @@ Week of 15 February 2021
 
 #### **ml5.js** (Machine Learning)
 * **Watch** [5.1. Introducing ml5.js](https://youtu.be/9OeGm15qHTE) and **read** the [notes](../topics/ai/introducing-ml5js.md)
-* **Watch** ]5.2. ml5.js: ObjectDetector](https://youtu.be/L3pek0nNpK8) and **read** the [notes](../topics/ai/ml5js-object-detector.md)
-* **Watch** ]5.3. ml5.js: Handpose](https://youtu.be/A2yFBDBq9UY) and **read** the [notes](../topics/ai/ml5js-handpose.md)
+* **Watch** [5.2. ml5.js: ObjectDetector](https://youtu.be/L3pek0nNpK8) and **read** the [notes](../topics/ai/ml5js-object-detector.md)
+* **Watch** [5.3. ml5.js: Handpose](https://youtu.be/A2yFBDBq9UY) and **read** the [notes](../topics/ai/ml5js-handpose.md)
 * (Optional) **Follow** the the [Getting Started](https://teachablemachine.withgoogle.com/train) process of Teachable Machine and connect the results to ml5.js by using the p5.js download option
 * References
   * [ml5.js Homepage](https://ml5js.org/)
