@@ -417,6 +417,18 @@ function draw() {
 
 ---
 
+## Viewing `localStorage` or `sessionStorage`
+
+It's possible to view the data being stored using the developer tools of your browser! You can even delete elements from storage there.
+
+In **Chrome**'s developer console go to the "Application" menu and select "Local Storage" or "Session Storage" and then the URL for the running program.
+
+In **Firefox**'s developer console go to the "Storage" menu and select "Local Storage" or "Session Storage" and then the URL for the running program.
+
+There are buttons to delete selected data or clear all the data. Handy!
+
+---
+
 ## Remembrance
 
 So, the Web Storage API allows us to save and load any kind of data we want in the user's browser. This lets us write programs that **remember** things, and this can be very **useful** as well as potentially very **interesting**.
