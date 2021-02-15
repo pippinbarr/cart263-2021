@@ -4,7 +4,7 @@
 
 ## Summary
 
-CSS (Cascading Style Sheets) is the language we use to express the **style** and some **layout** of web pages. It uses **selectors** to target parts of a page to style, and **properties** to specify the style. Excellent documentation is available from [Mozilla](https://developer.mozilla.org/en-US/docs/Web/CSS).
+CSS (Cascading Style Sheets) is the language we use to express the **style** and some **layout** of web pages. It uses **selectors** to target parts of a page to style, and **properties** to specify the style. Excellent documentation in the [Mozilla CSS documentation](https://developer.mozilla.org/en-US/docs/Web/CSS).
 
 ---
 
@@ -13,7 +13,7 @@ CSS (Cascading Style Sheets) is the language we use to express the **style** and
 * What is CSS?
 * Styling HTML with CSS
 * Too much information?
-  * Include CSS via a `<style>` tag or `style` attribute
+  * CSS file vs. `<style>` tag vs. `style` attribute
 
 ---
 
@@ -21,7 +21,7 @@ CSS (Cascading Style Sheets) is the language we use to express the **style** and
 
 CSS stands for (**C**)ascading (**S**)tyle (**S**)heets. It's the language we use to express **style** and some more sophisticated **layout** for a webpage.
 
-CSS works by using **selectors** to target which parts of a webpage to style and **properties** to specify the styling itself.
+CSS works by using **selectors** to target which parts of a webpage to style (e.g. paragraphs or sections or headers) and **properties** to specify the styling itself (e.g. colors or fonts or margins).
 
 CSS perhaps most ideally lives in a text file with extension `.css`, but can also be included in a `<style>` tag inside the `<head>` tag of an HTML file, or even as a `style` attribute for a specific HTML tag.
 
@@ -80,6 +80,8 @@ So, to begin with we create an empty text file called `style.css`. If we're bein
 
 Given that this file is empty, it won't do anything of course. But it **also** won't do anything because we have to tell our webpage to **use** it.
 
+### Linking the CSS file
+
 In order to tell a webpage to **use** the CSS in our file, we need to use a `<link>` tag inside the `<head>` tag. It works like this:
 
 ```html
@@ -134,7 +136,7 @@ Again, there's no actual styling information in the file, so nothing new is happ
 
 In order to use CSS we need to know about **selectors** and **properties**.
 
-**Selectors** are used to target specific parts of our HTML for styling. They can most obviously target **tags** to style.
+**Selectors** are used to target specific parts of our HTML for styling. We can most obviously select **tags**.
 
 **Properties** specify the style we want to apply to the selected HTML.
 
@@ -146,24 +148,24 @@ body {
 }
 ```
 
-Here `body` is the **selector**. It tells the browser that the styling information will be applied to everything inside the `<body>` tag. (Note we don't include the angle brackets when selecting the tag, just the tag name.)
+`body` is the **selector**. It tells the browser that the styling information will be applied to everything inside the `<body>` tag. (Note we don't include the angle brackets when selecting the tag, just the tag name.)
 
 We specify the styling properties inside **curly brackets** after the selector.
 
 The property and its value require the following:
 
 * `font-family` is the **property name**, it tells us the specific kind of styling we want to apply to the `<body>` tag, which is to set its font.
-* `:` (a colon) separates the property name from the value to set it to
-* `Helvetica` is the **value** we want to set the property to, in this case the name of the font to use,
+* `:` (a colon) separates the property name from the value
+* `Helvetica` is the **value** we want to set the property to, in this case the name of the font to use (no quote marks!),
 * `;` (a semi-colon) indicates the property and value are complete.
 
 If we look at the page and we have Helvetica installed on our computer, everything inside the `<body>` tag will be using that font.
 
 ### Fallback options
 
-If we **don't** have Helvetica, we'll end up with the default, which is probably some kind of serifed font, which we probably didn't want since Helvetica is a sans-serif font.
+If a user **doesn't** have Helvetica, they'll end up with a default, which is probably some kind of serifed font, which we probably didn't want given Helvetica is a sans-serif font.
 
-If we want to specify a series of fallback options for the `font-family` property, we can list more options separated by commas. It's common to include a generic option like `sans-serif` or `serif` to indicate a very broad preference:
+If we want to specify fallback options for the `font-family` property, we can list more options separated by commas. It's common to include a generic option like `sans-serif` or `serif` to indicate a very broad preference:
 
 ```css
 body {
@@ -171,13 +173,13 @@ body {
 }
 ```
 
-Now even if the user doesn't have Helvetica, they'll get a default sans-serif font.
+Now, even if the user doesn't have Helvetica, they'll get a default sans-serif font.
 
 ---
 
 ## More specific selectors
 
-We targeted the entire `<body>` tag, but we can target something more specific like the `<h2>` tag if we want to only style our **sub-headings** this way:
+We targeted the entire `<body>` tag above, but we can target something more specific like the `<h2>` tag if we want to only style our **sub-headings** this way:
 
 ```css
 h2 {
@@ -185,7 +187,7 @@ h2 {
 }
 ```
 
-Now only the `<h2>` tags have Helvetica (or sans-serif)
+Now the `<h2>` tags use Helvetica (or sans-serif)
 
 ---
 
@@ -223,15 +225,13 @@ p {
 }
 ```
 
-Now we've changed the font size of the main heading (`<h1>`) and also set the color of text in paragraphs (`<p>`). We could go on like this forever!
+Now we've set the font size of the main heading (`<h1>`), the font and color of the sub-heading (`<h2>`), and set the color of text in paragraphs (`<p>`). We could go on like this forever!
 
 ---
 
 ## Selecting more than thing at once
 
 We can apply specific styling to a set of different targets by listing the selectors in a comma-separated list:
-
-** FIX THIS! **
 
 ```css
 h1 {
@@ -260,7 +260,7 @@ strong, em {
 We've already seen three different kinds of **values** used in our CSS so far:
 
 * Font sizes specified in the `rem` unit (this is a "root em", where `1rem` is the default for the overall `html` tag and you can change font sizes based on that knowledge, thus `3rem` is three times larger than the default)
-* Fonts specified as text (e.g. `Helvetica` or `sans-serif`)
+* Typefaces specified as text (e.g. `Helvetica` or `sans-serif`)
 * Colors specified as hexademicals (e.g. `#4488aa`)
 
 There are many different kinds of values and units available in CSS and we need to make sure we **read the documentation** for any property we're using to check the available possibilities.
@@ -271,7 +271,7 @@ Note, for example, how the documentation for the [`color` property](https://deve
 
 ## Documentation
 
-Once again, central to using CSS well is to **read the documentation**. The Mozilla [CSS documentation](https://developer.mozilla.org/en-US/docs/Web/CSS) and especially the [CSS Reference](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference) are invaluable places to look up all the specifics you might be wondering about, as well as just to browse the sheer variety of possible properties and values.
+Once again, central to using CSS well is to **read the documentation**. The [Mozilla CSS documentation](https://developer.mozilla.org/en-US/docs/Web/CSS) and especially the [Mozilla CSS Reference](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference) are invaluable places to look up all the specifics you might be wondering about, as well as just to browse the sheer variety of possible properties and values.
 
 ---
 
@@ -279,7 +279,7 @@ Once again, central to using CSS well is to **read the documentation**. The Mozi
 
 So far we've looked at using selectors that can target specific **tags** on our webpage. This is clearly really useful, but it can make it hard to target more specific elements or sets of elements.
 
-For this reason, we very often need to use the `id` or `class` attributes with our HTML elements to make them easily selectable in CSS.
+For this reason, we often use the `id` or `class` attributes in our HTML elements to make them easily selectable in CSS.
 
 The `id` attribute is used for a **unique** HTML element that is the only one of its kind that we want to select with CSS.
 
@@ -333,7 +333,7 @@ So, in our example, we might give an `id` to our first `<section>` tag and a `cl
 
 ### Selecting an `id`
 
-With this in place we can target the `id` of `first-section` in our CSS by adding a selector like this:
+With this in place we can target the `id` `first-section` in our CSS by adding a selector like this:
 
 ```css
 #first-section {
@@ -365,7 +365,7 @@ Now the individual paragraphs in the second section have a light cyan background
 
 Both `id` and `class` are a **very** powerful way to style your webpage because they allow you to target really specific parts of the document.
 
-Just remember that you use `id` when there's only **one** element that will use a style, and use `class` when there are multiple elements that will share a style.
+Just remember that you use `id` when there's only **one** element that will use a style, and you use `class` when there are multiple elements that will share a style.
 
 ---
 
@@ -399,7 +399,7 @@ We can now target the text inside those `<span>` tags and style them however we'
 }
 ```
 
-A useful little idea to keep in mind when you want to target really specific parts of your HTML but it's not wrapped in a specific tag already. Use `<span>` for this.
+A useful little idea to keep in mind when you want to target really specific parts of your HTML but it's not wrapped in a specific tag already.
 
 ---
 
@@ -408,7 +408,7 @@ A useful little idea to keep in mind when you want to target really specific par
 A quick word about pseudo-classes, which allow us to add on top of the existing selectors with some specific extra ideas. We add them to **existing** selectors...
 
 * `:hover` selects an element that has the mouse hovering over it
-* `:nth-child(2)` selects the elements that are the second child of their parent
+* `:nth-child(2)` selects the elements that are the second child of the specified parent
 * `:invalid` selects form elements that are not validated successfully
 
 So if we want our links to change color when the user's mouse is over them, we could add:
@@ -427,12 +427,12 @@ There are many of these and they're worth reading about! Again, the [Mozilla Pse
 
 There are a lot of possibilities within CSS and it can be overwhelming. The most important ideas and approaches are:
 
-* At heart, CSS is about **selecting** elements in the HTML and **styling** them via properties and values
-* **Read the documentation** (again, the [Mozilla CSS documentation](https://developer.mozilla.org/en-US/docs/Web/CSS) is great)
-* **Layout** is a whole impressive part of CSS that you can investigate. The [Mozilla CSS Layout documentation](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout) is a good place to start on this. The CSS Grid has become very popular.
-* **Animation** is a very nice feature of contemporary CSS, check out the [Mozilla CSS animation documentation](https://developer.mozilla.org/en-US/docs/Web/CSS/animation) if you're interested.
-* **Do tutorials** like the [freeCodeCamp CSS lessons](https://www.freecodecamp.org/learn/responsive-web-design/basic-css/) if you're feeling wobbly.
-* **Look at other people's CSS** if you want to get ideas for how to accomplish things (you can use the "Inspector" option in your browser to examine the CSS on a page).
+* Fundamentally, CSS is about **selecting** elements in the HTML and **styling** them via properties and values
+* **Read the documentation** (again, the [Mozilla CSS documentation](https://developer.mozilla.org/en-US/docs/Web/CSS) is great) to understand what's available
+* **Layout** is a whole impressive part of CSS that you can investigate. The [Mozilla CSS Layout documentation](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout) is a good place to start on this. CSS grid has become popular.
+* **Animation** is a nice feature of contemporary CSS, check out the [Mozilla CSS animation documentation](https://developer.mozilla.org/en-US/docs/Web/CSS/animation) if you're interested.
+* **Do tutorials** like the [freeCodeCamp CSS lessons](https://www.freecodecamp.org/learn/responsive-web-design/basic-css/) if you're feeling unsure of yourself.
+* **Look at other people's CSS** if you want to get ideas for how to accomplish things (you can use the "Inspector" option in your browser to examine the CSS on a page). Be aware this can get overwhelming quickly.
 
 ---
 
@@ -440,7 +440,7 @@ There are a lot of possibilities within CSS and it can be overwhelming. The most
 
 ### CSS in the `<head>` tag
 
-We can include a `<style>` tag inside the `<head>` tag of an HTML file to specify CSS to be applied to that page. This will **override** CSS specified in any linked style files.
+We can include a `<style>` tag inside the `<head>` of an HTML file to specify CSS to be applied to that page. This will **override** CSS specified in any linked style files.
 
 ```html
 <head>
@@ -462,7 +462,7 @@ We can include a `<style>` tag inside the `<head>` tag of an HTML file to specif
 We can include a `style` attribute with any HTML element to apply CSS to that element. This will override **all** other styling. For example:
 
 ```html
-<p style="color: #ff0000; font-size: 2rem">This is large, red text.</p>
+<p style="color: #ff0000; font-size: 2rem;">This is large, red text.</p>
 ```
 
 # }

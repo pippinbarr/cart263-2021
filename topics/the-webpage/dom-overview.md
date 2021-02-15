@@ -1,12 +1,10 @@
-# `UNDER CONSTRUCTION`
-
 # DOM Overview {
 
 ---
 
 ## Summary
 
-The DOM (Document Object Model) is a representation in JavaScript of the webpage your program is running on. It's stored in a variable called `document` and the browser provides various methods to access and manipulate HTML elements and CSS on the page.
+The DOM (Document Object Model) is a representation in JavaScript of the webpage your program is running on. It's stored in a variable called `document` and the browser provides various methods to access and manipulate HTML elements and CSS on the page in your program.
 
 ---
 
@@ -18,7 +16,7 @@ The DOM (Document Object Model) is a representation in JavaScript of the webpage
 * Selection by `id`
 * Setting CSS
 * Setting attributes
-* More selection techniques
+* More selection methods
 * Creating, adding, and removing elements
 
 ---
@@ -87,9 +85,9 @@ The above will let us see the entire content of the current webpage in the conso
 
 We use `document` to access and manipulate the DOM and thus the active webpage!
 
-**Note** how we didn't write our code in any kind of special function like `setup()` or similiar. Because our script is loaded at the **end** of the webpage, we're able to just execute our code right away, outside any functions!
+**Note** how we didn't write our code in any kind of special function like `setup()` or similar. Because our script is loaded at the **end** of the webpage, we're able to execute our code right away, outside any functions!
 
-If we want to, we can still use a function:
+If it feels better, you can still use a function:
 
 ```javascript
 setup();
@@ -107,14 +105,14 @@ It's really up to you how you want to approach it!
 
 A central action we usually need to perform when working with the DOM is to **access specific elements on the page** so that we can manipulate them etc.
 
-Perhaps the most common function used for this uses the `id` of elements on a page to access them. It's called, rather neatly `getElementById()` and because it's a method of the DOM, we write `document.getElementById("id-goes-here")`.
+Perhaps the most common function used for this uses the `id` of elements on a page to access them. It's called, rather straightforwardly `getElementById()` and because it's a method of the DOM, we write `document.getElementById("id-goes-here")`.
 
-So if we want to get access to our `<h1>` tag in the example, we can use its `id` to do so and we could, for instance, change its color using CSS (more on this later)...
+So if we want to get access to our `<h1>` tag in the example, we can use its `id` of `main-heading` to do so and we could, for instance, change its color using CSS (more on this later)...
 
 ```javascript
 // Get the <h1> element with id "main-heading" and store it in a variable
-let mainHeading = document.getElementById('main-heading');
-// Access the element's CSS (style) and set its color property
+let mainHeading = document.getElementById(`main-heading`);
+// Set its color property
 mainHeading.style.color = `#339966`;
 ```
 
@@ -122,13 +120,13 @@ mainHeading.style.color = `#339966`;
 
 ## Changing the CSS of elements
 
-As we have just demonstrated, a fun thing we can do via the DOM is alter the **CSS** of elements on the page via their `style` property. Because CSS is what lets us radically alter the visual representation of a webpage, this is how we can **dynamically** change that representation.
+As we have just demonstrated, a key thing we can do via the DOM is alter the **CSS** of elements on the page via their `style` property. Because CSS is what lets us radically alter the visual representation of a webpage, this is central to how we can **dynamically** change that representation.
 
 The `style` property of any element on the page lets us change any CSS property for that element...
 
 ```javascript
 // Get the <h1> element with id "main-heading" and store it in a variable
-let mainHeading = document.getElementById('main-heading');
+let mainHeading = document.getElementById(`main-heading`);
 // Change some of the heading's CSS properties
 mainHeading.style.color = `#339966`;
 mainHeading.style.fontSize = `5rem`;
@@ -138,27 +136,27 @@ mainHeading.style.backgroundColor = `#000000`;
 
 ### Naming CSS properties
 
-Notice how we write multiword CSS properties like `font-family` in camelCase instead, e.g. `fontFamily`.
+Notice how we write multiword CSS properties like `font-family` in camelCase, e.g. `fontFamily`. That's the way it works! All hyphenated CSS properties should be written in camelCase when writing them as property names in JavaScript. `background-color` becomes `backgroundColor`, `font-size` becomes `fontSize` and so on.
 
-We can use the original CSS property names if we want to with a slightly different notation
+We can write the **standard CSS property names** by using a slightly different notation:
 
 ```javascript
 // Get the <h1> element with id "main-heading" and store it in a variable
-let mainHeading = document.getElementById('main-heading');
+let mainHeading = document.getElementById(`main-heading`);
 // Change some of the heading's CSS properties
-mainHeading.style["color"] = `#339966`;
-mainHeading.style["font-size"] = `5rem`;
-mainHeading.style["font-family"] = `Helvetica, sans-serif`;
-mainHeading.style["background-color"] = `#000000`;
+mainHeading.style[`color`] = `#339966`;
+mainHeading.style[`font-size`] = `5rem`;
+mainHeading.style[`font-family`] = `Helvetica, sans-serif`;
+mainHeading.style[`background-color`] = `#000000`;
 ```
 
 This is just another way to access a JavaScript object's properties and works on any object, in fact. We might argue that here it is a **better** approach since it maintains consistency between the CSS name and the name we use in our code. But really it's up to you!
 
 ### CSS priority
 
-When we set CSS properties in JavaScript this way we are setting them in the `style` **attribute** of the element. As you may remember, this means that the properties set here have **priority** over CSS in a `<style>` tag and CSS in a `.css` file.
+When we set CSS properties in JavaScript this way we are setting them in the **`style`*attribute** of the element. As you may remember, this means that the properties set here have **priority** over CSS in a `<style>` tag and CSS in a `.css` file.
 
-In other words, if you set CSS properties this way, it will override all other CSS that might be affecting the element.
+In other words, if you set CSS properties this way, it will override any other CSS that might be applied to the element.
 
 ### What CSS to set...
 
@@ -177,18 +175,19 @@ To access the plain text in an element we can use its `.innerText` property:
 This might most obviously be used to dynamically generate content on a webpage or to display "live" information.
 
 ```javascript
-let pronoun = document.getElementById('pronoun');
-pronoun.innerText = "you";
+let pronoun = document.getElementById(`pronoun`);
+pronoun.innerText = `you`;
 ```
 
 Here, we've changed the pronoun used to address the reader from "we" to "you". This clearly opens the door to webpages that change their content!
 
 ### Reading the `.innerText`
 
-Because `.innerText` is just a property of the element containing its text, we can also use this as information in our program...
+Because `.innerText` is just a property of the element that contains its current text, we can also use this as information in our program...
 
 ```javascript
-let pronoun = document.getElementById('pronoun');
+let pronoun = document.getElementById(`pronoun`);
+// Set the pronoun to "you" if it is currently "we"
 if (pronoun.innerText === `we`) {
   pronoun.innerText = `you`;
 }
@@ -198,14 +197,14 @@ if (pronoun.innerText === `we`) {
 
 ## Changing the HTML content of elements
 
-When we use `.innerText` we can only work with plain text, but we might want to user HTML tags in the content we're adding. In that case we should work with the `.innerHTML` property, which is an HTML representation of the content of an element. It's the same, but with HTML!
+When we use `.innerText` we can only work with plain text, but we might want to use HTML tags in the content we're adding. In that case we should work with the `.innerHTML` property, which is an HTML representation of the content of an element. It's the same, but with HTML!
 
 ```javascript
 let pronoun = document.getElementById('pronoun');
 pronoun.innerHTML = "<strong>you</strong>";
 ```
 
-Here we can use the `strong` tag inside our string because we're injecting it into the element specifically as HTML content.
+Here we can use the `strong` tag inside our string because we're setting it in the element specifically as **HTML** content.
 
 Again, we can also use this to read the HTML content of an element if that's useful to us.
 
@@ -221,7 +220,7 @@ We use `.setAttribute()` to set specific attributes on any element...
 
 ```javascript
 // Get the image element
-let image = document.getElementById('clown-image');
+let image = document.getElementById(`clown-image`);
 // Set its src attribute to a new image (a URL for a random clown image in this case)
 image.setAttribute(`src`, `http://loremflickr.com/320/240/clown`);
 ```
@@ -234,7 +233,7 @@ We use `.getAttribute()` to read specific attributes of any element...
 
 ```javascript
 // Get the image element
-let image = document.getElementById('clown-image');
+let image = document.getElementById(`clown-image`);
 // Get the value of the src property (which is the image path or URL)
 let src = image.getAttribute(`src`);
 // Check if the src property includes the word "clown"
@@ -246,7 +245,7 @@ if (src.includes(`clown`)) {
 
 ---
 
-## More selection
+## More selection methods
 
 So far we've only looked at selecting elements on a page by `id`, which is useful, but it's not the only way to go about things! As you might imagine, there are additional ways to select HTML elements in JavaScript...
 
@@ -264,7 +263,7 @@ for (let i = 0; i < headers.length; i++) {
 }
 ```
 
-#### Just between you and me...
+#### About that "array"...
 
 What is really returned by `getElementsByClassName()` isn't actually an array, it's an `HTMLCollection` object. However, it can be treated like an array in terms of having numbered indexes and a `.length` property, so you don't need to worry so much about it.
 
@@ -272,7 +271,7 @@ What is really returned by `getElementsByClassName()` isn't actually an array, i
 
 ### By tag
 
-We can grab elements by their tag name using `.getElementsByTagName()`. It returns the same kind of array-like object because we might have more than instance of the same tag type in our page.
+We can access elements by their tag name using `.getElementsByTagName()`. It returns the same kind of array-like object because we might have more than instance of the same tag type in our page.
 
 ```javascript
 // Get all h2 elements
@@ -348,7 +347,7 @@ The easiest way to do this is by knowing that every element has a `.parentElemen
 
 ```javascript
 // Select the item we want to remove by id
-let heading = document.getElementById('main-heading');
+let heading = document.getElementById(`main-heading`);
 // Remove the element by accessing its parent and using .removeChild()
 heading.parentElement.removeChild(heading); // Removing the child
 ```

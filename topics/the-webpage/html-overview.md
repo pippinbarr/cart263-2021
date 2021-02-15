@@ -17,13 +17,13 @@ HTML (HyperText Markup Language) is the language we use to express the **structu
 
 ## What is HTML?
 
-HTML stands for (**H**)yper(**T**)ext (**M**)arkup (**L**)anguage. It's the language we use to express **structure** and **content** and is the most basic part of a webpage. It's fundamentally premised on the idea of a webpage as a **document** and thus privileges the idea of a **linear presentation of formatted text**.
+HTML stands for (**H**)yper(**T**)ext (**M**)arkup (**L**)anguage. It's the language we use to express the **structure** and **content** of a webpage. It's fundamentally premised on the idea of a webpage as a **document** and thus privileges the idea of a **linear presentation of formatted text** (and other elements).
 
 HTML is recognizable for its use of specific **tags** like `<html>`, `<p>`, `<img>` to indicate the structure of a document. These tags essentially **are** HTML, they are the **markup**.
 
 HTML generally lives in a text file with extension `.html` (sometimes you'll see `.htm`).
 
-What we're really interested in it building toward doing things with HTML via JavaScript! So, this discussion is not intended to make anyone a master of HTML, but rather to get the basics of its structure and use.
+What we're really interested in is building toward doing things with HTML via JavaScript! So, this discussion is not intended to make anyone a master of HTML, but rather to get the basics of its structure and use.
 
 Let's put together a very simple webpage using HTML to illustrate key component parts.
 
@@ -31,9 +31,9 @@ Let's put together a very simple webpage using HTML to illustrate key component 
 
 ## The file
 
-We write HTML inside a plain text file with the extension `.html`. You're probably familiar with the typical file called `index.html` that represents the main page in a website's structure. `index.html` is a special name because it will **automatically** load if you navigate to the folder it's in with a browser.
+We write HTML inside a plain text file with the extension `.html`. You're probably familiar with the typical file called `index.html` that represents the main page in a specific folder of a website. `index.html` is a special name because it will **automatically** load if you navigate to the folder it's in with a browser.
 
-You can name HTML files other names too, but let's work with `index.html`. If you want to really get down to basics, make a folder and create a single `index.html` file inside it and run a local server to check it out. While the file is empty you will unsurprisingly see nothing!
+You can name HTML files other names too, but let's work with `index.html`. So, make a folder and create a single `index.html` file inside it and run a local server to check it out. While the file is empty you will unsurprisingly see nothing!
 
 ---
 
@@ -45,7 +45,7 @@ These days, every HTML file must begin with the "document type" declaration:
 <!DOCTYPE html>
 ```
 
-This tells the user's browser what kind of information is in the file (HTML!).
+This tells the user's browser what kind of information is in the file (guess what, it's HTML!!!).
 
 ---
 
@@ -86,21 +86,21 @@ The `<head>` tag is used to include **information** about the webpage that won't
 
 Including the `<title>` tag sets the title of the webpage that will appear in the browser, as well as its title when bookmarked etc.
 
-There are **many** other things we can and will put inside the `<head>` tag. This includes things like links to the **CSS** the page uses, links to **JavaScript** the page uses, various `<meta>` tags, and more (see the [`<head>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/head) documentation).
+There are **many** other things we can put inside the `<head>` tag. This includes things like links to the **CSS** the page uses, links to **JavaScript** the page uses, various `<meta>` tags, and more (see the [`<head> documentation`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/head)).
 
 For now, we will just stick with the title.
 
 ### Hierarchy
 
-Our example here demonstrates an important feature of HTML, which is that it is **hierarchical**. Most good text editors will make this explicit through indentation. You can see that the `<title>` tag is **inside** the `<head>` tag, which is itself **inside** the `<html>` tag.
+HTML is **hierarchical**. Most good text editors will make this explicit through indentation. You can see that the `<title>` tag is **inside** the `<head>` tag, which is itself **inside** the `<html>` tag.
 
-This idea is what allows us to really **structure** our webpage content quite carefully.
+This idea is what allows us to **structure** our webpage content quite carefully.
 
 ---
 
 ## The `<body>` tag
 
-The actual content of a webpage goes inside a `<body>` tag:
+The actual content of a webpage goes inside a `<body>` tag after the `<head>` tag:
 
 ```html
 <!DOCTYPE html>
@@ -187,6 +187,8 @@ There are two tags, `<em>` (for emphasis) and `<strong>` (for importance) that w
 </html>
 ```
 
+Note that neither `<em>` nor `<strong>` dictate how their emphasis or strength should be visually represented! HTML isn't about visual aesthetics. That said, they're most often italic and bold respectively.
+
 ---
 
 ## Links
@@ -207,18 +209,23 @@ One of the most important features of HTML is the **hypertext** part. A text bec
 
     <h2>Another sub-heading</h2>
     <p>Another paragraph of text. <strong>This is important</strong>.</p>
+    <!-- A link! -->
     <p>Here is a <a href="https://thi.cc/">thicc link</a>.</p>
   </body>
 </html>
 ```
 
-Here we see a link to the website https://thi.cc/. Note that the text that will become the link is **inside** the `<a>` tag. Note that the website linked to is specified using the `href` attribute.
+Here we see a link to the website [https://thi.cc/](https://thi.cc/). Note that the text that will become the visible link is **inside** the `<a>` tag. Note that the website linked to is specified using the `href` attribute.
 
 ### Attributes
 
 Many HTML tags are complex enough that you can't just specify them with the tag and nothing else. The `<a>` tag **requires** that you specify the website to link to, for example. To achieve this, many tags include **attributes** for specifying extra information. It's a lot like the **arguments** we give to a function in programming.
 
-Attributes are written **inside** the angle brackets of the **opening** tag, **after** the tag name itself. Attributes are written by writing the attribute name (e.g. `href`), an equals side (`=`), and then the value to set the attribute to inside quote marks (e.g. `"https://thi.cc/"`).
+Attributes are written **inside** the angle brackets of the **opening** tag, **after** the tag name itself. Attributes are written by writing
+
+* the attribute name (e.g. `href`),
+* an equals sine (`=`),
+* the value to set the attribute to inside quote marks (e.g. `"https://thi.cc/"`).
 
 The documentation for a tag will tell you the possible attributes you can use with that tag. See the [`<a>` tag documentation](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a) for an example.
 
@@ -244,6 +251,7 @@ Everyone loves images! We can include images in a webpage in a couple of ways, b
     <h2>Another sub-heading</h2>
     <p>Another paragraph of text. <strong>This is important</strong>.</p>
     <p>Here is a <a href="https://thi.cc/">thicc link</a>.</p>
+    <!-- An image! -->
     <img src="assets/images/clown.png" alt="A clown emoji.">
   </body>
 </html>
@@ -251,12 +259,14 @@ Everyone loves images! We can include images in a webpage in a couple of ways, b
 
 As you can see, the `<img>` tag requires at least two **attributes**:
 
-* The `src` attribute lets us specify the location of the image (either a relative path in our project folder, as above, or a URL linking to an image)
+* The `src` attribute lets us specify the location of the image, which is generally
+  * a relative path in our project folder, as above
+  * a URL pointing to an image file
 * The `alt` attribute lets us specify a description of the image, particularly for accessibility reasons such as someone using a screen-reader
 
 ### No closing tag
 
-You may have noticed that the `<img>` tag is one of the few HTML tags that doesn't require a closing tag. This is presumably because it wouldn't really make much sense to put something "inside" an image?
+You may have noticed that the `<img>` tag is one of the (exceptional) HTML tags that doesn't require a closing tag. This is presumably because it wouldn't really make much sense to put something else "inside" an image? Even though that sounds kind of cool?
 
 ### Images as links
 
@@ -278,6 +288,7 @@ We can turn an image into a link by putting an `<img>` tag inside an `<a>` tag:
     <h2>Another sub-heading</h2>
     <p>Another paragraph of text. <strong>This is important</strong>.</p>
     <p>Here is a <a href="https://thi.cc/">thicc link</a>.</p>
+    <!-- An image as a link! -->
     <a href="https://thi.cc/">
       <img src="assets/images/clown.png" alt="A clown emoji.">
     </a>
@@ -285,7 +296,7 @@ We can turn an image into a link by putting an `<img>` tag inside an `<a>` tag:
 </html>
 ```
 
-Now the second clown image links to https://thi.cc/.
+Now the second clown image links to [https://thi.cc/](https://thi.cc/).
 
 ---
 
@@ -293,7 +304,7 @@ Now the second clown image links to https://thi.cc/.
 
 When we look at the page we've built up, we don't see something especially gorgeous. We see the absolute default settings that a browser renders HTML with, but it's not nothing. There are paragraph breaks, different font sizes for headings, italics for emphasis, underlined links that highlight when clicked, and so on.
 
-Still, generally speaking HTML these days is used to represent the **content** and **structure** of your webpage, and not so much what it will actually look like in the browser.
+However, it remains the case that HTML is intended to represent the **content** and **structure** of your webpage, and not what it will actually look like in the browser. The browsers naturally have default visual representations for the different tags, but that's up to them, not HTML.
 
 Thus, the vast majority of tags are about structuring your content, as we've seen.
 
@@ -301,7 +312,7 @@ Thus, the vast majority of tags are about structuring your content, as we've see
 
 ## More structure
 
-You may have heard of the `<div>` tag, which is a generic way of dividing up parts of your webpage into meaningful units. We might do something like the following to create two individual sections of our page, thinking of the `<h2>` tags as denoting sections:
+The `<div>` tag is a generic way of dividing up parts of your webpage into meaningful units. We might do something like the following to create two individual sections of our page, thinking of the `<h2>` tags as denoting sections:
 
 ```html
 <!DOCTYPE html>
@@ -312,12 +323,14 @@ You may have heard of the `<div>` tag, which is a generic way of dividing up par
   <body>
     <h1>Main heading</h1>
 
+    <!-- The first div contains the first section -->
     <div>
       <h2>Sub-heading</h2>
       <p>A paragraph of text. Here is an <em>emphasized</em> word.</p>
       <img src="assets/images/clown.png" alt="A clown emoji.">
     </div>
 
+    <!-- The second div contains the second section -->
     <div>
       <h2>Another sub-heading</h2>
       <p>Another paragraph of text. <strong>This is important</strong>.</p>
@@ -326,19 +339,20 @@ You may have heard of the `<div>` tag, which is a generic way of dividing up par
         <img src="assets/images/clown.png" alt="A clown emoji.">
       </a>
     </div>
+
   </body>
 </html>
 ```
 
-Adding these `<div>` tags didn't do anything we can see to the webpage, it's **purely** structural (and useful later on with **CSS**).
+Adding these `<div>` tags doesn't do anything we can see on the webpage, it's **purely** structural, gathering together parts of the page.
 
 ---
 
-## HTML section and outlines
+## HTML sections and outlines
 
-With HTML5 we have better named structuring tags than `<div>`! They are:
+With HTML5 we have better named structuring tags than the very generic `<div>`! They are:
 
-* `<nav>` for denoting the navigation component of your page (like its menu system)
+* `<nav>` for denoting a navigation component of your page (like its menu system)
 * `<header>` to denote the header of the page (like the logo and probably the navigation)
 * `<section>` for denoting a section of a page
 * `<article>` for denoting an article on your page
@@ -388,7 +402,7 @@ Again, the page doesn't look any different, but we've structured it better in th
 
 We're now in a position to write simple HTML documents! This is the backbone of creating any webpage, so understanding these fundamentals is really important once we start wanting to do **dynamic** things with the HTML via JavaScript.
 
-Again, there are many, many more tags to explore within HTML, we've only scratched the surface. Take a look at Mozilla's [HTML elements reference](https://developer.mozilla.org/en-US/docs/Web/HTML/Element) to learn more.
+Again, there are many, many more tags to explore within HTML, we've only scratched the surface. Take a look at the [Mozilla HTML elements reference](https://developer.mozilla.org/en-US/docs/Web/HTML/Element) to learn more.
 
 ---
 

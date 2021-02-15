@@ -306,8 +306,8 @@ Week of 22 February 2021
 ## Classroom (in Discord classroom channels at 13:30 on the day of class)
 * Q&A
 * [Project 1: A Night at the Movies](../projects/project1/README.md)
-* Project 2
-* Remember to prepare for The Webpage now or during reading week
+* [Project 2: Anything](../projects/project2/README.md)
+* Remember to prepare for the [The Webpage](#the-webpage) week now or during reading week
 * The [C-LAB](https://clab.concordia.ca/) is there to help you
 
 ## Studio (in Discord studio channels after classroom period)
@@ -319,7 +319,7 @@ Week of 22 February 2021
 
 ## Homework
 * Remember to prepare for The Webpage now or during reading week
-* Start on Project 2
+* Start on [Project 2: Anything](../projects/project2/README.md)
 
 ---
 
