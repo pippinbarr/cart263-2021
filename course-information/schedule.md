@@ -3,6 +3,7 @@
 # Schedule
 
 #### Contents
+- [Templates](#templates) - template projects
 - [Guides](#guides) - high level guides
 - [Examples](../examples/) - full examples of code
 - [Projects](#projects) - project briefs and due dates
@@ -25,6 +26,11 @@
 - Week 13 - [Project 2 Studio III](#project-2-studio-iii) - Studio support for Project 2
 
 ---
+
+#### Templates
+
+- p5 Template Project [Source](https://www.github.com/pippinbarr/cart263-2021/tree/master/templates/template-p5-project) [.zip](https://pippinbarr.github.io/cart263-2021/templates/template-p5-project.zip)
+- Plain JavaScript Project [Source](https://www.github.com/pippinbarr/cart263-2021/tree/master/templates/plain-javascript-project) [.zip](https://pippinbarr.github.io/cart263-2021/templates/plain-javascript-project.zip)
 
 #### Guides
 - [Style Guide](../guides/style-guide.md)
@@ -334,6 +340,8 @@ Week of 8 March 2021
 ## Before class
 
 ### Topics
+
+**Follow along** with the Plain JavaScript Template [Source](https://www.github.com/pippinbarr/cart263-2021/tree/master/templates/plain-javascript-project) [.zip](https://pippinbarr.github.io/cart263-2021/templates/plain-javascript-project.zip).
 
 #### HTML
 * **Watch** 6.1. HTML Overview (coming soon) and **read** the [notes](../topics/the-webpage/html-overview.md)
