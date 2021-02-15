@@ -1,4 +1,4 @@
-# CSS Basics {
+# CSS Overview {
 
 ---
 
@@ -230,6 +230,8 @@ Now we've changed the font size of the main heading (`<h1>`) and also set the co
 ## Selecting more than thing at once
 
 We can apply specific styling to a set of different targets by listing the selectors in a comma-separated list:
+
+** FIX THIS! **
 
 ```css
 h1 {

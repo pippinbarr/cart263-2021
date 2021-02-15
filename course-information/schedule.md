@@ -336,21 +336,23 @@ Week of 8 March 2021
 ### Topics
 
 #### HTML
-* **Watch** 6.1. HTML basics (coming soon) and **read** the [notes](../topics/the-webpage/html-basics.md)
+* **Watch** 6.1. HTML Overview (coming soon) and **read** the [notes](../topics/the-webpage/html-overview.md)
 * References
   * [HTML Documentation from Mozilla](https://developer.mozilla.org/en-US/docs/Web/HTML)
   * [freeCodeCamp Introduction to Basic HTML & HTML5](https://www.freecodecamp.org/learn/responsive-web-design/basic-html-and-html5/)
   * [codecademy Learn HTML](https://www.codecademy.com/learn/learn-html)
 
 #### CSS
-* **Watch** 6.1. CSS basics (coming soon) and **read** the [notes](../topics/the-webpage/css-basics.md)
+* **Watch** 6.2. CSS Overview (coming soon) and **read** the [notes](../topics/the-webpage/css-overview.md)
 * References
   * [CSS Documentation from Mozilla](https://developer.mozilla.org/en-US/docs/Web/CSS)
   * [freeCodeCamp Introduction to Basic CSS](https://www.freecodecamp.org/learn/responsive-web-design/basic-css/)
   * [codecademy Learn CSS](https://www.codecademy.com/learn/learn-css)
 
 #### The DOM (Document Object Model)
-* Video and notes to come
+* **Watch** 6.3. DOM Overview (coming soon) and **read** the [notes](../topics/the-webpage/dom-overview.md)
+* **Watch** 6.4. DOM Events (coming soon) and **read** the [notes](../topics/the-webpage/dom-events.md)
+* **Watch** 6.5. DOM Form Input (coming soon) and **read** the [notes](../topics/the-webpage/dom-form-input.md)
 * References
   * [DOM Documentation from Mozilla](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model)
 

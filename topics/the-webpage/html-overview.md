@@ -1,4 +1,4 @@
-# HTML Basics {
+# HTML Overview {
 
 ---
 
@@ -12,7 +12,6 @@ HTML (HyperText Markup Language) is the language we use to express the **structu
 
 * What is HTML?
 * Creating a simple webpage in HTML
-* Input elements
 
 ---
 
@@ -385,133 +384,11 @@ Again, the page doesn't look any different, but we've structured it better in th
 
 ---
 
-## Input
-
-One thing we almost certainly will end up wanting to do is to get user input. Beyond things like clicking on links, we can achieve a lot using **input** related HTML elements and their associated tags. Let's look at a couple of these tags to get the idea.
-
-### The `<input>` tag
-
-The majority of input can be achieved using HTML's `<input>` tag and specifying different kinds of input element with the `type` attribute.
-
-### Text
-
-We can let the user type text into the page using the `text` input type:
-
-```html
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>Input examples</title>
-  </head>
-  <body>
-    <section>
-      <!-- A text entry field -->
-      <input type="text">
-    </section>
-  </body>
-</html>
-```
-
-Voilà, a text-input box.
-
-Note that the `<input>` tag is another that we don't need a closing tag for.
-
-Again, there are many other attributes available to make our text input box more specific, such as a default (`value`) or specifying a maximum length (`maxlength`):
-
-```html
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>Input examples</title>
-  </head>
-  <body>
-    <section>
-      <!-- A text entry field with default text and a character limit -->
-      <input type="text" value="Enter your name" maxlength="10">
-    </section>
-  </body>
-</html>
-```
-
-### A button
-
-Buttons are a classic way to show users they can interact with your page. We just need an input of type `button`:
-
-```html
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>Input examples</title>
-  </head>
-  <body>
-    <section>
-      <!-- A text entry field with default text and a character limit -->
-      <input type="text" value="Enter your name" maxlength="10">
-      <!-- A button with a label -->
-      <input type="button" value="Button label"></input>
-    </section>
-  </body>
-</html>
-```
-
-Buttons are sufficiently popular that you can also create one using the `<button>` tag instead:
-
-```html
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>Input examples</title>
-  </head>
-  <body>
-    <section>
-      <!-- A text entry field with default text and a character limit -->
-      <input type="text" value="Enter your name" maxlength="10">
-      <!-- A button with a label -->
-      <input type="button" value="Button label"></input>
-      <!-- A button using the button tag -->
-      <button>Another button label</button>
-    </section>
-  </body>
-</html>
-
-```
-
-### A range slider
-
-Sliders are fun! They let us choose numbers from a range with an interactive element. The type name for a slider is `range` and important attributes are the `min` and `max` values the slider represents!
-
-```html
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>Input examples</title>
-  </head>
-  <body>
-    <section>
-      <!-- A text entry field with default text and a character limit -->
-      <input type="text" value="Enter your name" maxlength="10">
-      <!-- A button with a label -->
-      <input type="button" value="Button label"></input>
-      <!-- A button using the button tag -->
-      <button>Another button label</button>
-      <!-- A slider from 0-100 with a default of 0 -->
-      <input type="range" value="0" min="0" max="100">
-    </section>
-  </body>
-</html>
-```
-
-### And many, many more
-
-There are a lot of input types, including color pickers, date entry, checkboxes, radio buttons, file selection, and on and on. See the documentation!
-
----
-
 ## There is a lot more to HTML
 
 We're now in a position to write simple HTML documents! This is the backbone of creating any webpage, so understanding these fundamentals is really important once we start wanting to do **dynamic** things with the HTML via JavaScript.
 
-Again, there are many, many more tags to explore within HTML, we've only scratched the surface. Take a look at Mozilla's [HTML elements reference](https://developer.mozilla.org/en-US/docs/Web/HTML/Element) and [`<input>` reference](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input) to learn more.
+Again, there are many, many more tags to explore within HTML, we've only scratched the surface. Take a look at Mozilla's [HTML elements reference](https://developer.mozilla.org/en-US/docs/Web/HTML/Element) to learn more.
 
 ---
 
