@@ -278,8 +278,8 @@ Click through for examples of the topics covered in this section
   * The D/CART Year End Show is a great opportunity to promote your work, and yourself as an artist. Whether you created your work in Concordia's studios or in the comfort of your bedroom, we want to see it! This year’s theme, Space Between, is an opportunity to think about new spaces opening up in our lives and our practices.
   * Print, digital, sculptural… existential? Submit your project in the medium of your choice!
   * In order to submit, you must be enrolled in the D/CART program and your submission has to have been created within the context of a D/CART class.
-  * Submission link: http://tinyurl.com/dcart2021
-  * Facebook event link: http://tinyurl.com/space-between-event
+  * Submission link: [http://tinyurl.com/dcart2021](http://tinyurl.com/dcart2021)
+  * Facebook event link: [http://tinyurl.com/space-between-event](http://tinyurl.com/space-between-event)
 
 ## Studio (in Discord studio channels after classroom period)
 * Instructor and TA available to help

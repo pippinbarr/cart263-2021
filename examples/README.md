@@ -126,7 +126,7 @@ Pop a bubble with your index finger via the webcam!
 ### Hand Gun Dog
 Shoot small dogs out of your fingertip via the webcam!
 
-* [Hand Gun Dog](https://pippinbarr.github.io/cart263-2021/examples/ai/hand-gun-dog) ([Source](https://www.github.com/pippinbarr/cart263-2021/tree/master/examples/ai/hand-gun-dog))
+* [Hand Gun Dog](https://pippinbarr.github.io/cart263-2021/examples/ai/hand-dog-gun) ([Source](https://www.github.com/pippinbarr/cart263-2021/tree/master/examples/ai/hand-dog-gun))
 
 ### Fly Eater
 Eat virtual flies via the webcam!
