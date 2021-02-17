@@ -365,10 +365,10 @@ Week of 8 March 2021
   * [DOM Documentation from Mozilla](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model)
 
 ### Activity
-* tbd.
+* **Complete** [Activity: Haiku Generator](../activities/haiku-generator.md) (**Watch** 5.4. Activity: Haiku Generator (coming soon) to see Pippin doing it) ([Example final code](https://github.com/pippinbarr/cart263-2021/tree/main/examples/the-webpage/haiku-generator/), [Online](https://pippinbarr.github.io/cart263-2021/examples/the-webpage/haiku-generator/))
 
 ### Exercise
-* tbd.
+* **Complete** [Exercise 4: Haiku Generator++](../exercises/haiku-generator-plus-plus.md) (due the night of class)
 
 ## [Examples](../examples/#the-webpage)
 Click through for examples of the topics covered in this section
