@@ -1,0 +1,14 @@
+/*********************************************
+
+Some basic styling to make text display a
+little more prettily.
+
+**********************************************/
+
+body {
+  font-family: monospace;
+  font-size: 1.2rem;
+  width: 50vw;
+  margin: auto;
+  padding-top: 1.25rem;
+}

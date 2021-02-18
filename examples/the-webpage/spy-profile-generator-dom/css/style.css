@@ -1,0 +1,15 @@
+/*********************************************
+
+Some basic styling to make text display a little more prettily.
+
+**********************************************/
+
+body {
+  font-family: monospace;
+  margin-top: 5rem;
+  margin-left: 5rem;
+}
+
+#profile {
+  font-size: 1rem;
+}

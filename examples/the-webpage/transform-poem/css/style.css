@@ -1,0 +1,25 @@
+/*********************************************
+
+Some basic styling to make text display a little
+more prettily. Also to allow for transform fun
+with the special words.
+
+**********************************************/
+
+body {
+  font-family: Helvetica, sans-serif;
+  font-size: 4rem;
+  font-weight: bold;
+  width: 50vw;
+  margin: auto;
+  padding-top: 2rem;
+  /* Useful so that the words that fly offscreen don't make a scrollbar appear */
+  overflow: hidden;
+}
+
+/* The special words */
+.mover, .spinner, .skewer {
+  display: inline-block; /* Required in order to play with transform */
+  position: relative; /* As above */
+  color: gray; /* To make them stand out */
+}

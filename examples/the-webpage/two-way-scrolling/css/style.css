@@ -1,0 +1,51 @@
+/*********************************************
+
+Some style stuff
+Some layout stuff
+Some scrollbar hiding stuff
+
+**********************************************/
+
+/* Basic appearance of the texts */
+body {
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+
+  font-family: Helvetica, sans-serif;
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+/* Using CSS grid to create a two column layout */
+#container {
+  display: grid;
+  grid-template-columns: 50vw 50vw;
+}
+
+/* Basic column setup and scrollbar hiding */
+.two-way-scroller {
+  /* Basic column and text styling */
+  width: 40vw;
+  height: 100vh;
+  margin: auto;
+  /* Hide the scrollbar according to different browser requirements */
+  overflow: auto;
+  -ms-overflow-style: none; /* IE 11 */
+  scrollbar-width: none; /* Firefox 64 */
+
+}
+
+/* Color specific styling for the distinct columns */
+#left-div {
+  color: pink;
+}
+
+#right-div {
+  color: grey;
+}
+
+/* Also an attempt to hide scrollbars! */
+::-webkit-scrollbar {
+  display: none;
+}

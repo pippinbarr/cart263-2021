@@ -1,0 +1,23 @@
+/*********************************************
+
+Some basic styling to make text display a little more prettily
+and to allow individual characters to move with their transform
+
+**********************************************/
+
+body {
+  font-family: Helvetica, sans-serif;
+  font-size: 4rem;
+  font-weight: bold;
+  width: 50vw;
+  margin: auto;
+  margin-top: 10rem;
+  overflow: hidden;
+}
+
+/* We need inline-block and relative positioning to make the character
+move with its transform the way we want */
+.character {
+  display: inline-block;
+  position: relative;
+}

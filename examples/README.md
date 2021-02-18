@@ -6,6 +6,7 @@
 * [Voices](#voices)
 * [Data](#data)
 * [AI](#ai)
+* [The Webpage](#the-webpage)
 
 ---
 
@@ -137,3 +138,42 @@ Eat virtual flies via the webcam!
 Show the webcam a requested object to win!
 
 * [Feed Me(dia)](https://pippinbarr.github.io/cart263-2021/examples/ai/feed-media) ([Source](https://www.github.com/pippinbarr/cart263-2021/tree/master/examples/ai/feed-media))
+
+---
+
+## The Webpage
+
+### Build Your Own Webpage
+Literally type HTML into a text input and add it to the webpage. The ultimate in DIY.
+
+* [Build Your Own Webpage](https://pippinbarr.github.io/cart263-2021/examples/the-webpage/build-your-own-webpage) ([Source](https://www.github.com/pippinbarr/cart263-2021/tree/master/examples/the-webpage/build-your-own-webpage))
+
+### Haiku Generator
+Generate beautiful haiku.
+
+* [Haiku Generator](https://pippinbarr.github.io/cart263-2021/examples/the-webpage/haiku-generator) ([Source](https://www.github.com/pippinbarr/cart263-2021/tree/master/examples/the-webpage/haiku-generator))
+
+### Nonsensifier
+Gradually corrupts the text on the webpage until it's all just illegible symbols.
+
+* [Nonsensifier Generator](https://pippinbarr.github.io/cart263-2021/examples/the-webpage/nonsenifier) ([Source](https://www.github.com/pippinbarr/cart263-2021/tree/master/examples/the-webpage/nonsensifier))
+
+### Transform Poem
+A poem with very moving words. Ha ha ha.
+
+* [Transform Poem Generator](https://pippinbarr.github.io/cart263-2021/examples/the-webpage/transform-poem) ([Source](https://www.github.com/pippinbarr/cart263-2021/tree/master/examples/the-webpage/transform-poem))
+
+### Two Way Scrolling
+Two columns, opposite scrolling directions.
+
+* [Two Way Scrolling](https://pippinbarr.github.io/cart263-2021/examples/the-webpage/two-way-scrolling) ([Source](https://www.github.com/pippinbarr/cart263-2021/tree/master/examples/the-webpage/two-way-scrolling))
+
+### Word Painter
+Words change color on mouse over and leave a lovely trail that catches up with the mouse over time.
+
+* [Word Painter](https://pippinbarr.github.io/cart263-2021/examples/the-webpage/word-painter) ([Source](https://www.github.com/pippinbarr/cart263-2021/tree/master/examples/the-webpage/word-painter))
+
+### Wordplay
+Words go flying across the page on mouseover.
+
+* [Wordplay](https://pippinbarr.github.io/cart263-2021/examples/the-webpage/wordplay) ([Source](https://www.github.com/pippinbarr/cart263-2021/tree/master/examples/the-webpage/wordplay))
