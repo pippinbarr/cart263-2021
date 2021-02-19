@@ -4,9 +4,17 @@
 
 ## Summary
 
+Form input is a specific case of event handling and accessing data in the DOM. Notably we want to be able to respond to the user filling in input elements on a page and to get access to the information they have provided.
+
 ---
 
 ## Contents
+
+* Input and webpages
+* Buttons and
+* Text inputs and
+* Range sliders
+* Oh my!
 
 ---
 
@@ -316,7 +324,7 @@ Again, we should read the [`<input type="range">` documentation](https://develop
 
 ---
 
-## And yes, there's more...
+## Oh my!
 
 There are a lot of input types, and we should what? We should read the [<input> documentation](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input) to find out more! Exciting possibilities include...
 

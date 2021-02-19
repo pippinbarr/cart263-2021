@@ -122,7 +122,7 @@ mainHeading.style.color = `#339966`;
 
 As we have just demonstrated, a key thing we can do via the DOM is alter the **CSS** of elements on the page via their `style` property. Because CSS is what lets us radically alter the visual representation of a webpage, this is central to how we can **dynamically** change that representation.
 
-The `style` property of any element on the page lets us change any CSS property for that element...
+The `style` property of any element on the page lets us change any CSS property for that element.
 
 ```javascript
 // Get the <h1> element with id "main-heading" and store it in a variable
@@ -133,6 +133,8 @@ mainHeading.style.fontSize = `5rem`;
 mainHeading.style.fontFamily = `Helvetica, sans-serif`;
 mainHeading.style.backgroundColor = `#000000`;
 ```
+
+Note that **all CSS properties are stored as strings**. More on the implications of this later.
 
 ### Naming CSS properties
 
