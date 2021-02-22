@@ -38,16 +38,12 @@ setupLines();
 addListeners();
 
 /**
-Puts a randomly chosen haiku line in each line of the poem in HTML,
-also sets opacity to 1 since that's useful later on
+Puts a randomly chosen haiku line in each line of the poem in HTML
 */
 function setupLines() {
   line1.innerText = random(haikuLines.fiveSyllables);
-  line1.style.opacity = 1;
   line2.innerText = random(haikuLines.sevenSyllables);
-  line2.style.opacity = 1;
   line3.innerText = random(haikuLines.fiveSyllables);
-  line3.style.opacity = 1;
 }
 
 /**
@@ -63,36 +59,32 @@ function addListeners() {
 Triggers a fade out when a line is clicked
 */
 function changeLine(event) {
-  // We use an anonymous function so we can provide the
-  // clicked element as an argument to fadeOut()
-  window.requestAnimationFrame(function() {
-    fadeOut(event.target);
-  });
+  fadeOut(event.target, 1);
 }
 
 /**
 Reduces the opacity of the provided element until it reaches zero
 then changes its line and triggers a fade in
 */
-function fadeOut(element) {
+function fadeOut(element, opacity) {
   // Change the opacity of the line
-  let newOpacity = changeOpacity(element, -0.01);
-  // Check if the opacity made it to or past zero
-  if (newOpacity <= 0) {
-    // If so, set the opacity to exactly 0
-    element.style[`opacity`] = 0;
-    // Set a new line of poem for the element
-    setNewLine(element);
-    // Trigger a fade in
+  opacity -= 0.01;
+  element.style[`opacity`] = opacity;
+  // Check if the opacity is greater than 0...
+  if (opacity > 0) {
+    // If so, keep fading on the next frame
+    // Note the use of an anonymous function here so we can pass
+    // arguments to fadeOut()
     requestAnimationFrame(function() {
-      fadeIn(element);
+      fadeOut(element, opacity);
     });
   }
   else {
-    // Trigger another frame of fading out
-    requestAnimationFrame(function() {
-      fadeOut(element);
-    });
+    // If not, we can switch lines and fade in...
+    // Set a new line of poem for the element
+    setNewLine(element);
+    // Trigger a fade in
+    fadeIn(element, 0);
   }
 }
 
@@ -100,35 +92,21 @@ function fadeOut(element) {
 Increases the opacity of the provided element until it reaches
 1 and then stops.
 */
-function fadeIn(element) {
+function fadeIn(element, opacity) {
   // Increase the opacity
-  let newOpacity = changeOpacity(element, 0.01);
-  // Check if it reached or passed 1
-  if (newOpacity >= 1) {
-    // If so, set it to 1 and don't ask for another frame of animation (we're done)
-    element.style[`opacity`] = 1;
-  }
-  else {
-    // If not, trigger another frame of fading in
+  opacity += 0.01;
+  element.style[`opacity`] = opacity;
+  // Check if opacity is still less than 1
+  if (opacity < 1) {
+    // Keep fading. Note the use of an anonymous function here so we
+    // can pass arguments to fadeIn()
     requestAnimationFrame(function() {
-      fadeIn(element);
+      fadeIn(element, opacity);
     });
   }
-}
-
-/**
-Changes the opacity of the element by the amount specified
-*/
-function changeOpacity(element, amount) {
-  // Get the current opacity of the element as a number (not a string!)
-  // parseFloat() converts a number contained in a string to an actual number
-  let opacity = parseFloat(element.style.opacity);
-  // Change the opacity
-  opacity += amount;
-  // Set the opacity of the element to the new value
-  element.style[`opacity`] = opacity;
-  // Return the new value so it can be checked by the caller
-  return opacity;
+  else {
+    // Do nothing - we're done!
+  }
 }
 
 /**
