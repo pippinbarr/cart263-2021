@@ -49,16 +49,12 @@ Here's some simple HTML that we can style using CSS:
     <section>
       <h2>Sub-heading</h2>
       <p>A paragraph of text. Here is an <em>emphasized</em> word.</p>
-      <img src="assets/images/clown.png" alt="A clown emoji.">
     </section>
 
     <section>
       <h2>Another sub-heading</h2>
       <p>Another paragraph of text. <strong>This is important</strong>.</p>
       <p>Here is a <a href="https://thi.cc/">thicc link</a>.</p>
-      <a href="https://thi.cc/">
-        <img src="assets/images/clown.png" alt="A clown emoji.">
-      </a>
     </section>
 
     <footer>
@@ -102,16 +98,12 @@ In order to tell a webpage to **use** the CSS in our file, we need to use a `<li
     <section>
       <h2>Sub-heading</h2>
       <p>A paragraph of text. Here is an <em>emphasized</em> word.</p>
-      <img src="assets/images/clown.png" alt="A clown emoji.">
     </section>
 
     <section>
       <h2>Another sub-heading</h2>
       <p>Another paragraph of text. <strong>This is important</strong>.</p>
       <p>Here is a <a href="https://thi.cc/">thicc link</a>.</p>
-      <a href="https://thi.cc/">
-        <img src="assets/images/clown.png" alt="A clown emoji.">
-      </a>
     </section>
 
     <footer>
@@ -307,7 +299,6 @@ So, in our example, we might give an `id` to our first `<section>` tag and a `cl
       <h2>Sub-heading</h2>
       <p>A paragraph of text.</p>
       <p>A paragraph of text. Here is an <em>emphasized</em> word.</p>
-      <img src="assets/images/clown.png" alt="A clown emoji.">
     </section>
 
     <section>
@@ -319,9 +310,6 @@ So, in our example, we might give an `id` to our first `<section>` tag and a `cl
       <p class="second-section-paragraph">
         Here is a <a href="https://thi.cc/">thicc link</a>.
       </p>
-      <a href="https://thi.cc/">
-        <img src="assets/images/clown.png" alt="A clown emoji.">
-      </a>
     </section>
 
     <footer>

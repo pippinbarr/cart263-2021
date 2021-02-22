@@ -344,14 +344,14 @@ Week of 8 March 2021
 **Follow along** with the Plain JavaScript Template [Source](https://www.github.com/pippinbarr/cart263-2021/tree/master/templates/plain-javascript-project) [.zip](https://pippinbarr.github.io/cart263-2021/templates/plain-javascript-project.zip).
 
 #### HTML
-* **Watch** 6.1. HTML Overview (coming soon) and **read** the [notes](../topics/the-webpage/html-overview.md)
+* (Optional) **Watch** 6.1. HTML Overview (coming soon) and **read** the [notes](../topics/the-webpage/html-overview.md)
 * References
   * [HTML Documentation from Mozilla](https://developer.mozilla.org/en-US/docs/Web/HTML)
   * [freeCodeCamp Introduction to Basic HTML & HTML5](https://www.freecodecamp.org/learn/responsive-web-design/basic-html-and-html5/)
   * [codecademy Learn HTML](https://www.codecademy.com/learn/learn-html)
 
 #### CSS
-* **Watch** 6.2. CSS Overview (coming soon) and **read** the [notes](../topics/the-webpage/css-overview.md)
+* (Optional) **Watch** 6.2. CSS Overview (coming soon) and **read** the [notes](../topics/the-webpage/css-overview.md)
 * References
   * [CSS Documentation from Mozilla](https://developer.mozilla.org/en-US/docs/Web/CSS)
   * [freeCodeCamp Introduction to Basic CSS](https://www.freecodecamp.org/learn/responsive-web-design/basic-css/)

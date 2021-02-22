@@ -63,6 +63,7 @@ function oppositeScroll(main, other) {
     main.pScrollTop = main.element.scrollTop;
     return;
   }
+
   // If we get here we want to scroll the other div in the opposite direction to
   // the main div that was just scrolled by the user
 
