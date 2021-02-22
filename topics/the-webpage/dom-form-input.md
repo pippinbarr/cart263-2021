@@ -326,7 +326,7 @@ Again, we should read the [`<input type="range">` documentation](https://develop
 
 ## Oh my!
 
-There are a lot of input types, and we should what? We should read the [<input> documentation](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input) to find out more! Exciting possibilities include...
+There are a lot of input types, and we should what? We should read the [`<input>` documentation](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input) to find out more! Exciting possibilities include...
 
 ### Color picker
 
@@ -359,41 +359,6 @@ colorPicker.addEventListener(`input`, function(event) {
   document.body.style[`background-color`] = color;
 });
 ```
-
-### Date picker
-
-### Color picker
-
-`index.html`
-```html
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>Input examples</title>
-  </head>
-  <body>
-    <section>
-      <!-- A color picker -->
-      <input id="color-picker" type="color">
-    </section>
-
-    <script src="js/script.js"></script>
-  </body>
-</html>
-```
-
-`script.js`
-```javascript
-let colorPicker = document.getElementById(`color-picker`);
-
-// Set the background color of the document when the color
-// picker is used
-colorPicker.addEventListener(`input`, function(event) {
-  let color = event.target.value;
-  document.body.style[`background-color`] = color;
-});
-```
-
 
 ### Password entry
 
