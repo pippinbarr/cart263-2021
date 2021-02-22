@@ -33,7 +33,7 @@ So we could, for instance, change the color of some text when the user clicks a 
 
 ## A webpage
 
-In order to work with the DOM, we'll need an actual webpage! Let's use the following HTML and CSS files...
+In order to work with the DOM, we'll need an actual webpage! Let's use the following HTML and CSS files. Note you'll need a file in `assets/images/clown.png` to match the `<img>` element on this page (feel free to substitute for something else).
 
 `index.html`
 ```html
@@ -57,7 +57,7 @@ In order to work with the DOM, we'll need an actual webpage! Let's use the follo
 
     <section id="clown-section">
       <h2 class="header">A clown</h2>
-      <p>I like clowns.</p>
+      <img id="clown-image" src="assets/images/clown.png" alt="A clown emoji.">
     </section>
   </body>
 </html>
@@ -101,7 +101,7 @@ Let's add our script to the end of the `<body>`...
 
     <section id="clown-section">
       <h2 class="header">A clown</h2>
-      <p>I like clowns.</p>
+      <img id="clown-image" src="assets/images/clown.png" alt="A clown emoji.">
     </section>
 
     <!-- NEW! We add our script at the bottom of the body element. -->
