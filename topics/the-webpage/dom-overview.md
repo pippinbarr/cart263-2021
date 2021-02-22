@@ -31,11 +31,55 @@ So we could, for instance, change the color of some text when the user clicks a 
 
 ---
 
+## A webpage
+
+In order to work with the DOM, we'll need an actual webpage! Let's use the following HTML and CSS files...
+
+`index.html`
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Introducing the DOM</title>
+
+    <!-- CSS stylesheet(s) -->
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+  </head>
+
+  <body>
+    <h1 id="main-heading" class="header">Introducing the DOM</h1>
+    <section id="well-section">
+      <h2 class="header">Well...</h2>
+      <p>
+        Well, here <span id="pronoun">we</span> are, using the <a href="https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model">DOM</a>.
+      </p>
+    </section>
+
+    <section id="clown-section">
+      <h2 class="header">A clown</h2>
+      <img id="clown-image" src="assets/images/clown.png">
+    </section>
+  </body>
+
+</html>
+```
+
+For the above to work, make sure to put a `clown.png` in `assets/images` (or some other image file if you make sure to change the `src` attribute!)
+
+`style.css` (should be placed in a `css` folder)
+```css
+body {
+  font-family: sans-serif;
+}
+```
+
+---
+
 ## Waiting for the DOM
 
 When we're writing code that accesses the DOM, we need to wait until it's actually loaded. There are a couple of ways of doing this, but the simplest is that when we include the `<script>` tag linking to our script in `index.html` we should place it at the **end** of the `<body>` tag. This way your script will be loaded last, when the DOM is ready.
 
-Let's create a simple webpage and add our script to the end of the `<body>`...
+Let's add our script to the end of the `<body>`...
 
 `index.html`
 ```html
@@ -62,8 +106,7 @@ Let's create a simple webpage and add our script to the end of the `<body>`...
       <img id="clown-image" src="assets/images/clown.png">
     </section>
 
-
-    <!-- My script(s) -->
+    <!-- NEW! Script added at the end of the body element -->
     <script src="js/script.js"></script>
   </body>
 
