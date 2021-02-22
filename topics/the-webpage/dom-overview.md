@@ -57,14 +57,11 @@ In order to work with the DOM, we'll need an actual webpage! Let's use the follo
 
     <section id="clown-section">
       <h2 class="header">A clown</h2>
-      <img id="clown-image" src="assets/images/clown.png">
+      <p>I like clowns.</p>
     </section>
   </body>
-
 </html>
 ```
-
-For the above to work, make sure to put a `clown.png` in `assets/images` (or some other image file if you make sure to change the `src` attribute!)
 
 `style.css` (should be placed in a `css` folder)
 ```css
@@ -83,6 +80,7 @@ Let's add our script to the end of the `<body>`...
 
 `index.html`
 ```html
+<!DOCTYPE html>
 <!DOCTYPE html>
 <html>
   <head>
@@ -103,13 +101,12 @@ Let's add our script to the end of the `<body>`...
 
     <section id="clown-section">
       <h2 class="header">A clown</h2>
-      <img id="clown-image" src="assets/images/clown.png">
+      <p>I like clowns.</p>
     </section>
 
-    <!-- NEW! Script added at the end of the body element -->
+    <!-- NEW! We add our script at the bottom of the body element. -->
     <script src="js/script.js"></script>
   </body>
-
 </html>
 ```
 
