@@ -73,6 +73,8 @@ Here's some very simple HTML to work with for this topic:
 </html>
 ```
 
+You'll also want to create a file `js/scripts.js` in which to add your JavaScript when following the examples below.
+
 ---
 
 ## Time-based events
