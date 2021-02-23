@@ -1,0 +1,16 @@
+body {
+  background-color: black;
+}
+
+#face {
+  background-color: yellow;
+  font-family: monospace;
+  font-size: 20vh;
+  margin: auto;
+  margin-top: 20vh;
+  text-align: center;
+  width: 40vh;
+  height: 40vh;
+  border-radius: 500px;
+  transform: rotate(90deg);
+}

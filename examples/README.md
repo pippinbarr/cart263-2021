@@ -177,3 +177,8 @@ Words change color on mouse over and leave a lovely trail that catches up with t
 Words go flying across the page on mouseover.
 
 * [Wordplay](https://pippinbarr.github.io/cart263-2021/examples/the-webpage/wordplay) ([Source](https://www.github.com/pippinbarr/cart263-2021/tree/master/examples/the-webpage/wordplay))
+
+### Happy Offline
+A webpage that is happy when you're offline and sad when you're not!
+
+* [Happy Offline](https://pippinbarr.github.io/cart263-2021/examples/the-webpage/happy-offline) ([Source](https://www.github.com/pippinbarr/cart263-2021/tree/master/examples/the-webpage/happy-offline))
