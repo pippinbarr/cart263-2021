@@ -157,7 +157,7 @@ In order to be cool it would be nice if a clicked line would fade out, change wh
 
 ### Fade out
 
-We want to edit `lineClicked()` (the event handler for a click on a line) to fade out the line over time. We'll use `setInterval()` to do this, and cancel the interval when the line has completely faded out.
+We want to edit `lineClicked()` (the event handler for a click on a line) to fade out the line over time. We'll use `requestAnimationFrame()` to do this with the browser's framerate.
 
 Define a function `fadeOut()` that accepts two parameters
 * One called `element` (which will receive the element to fade out)
@@ -172,8 +172,7 @@ It should:
   * If it isn't, do nothing for now, just write an empty `else` statement
 
 In `lineClicked()`:
-1. Delete the call to
-2. Replace the call to `setNewLine()` with a call to `fadeOut`, providing the `event.target` and `1` as arguments
+1. Replace the call to `setNewLine()` with a call to `fadeOut`, providing the `event.target` and `1` as arguments
 
 If we run this version of the program we should see each line fade out when we click on it. And then they're just gone. The amazing disappearing haiku! Poignant! Sand mandala! Sad mandala!
 
@@ -187,11 +186,11 @@ Define a function `fadeIn()` (yes, a lot of this will be the same as `fadeOut()`
 
 It should:
 1. Increase the `opacity` by a small amount (perhaps `0.01`)
-2. Use an `if` statement to check if `opacity` is less than `1`
+2. Set the `opacity` style property of `element` to the new `opacity` value
+3. Use an `if` statement to check if `opacity` is less than `1`
   * If is, call to `requestAnimationFrame()` with an anonymous function as an argument which calls `fadeIn()` with `element` and `opacity` as arguments (to keep the fade going)
     * Note the use of an anonymous function here is again key because it lets us pass **arguments** to the `fadeIn()` function!
   * If it isn't, do nothing!
-5. Below the `if` statement, set the `opacity` style property of `element` to the new `opacity` value
 
 In `fadeOut()`:
 1. In the part of the `if` statement that runs if the `opacity` has reached `0` add:
@@ -206,9 +205,8 @@ Now if we run the program, lines should fade out when clicked, then fade back in
 
 As always, there are probably improvements that can be made. Consider
 
+* The creation of our lines of poetry and their event listeners at the top is extremely repetitive - write a function to do this!
 * We could consider avoiding separate variables for the lines of the haiku and instead just working directly with the `.innerText` of the elements
-* We could consider storing the three line elements inside an array
-
 
 ---
 
