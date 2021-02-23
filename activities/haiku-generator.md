@@ -204,11 +204,11 @@ Now if we run the program, lines should fade out when clicked, then fade back in
 
 ## 5. Improve the program
 
-As always, there are improvements that can be made. Consider
+As always, there are probably improvements that can be made. Consider
 
-* There is some repeated code we might be able to reduce, notably the code to get, change, and set the opacity
 * We could consider avoiding separate variables for the lines of the haiku and instead just working directly with the `.innerText` of the elements
 * We could consider storing the three line elements inside an array
+
 
 ---
 
@@ -218,16 +218,17 @@ We can imagine all kinds of improvements and changes!
 
 * Tidy up the program as per the suggestions above and any other thoughts you have
 * Significantly improve the HTML and CSS presentation of the haiku
-* Add a randomly generated title
-* Add another DOM event into the user interaction that changes the poem somehow (maybe key presses change the color of the text?)
-* Make the program work at the level of replacing words randomly instead of lines (could be like a Mad Libs haiku, you'll need `<span>` tags around the words you can change, could be fun with a rhyme scheme)
-* Use CSS animations to spice things up
+* Add a randomly generated title for the poem (will need an element on the page and code to create the random title and inject it into the element)
+* Add another DOM event into the user interaction that changes the poem somehow (maybe key presses or mouseovers change the color of the text?)
+* Make the program work at the level of replacing words randomly instead of lines (could be like a Mad Libs haiku, you'd need `<span>` tags around the words you can change, could be fun with a rhyme scheme)
+* Use CSS animations to spice things up (replace the current fading code with a CSS animation that does it instead? Make the background cycle through different colors?)
 * Turn the program into a sonnet generator (or some other poetic form)
 * Listen to `mouseenter` and `mouseleave` events on the lines and trigger visual (or other) changes for those events too
 * Make individual characters react to mouseover by changing their color or size or something else (you'll need to break each line into characters each time you generate it and wrap each character in a `<span>` to do this)
 * Make a synthesized voice read out the poem each time it changes or on a separate user interaction
-* Change or add to the basic transition of a fade in and out (could you make new lines be "typed out"?)
-* Use JSON to generate the poem lines by adding random words to the poems from the [corpora repository](https://github.com/dariusk/corpora/tree/master/data) (watch out for syllable counts if your poem form cares about that)
+* Make the user read the poem out correctly and then generate a new poem? An infinite poetry recital?
+* Change or add to the basic transition of a fade in and out (could you make new lines appear with a typewriter effect?)
+* Use JSON to generate the poem lines by adding random words to the poems from the [corpora repository](https://github.com/dariusk/corpora/tree/master/data) (watch out for syllable counts if your poem form cares about that though, maybe blank verse is better)
 * Use the Sentiment feature of ml5.js to change the color of the page background or something similar based on a sentiment analysis of the poem
 * Use the CharRNN feature of ml5.js to generate lines of poetry instead of the current technique of picking them from arrays
 * Use a text-oriented library like [Tracery](https://tracery.io/) or [RiTa](https://rednoise.org/rita) to generate the poem or parts of it
