@@ -400,14 +400,6 @@ Week of 15 March 2021
 
 ## Before class
 
-
-
-## Objectives
-- Understanding HTML and CSS
-- Understanding the DOM (Document Object Model)
-
-## Before class
-
 ### Topics
 
 **Follow along** with the Plain JavaScript Template [Source](https://www.github.com/pippinbarr/cart263-2021/tree/master/templates/plain-javascript-project) [.zip](https://pippinbarr.github.io/cart263-2021/templates/plain-javascript-project.zip).
