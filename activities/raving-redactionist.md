@@ -70,15 +70,15 @@ The central idea of the program is that over time the redacted elements of the t
 
 1. At the start of the program, use `setInterval()` to call a function called `revelation()` every 500 milliseconds or so.
 2. Define the `revelation()` function, in it
-  * Selection all the currently **redacted** spans and for each one call a function called `attemptReveal()` (use `.each()`)
+  * Select all the currently **redacted** spans and for each one call a function called `attemptReveal()` (use `.each()`)
 3. Define the `attemptReveal()` function, in it
   * Generate a random number between `0` and `1` (use `Math.random()`)
   * Check if the random number is less than `0.1` (so there is a 10% chance of this)
   * If it is:
-    * remove the `redacted` class from the current element (use `$(this)`)
-    * add the `revealed` class to the current element
+    1. remove the `redacted` class from the current element (use `$(this)`)
+    2. add the `revealed` class to the current element
 
-If we run the program now, over time we should see the various secret passages become revealed! Terrible! We are losing our nations most valuable Latin secrets!
+If we run the program now, over time we should see the various secret passages become revealed! Terrible! We are losing our nation's most valuable Latin secrets!
 
 ---
 
@@ -86,17 +86,22 @@ If we run the program now, over time we should see the various secret passages b
 
 The final element we want to add is to allow the user to **re**redact the revealed parts of the text. We'll do this by having the user click on the elements to redact them.
 
+To do this it will be nice if all our secret spans share another class called `top-secret`, so in the HTML:
+
+1. Add a `top-secret` class to all the secret spans (note that to add multiple classes to an element in HTML you list the classes in the `class` attribute with spaces between them)
+
+We'll only use this class to help in jQuery, so we don't need any CSS).
+
 Back at the top of the program, before the `setInterval()`:
 
-1. Add a `click` event listener to all the `span` elements on the page which calls a function called `redact()`
+1. Add a `click` event listener to all the `.top-secret` elements on the page which calls a function called `redact()`
 2. Define the `redact()` function, in it:
   * Remove the `revealed` class from the current element
   * Add the `redacted` class to the current element
 
-Now when a secret is revealed, the user can click on the revealed text and it will be hidden again. The nation is safe! But then it might be revealed again! We are at war! But then you can hide it again, so it's okay. But then...!
+Now when a secret is revealed, the user can click on the revealed text and it will be hidden again. The nation is safe! But then it might be revealed again randomly! We are at war! But then you can hide it again, so it's okay. But then...!
 
 ---
-
 
 ## 5. Improve the program
 

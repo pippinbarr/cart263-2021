@@ -407,8 +407,8 @@ Week of 15 March 2021
 #### jQuery
 * **Watch** [7.1. jQuery Overview](#) (coming soon!) and **read** the [notes](../topics/jquery/jquery-overview.md)
 * **Watch** [7.2. jQuery Events](#) (coming soon!) and **read** the [notes](../topics/jquery/jquery-events.md)
-* **Watch** [7.3. jQuery Extras](#) (coming soon!) and **read** the [notes](../topics/jquery/jquery-extras.md)
-* **Watch** [7.4. jQuery Form Input](#) (coming soon!) and **read** the [notes](../topics/jquery/jquery-form-input.md)
+* **Watch** [7.3. jQuery Form Input](#) (coming soon!) and **read** the [notes](../topics/jquery/jquery-form-input.md)
+* **Watch** [7.4. jQuery Extras](#) (coming soon!) and **read** the [notes](../topics/jquery/jquery-extras.md)
 * References
   * [jQuery Homepage](https://jquery.com/)
   * [jQuery API](https://api.jquery.com/)

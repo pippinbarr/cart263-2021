@@ -85,7 +85,7 @@ In order to work with the DOM, we'll need an actual webpage! Let's use the follo
 To obtain jQuery we have two basic options
 
 1. We can download the library as a **file** and include it in our project files
-2. We can obtain a **link** to the library on a CDN (Content Distribution Network) and use that instead
+2. We can obtain a **link** to the library on a CDN (Content Delivery Network) and use that instead
 
 Both options are fine. Having a **file** means we can work offline, but we increase the size of our project. Having a **CDN link** means we can't work offline, but our webpage may run faster for the user thanks to caching.
 
@@ -93,7 +93,7 @@ Both options are fine. Having a **file** means we can work offline, but we incre
 
 If we opt for the file, we should go to the [jQuery Homepage](https://jquery.com/) and click through to [Download jQuery](https://jquery.com/download/). Here we see many different options for the library, but let's stick with obtaining the **compressed, production** version of jQuery.
 
-If we click that link, we will end up with a file we can save to our computer and include as a library in the usual way (place it in `js/libraries` and use `<script>` tag to link to it in your `index.html`).
+If we click that link, we will end up with a file we can save to our computer and include as a library in the usual way (place it in `js/libraries` and use a `<script>` tag to link to it in your `index.html`).
 
 ### Using a CDN link
 
@@ -169,11 +169,35 @@ $(`.header`).css(`color`, `#339966`);
 
 Hey presto, every element with the class `header` is affected. No need for us to loop through each element or anything like that, it just works! This is quite lovely.
 
+
+### When to use a variable?
+
+If we can just act directly on a jQuery selection without first storing it in a variable, why ever bother with the variable?
+
+It comes to down to a question of efficiency. Every time you call the jQuery function `$()` jQuery needs to go and analyze the current webpage to find all the elements that match your selector. This takes work!
+
+```javascript
+// This code causes jQuery to search for every element matching .header three times
+$(`.header`).css(`color`,`red`);
+$(`.header`).css(`background-color`,`black`);
+$(`.header`).css(`font-size`,`3rem`);
+```
+
+So, in practice, if you're repeatedly using the same selector, it would be smart to store the jQuery selection in a variable so that you don't repeat that work every time.
+
+```javascript
+// This code causes jQuery to search for every element matching .header once
+let $headers = $(`.header`);
+$headers.css(`color`,`red`);
+$headers.css(`background-color`,`black`);
+$headers.css(`font-size`,`3rem`);
+```
+
 ---
 
-## What can we do?
+## What can we do with jQuery?
 
-**TALK ABOUT DOCS**
+This is a big question and in these notes we'll answer with specific examples of common tasks jQuery is especially helpful for. For the rest, it's important to take a look at the [jQuery API documentation](https://api.jquery.com/), examples, tutorials, and more.
 
 ---
 
@@ -286,7 +310,7 @@ if ($(`#thicc-link`).attr(`href`) === `https://thi.cc`) {
 }
 ```
 
-Here we check if the `href` attribute of our link does indeed point it to `https://thi.cc` and if so we rewrite the text of the link to be more descriptive!
+Here we check if the `href` attribute of our link does indeed point to `https://thi.cc` and if so we rewrite the text of the link to be more descriptive!
 
 ---
 

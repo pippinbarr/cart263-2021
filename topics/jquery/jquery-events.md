@@ -68,7 +68,7 @@ You'll also want to create a file `js/scripts.js` so you can write jQuery-based 
 
 ## `.on()`
 
-For the vast majority of events we want to respond to in the DOM, we use a specific method called [`.on()`](https://api.jquery.com/on/). Most of the time it takes two arguments:
+For the vast majority of events we want to respond to, we use a specific method called [`.on()`](https://api.jquery.com/on/). Most of the time it takes two arguments:
 
 * The **type** of event as a string (like `"click"`, exactly the same as the standard DOM events)
 * The **callback** function to call whenever the event is **triggered** (like a function that changes the color of an element)
@@ -83,7 +83,7 @@ $(`#main-heading`).on(`click`, function(event) {
 
 ### The `event` parameter
 
-The callback function we provide to `.addEventListener()` automatically receives a single parameter which we will call `event`. This parameter contains an object with information about the event that triggered the function. So in our click event example, it contains information about the click event that occurred.
+The callback function we provide to `.on()` automatically receives a single parameter which we will call `event`. This parameter contains an object with information about the event that triggered the function. So in our click event example, it contains information about the click event that occurred.
 
 You can take a look inside the `event` parameter in the JavaScript console if you want to:
 
@@ -97,7 +97,7 @@ As you can see, it contains quite a few properties! Not all of them are obviousl
 
 ### Event documentation
 
-Generally speaking the event you get in a jQuery event handler is pretty much the same as the one you get when writing plain JavaScript with the DOM. If you'd like to know more you can read the [Event Object documentation](https://api.jquery.com/category/events/event-object/).
+Generally speaking the `event` you get in a jQuery event handler is pretty much the same as the one you get when writing plain JavaScript with the DOM. If you'd like to know more you can read the [Event Object documentation](https://api.jquery.com/category/events/event-object/).
 
 ### Event target
 
@@ -154,8 +154,6 @@ These above ideas apply any time we're dealing with an event listener in jQuery.
 * Inside the callback function `this` contains the event target
 * Read the [Mozilla event reference](https://developer.mozilla.org/en-US/docs/Web/Events) to find out possible event types (this can be quite exciting!)
 
-Let's move on from here more quickly by just looking at some other common DOM events we're likely to use in our lives.
-
 ---
 
 ## The mouse
@@ -175,6 +173,8 @@ $(`#paragraph`).hover(
     $(this).css(`color`, `#000000`);
   });
 ```
+
+It feels a touch questionable as to whether this is clearer than just using `mouseenter` and `mouseleave` separately?
 
 ---
 
@@ -200,7 +200,7 @@ $(`.header`).on(`click`, function(event) {
 });
 ```
 
-There's quite a lot more sophistication available with events when it comes to distinguishing between different listeners to the **same** event. In particular, it's worth reading about the idea of an event **namespace** in the [`.on()` documentation](https://api.jquery.com/on/) if this comes up.
+There's quite a lot more sophistication available with events when it comes to distinguishing between different listeners to the **same** event. In particular, it's worth reading about the idea of an event **namespace** in the [`.on()` documentation](https://api.jquery.com/on/) if this comes up for you.
 
 ---
 
