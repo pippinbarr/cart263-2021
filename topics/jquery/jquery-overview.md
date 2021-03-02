@@ -1,8 +1,5 @@
 # jQuery Overview {
 
-
-**ADD** addClass and removeClass?
-
 ---
 
 ## Summary

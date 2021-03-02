@@ -6,11 +6,11 @@
 
 Along with providing convenient manipulation of webpages along standard lines available in plain JavaScript, jQuery has a number of fun extras that can streamline common tasks like making elements appear and disappear, animating CSS properties, and more.
 
-
 ---
 
 ## Contents
 
+* Adding and removing classes
 * Display transitions
 * CSS animation
 * `.each()`
@@ -20,10 +20,18 @@ Along with providing convenient manipulation of webpages along standard lines av
 
 ---
 
-## Example HTML
+## Example webpage
 
-Here's some very simple HTML to work with for this topic:
+Here's some very simple HTML and CSS to work with for this topic:
 
+`style.css`
+```css
+.highlight {
+  background-color: yellow;
+}
+```
+
+`index.html`
 ```html
 <!DOCTYPE html>
 <html>
@@ -60,6 +68,34 @@ Here's some very simple HTML to work with for this topic:
 
 You'll also want to create a file `js/scripts.js` so you can write jQuery-based JavaScript!
 
+
+---
+
+## Adding and removing classes
+
+A really nice way to dynamically change elements on a page quickly from your JavaScript is by adding or removing classes that therefore alter how they are processed by CSS.
+
+In our CSS above we have a `highlight` class that we could add to any element to easily set its background to yellow, or remove to unhighlight it!
+
+jQuery provides `.addClass()` and `.removeClass()` for this purpose.
+
+```javascript
+// Highlight the main heading
+$(`#main-heading`).addClass(`highlight`);
+
+// If the user clicks on the main heading, remove the highlight
+$(`#main-heading`).on(`click`,function(event) {
+  $(this).removeClass(`highlight`);
+});
+```
+
+jQuery also has `.toggleClass()` if you want to switch back and forth between applying a class to an element and removing it...
+
+```javascript
+setInterval(function() {
+  $(`#main-heading`).toggleClass(`highlight`);
+}, 500);
+```
 
 ---
 
