@@ -78,6 +78,8 @@ In order to work with the DOM, we'll need an actual webpage! Let's use the follo
 </html>
 ```
 
+You'll also want to have a `script.js` file in your `js/` folder so you can write some jQuery-based JavaScript!
+
 ---
 
 ## Including the jQuery library
