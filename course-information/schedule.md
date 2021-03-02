@@ -368,7 +368,7 @@ Week of 8 March 2021
 * **Complete** [Activity: Haiku Generator](../activities/haiku-generator.md) (**Watch** [6.6. Activity: Haiku Generator](https://youtu.be/AiuTJMhJhKA) to see Pippin doing it) ([Example final code](https://github.com/pippinbarr/cart263-2021/tree/main/examples/the-webpage/haiku-generator/), [Online](https://pippinbarr.github.io/cart263-2021/examples/the-webpage/haiku-generator/))
 
 ### Exercise
-* **Complete** [Exercise 4: Haiku Generator++](../exercises/haiku-generator-plus-plus.md) (due the night of class)
+* **Complete** [Exercise 5: Haiku Generator++](../exercises/haiku-generator-plus-plus.md) (due the night of class)
 
 ## [Examples](../examples/#the-webpage)
 Click through for examples of the topics covered in this section
@@ -400,11 +400,52 @@ Week of 15 March 2021
 
 ## Before class
 
+
+
+## Objectives
+- Understanding HTML and CSS
+- Understanding the DOM (Document Object Model)
+
+## Before class
+
 ### Topics
-* **jQuery**
+
+**Follow along** with the Plain JavaScript Template [Source](https://www.github.com/pippinbarr/cart263-2021/tree/master/templates/plain-javascript-project) [.zip](https://pippinbarr.github.io/cart263-2021/templates/plain-javascript-project.zip).
+
+#### jQuery
+* **Watch** [7.1. jQuery Overview](#) (coming soon!) and **read** the [notes](../topics/jquery/jquery-overview.md)
+* **Watch** [7.2. jQuery Events](#) (coming soon!) and **read** the [notes](../topics/jquery/jquery-events.md)
+* **Watch** [7.3. jQuery Extras](#) (coming soon!) and **read** the [notes](../topics/jquery/jquery-extras.md)
+* **Watch** [7.4. jQuery Form Input](#) (coming soon!) and **read** the [notes](../topics/jquery/jquery-form-input.md)
+* References
   * [jQuery Homepage](https://jquery.com/)
   * [jQuery API](https://api.jquery.com/)
   * [JQuery Learning Center](https://learn.jquery.com/)
+
+### Activity
+* **Complete** [Activity: Raving Redactionist](../activities/raving-redactionist.md) (**Watch** [7.5. Activity: Raving Redactionist](#) to see Pippin doing it - coming soon!) ([Example final code](https://github.com/pippinbarr/cart263-2021/tree/main/examples/jquery/raving-redactionist/), [Online](https://pippinbarr.github.io/cart263-2021/examples/jquery/raving-redactionist/))
+
+### Exercise
+* **Complete** [Exercise 6: Raving Redactionist++](../exercises/raving-redactionist-plus-plus.md) (due the night of class)
+
+## [Examples](../examples/#jquery)
+Click through for examples of the topics covered in this section
+
+## Classroom (in Discord classroom channels at 13:30 on the day of class)
+* Q&A
+* Review of the week's material
+* [Project 2: Anything](../projects/project2/README.md)
+* The [C-LAB](https://clab.concordia.ca/) is there to help you
+
+## Studio (in Discord studio channels after classroom period)
+* Instructor and TA available to help
+* Work on Exercise
+* Work on Project
+* Start work on next week's material
+
+## Homework
+* Continue work on next week's material
+* [Project 2: Anything](../projects/project2/README.md)
 
 ---
 
