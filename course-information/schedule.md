@@ -405,17 +405,17 @@ Week of 15 March 2021
 **Follow along** with the Plain JavaScript Template [Source](https://www.github.com/pippinbarr/cart263-2021/tree/master/templates/plain-javascript-project) [.zip](https://pippinbarr.github.io/cart263-2021/templates/plain-javascript-project.zip).
 
 #### jQuery
-* **Watch** [7.1. jQuery Overview](#) (coming soon!) and **read** the [notes](../topics/jquery/jquery-overview.md)
-* **Watch** [7.2. jQuery Events](#) (coming soon!) and **read** the [notes](../topics/jquery/jquery-events.md)
-* **Watch** [7.3. jQuery Form Input](#) (coming soon!) and **read** the [notes](../topics/jquery/jquery-form-input.md)
-* **Watch** [7.4. jQuery Extras](#) (coming soon!) and **read** the [notes](../topics/jquery/jquery-extras.md)
+* **Watch** [7.1. jQuery Overview](https://youtu.be/cwITjOUZx3I) (coming soon!) and **read** the [notes](../topics/jquery/jquery-overview.md)
+* **Watch** [7.2. jQuery Events](https://youtu.be/0ljECNCfPHE) (coming soon!) and **read** the [notes](../topics/jquery/jquery-events.md)
+* **Watch** [7.3. jQuery Form Input](https://youtu.be/Kw2RqSAm2Ao) (coming soon!) and **read** the [notes](../topics/jquery/jquery-form-input.md)
+* **Watch** [7.4. jQuery Extras](https://youtu.be/LeDeKIqK7o8) (coming soon!) and **read** the [notes](../topics/jquery/jquery-extras.md)
 * References
   * [jQuery Homepage](https://jquery.com/)
   * [jQuery API](https://api.jquery.com/)
   * [JQuery Learning Center](https://learn.jquery.com/)
 
 ### Activity
-* **Complete** [Activity: Raving Redactionist](../activities/raving-redactionist.md) (**Watch** [7.5. Activity: Raving Redactionist](#) to see Pippin doing it - coming soon!) ([Example final code](https://github.com/pippinbarr/cart263-2021/tree/main/examples/jquery/raving-redactionist/), [Online](https://pippinbarr.github.io/cart263-2021/examples/jquery/raving-redactionist/))
+* **Complete** [Activity: Raving Redactionist](../activities/raving-redactionist.md) (**Watch** [7.5. Activity: Raving Redactionist](https://youtu.be/FAmrnLmfP3U) to see Pippin doing it) ([Example final code](https://github.com/pippinbarr/cart263-2021/tree/main/examples/jquery/raving-redactionist/), [Online](https://pippinbarr.github.io/cart263-2021/examples/jquery/raving-redactionist/))
 
 ### Exercise
 * **Complete** [Exercise 6: Raving Redactionist++](../exercises/raving-redactionist-plus-plus.md) (due the night of class)
