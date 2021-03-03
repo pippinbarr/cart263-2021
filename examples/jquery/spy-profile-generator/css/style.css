@@ -1,0 +1,13 @@
+/* Monospace is great */
+body {
+  font-family: monospace;
+}
+
+/* Don't display the new user or profile interfaces at the start */
+#new-user {
+  display: none;
+}
+
+#profile {
+  display: none;
+}

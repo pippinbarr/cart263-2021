@@ -1,0 +1,77 @@
+/*********************************************
+
+Transform Poem
+Pippin Barr
+
+Most importantly uses CSS animations to move
+elements on the page.
+
+**********************************************/
+
+/* Some basic styling of the fonts etc. */
+body {
+  font-family: Helvetica, sans-serif;
+  font-size: 4rem;
+  font-weight: bold;
+  width: 50vw;
+  margin: auto;
+  padding-top: 2rem;
+  overflow: hidden;
+}
+
+/* The specific elements that will be moveable */
+.mover, .spinner, .skewer {
+  display: inline-block; /* Needed if we're animating the transforms */
+  color: gray;
+}
+
+/* The move class uses the move animation */
+.move {
+  animation-name: move;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+}
+
+/* Animates from no translation to translating off the page */
+@keyframes move {
+ from {
+   transform: translate(0px, 0px);
+ }
+ to {
+   transform: translate(150vw, 100vh);
+ }
+}
+
+/* Same idea as above with rotating the transform */
+.spin {
+  animation-name: spin;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes spin {
+ from {
+   transform: rotate(0deg);
+ }
+ to {
+   transform: rotate(360deg);
+ }
+}
+
+/* Same idea as above with skewing the transform */
+.skew {
+  animation-name: skew;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes skew {
+ from {
+   transform: skew(0deg);
+ }
+ to {
+   transform: skew(360deg);
+ }
+}

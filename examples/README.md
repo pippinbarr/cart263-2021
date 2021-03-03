@@ -7,6 +7,7 @@
 * [Data](#data)
 * [AI](#ai)
 * [The Webpage](#the-webpage)
+* [jQuery](#jquery)
 
 ---
 
@@ -182,3 +183,43 @@ Words go flying across the page on mouseover.
 A webpage that is happy when you're offline and sad when you're not!
 
 * [Happy Offline](https://pippinbarr.github.io/cart263-2021/examples/the-webpage/happy-offline) ([Source](https://www.github.com/pippinbarr/cart263-2021/tree/master/examples/the-webpage/happy-offline))
+
+---
+
+## jQuery
+
+### DIY Homepage
+
+An ugly homepage that the user can edit in place and save so that it persists between sessions.
+
+* [DIY Homepage](https://pippinbarr.github.io/cart263-2021/examples/jquery/diy-homepage) ([Source](https://www.github.com/pippinbarr/cart263-2021/tree/master/examples/jquery/diy-homepage))
+
+### Haiku Generator
+
+Generates a random haiku and allows the user to swap the lines for other lines with a fading transition.
+
+* [Haiku Generator](https://pippinbarr.github.io/cart263-2021/examples/jquery/haiku-generator) ([Source](https://www.github.com/pippinbarr/cart263-2021/tree/master/examples/jquery/haiku-generator))
+
+### Raving Redactionist
+
+Simulates a desperate struggle to keep a secret document secret as its secrets reveal itself over time and the user must continuallly redact them.
+
+* [Raving Redactionist](https://pippinbarr.github.io/cart263-2021/examples/jquery/raving-redactionist) ([Source](https://www.github.com/pippinbarr/cart263-2021/tree/master/examples/jquery/raving-redactionist))
+
+### Secret Mouse Message
+
+Reveals a secret message to the user based on their mouse position on the webpage.
+
+* [Secret Mouse Message](https://pippinbarr.github.io/cart263-2021/examples/jquery/secret-mouse-message) ([Source](https://www.github.com/pippinbarr/cart263-2021/tree/master/examples/jquery/secret-mouse-message))
+
+### Spy Profile Generator
+
+Generates profiles for multiple spies, and lets them login later on with a username and password to view their saved profile.
+
+* [Spy Profile Generator](https://pippinbarr.github.io/cart263-2021/examples/jquery/spy-profile-generator) ([Source](https://www.github.com/pippinbarr/cart263-2021/tree/master/examples/jquery/spy-profile-generator))
+
+### Transform Poem
+
+A recreation of the earlier transform poem using CSS animations instead of JavaScript-based animation.
+
+* [Transform Poem](https://pippinbarr.github.io/cart263-2021/examples/jquery/transform-poem) ([Source](https://www.github.com/pippinbarr/cart263-2021/tree/master/examples/jquery/transform-poem))
