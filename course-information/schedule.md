@@ -405,10 +405,10 @@ Week of 15 March 2021
 **Follow along** with the Plain JavaScript Template [Source](https://www.github.com/pippinbarr/cart263-2021/tree/master/templates/plain-javascript-project) [.zip](https://pippinbarr.github.io/cart263-2021/templates/plain-javascript-project.zip).
 
 #### jQuery
-* **Watch** [7.1. jQuery Overview](https://youtu.be/cwITjOUZx3I) (coming soon!) and **read** the [notes](../topics/jquery/jquery-overview.md)
-* **Watch** [7.2. jQuery Events](https://youtu.be/0ljECNCfPHE) (coming soon!) and **read** the [notes](../topics/jquery/jquery-events.md)
-* **Watch** [7.3. jQuery Form Input](https://youtu.be/Kw2RqSAm2Ao) (coming soon!) and **read** the [notes](../topics/jquery/jquery-form-input.md)
-* **Watch** [7.4. jQuery Extras](https://youtu.be/LeDeKIqK7o8) (coming soon!) and **read** the [notes](../topics/jquery/jquery-extras.md)
+* **Watch** [7.1. jQuery Overview](https://youtu.be/cwITjOUZx3I) and **read** the [notes](../topics/jquery/jquery-overview.md)
+* **Watch** [7.2. jQuery Events](https://youtu.be/0ljECNCfPHE) and **read** the [notes](../topics/jquery/jquery-events.md)
+* **Watch** [7.3. jQuery Form Input](https://youtu.be/Kw2RqSAm2Ao) and **read** the [notes](../topics/jquery/jquery-form-input.md)
+* **Watch** [7.4. jQuery Extras](https://youtu.be/LeDeKIqK7o8) and **read** the [notes](../topics/jquery/jquery-extras.md)
 * References
   * [jQuery Homepage](https://jquery.com/)
   * [jQuery API](https://api.jquery.com/)
