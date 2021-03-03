@@ -200,6 +200,12 @@ Generates a random haiku and allows the user to swap the lines for other lines w
 
 * [Haiku Generator](https://pippinbarr.github.io/cart263-2021/examples/jquery/haiku-generator) ([Source](https://www.github.com/pippinbarr/cart263-2021/tree/master/examples/jquery/haiku-generator))
 
+### Random Stressor
+
+Takes a user's input text and adds emphasis to a single word.
+
+* [Random Stressor](https://pippinbarr.github.io/cart263-2021/examples/jquery/random-stressor) ([Source](https://www.github.com/pippinbarr/cart263-2021/tree/master/examples/jquery/random-stressor))
+
 ### Raving Redactionist
 
 Simulates a desperate struggle to keep a secret document secret as its secrets reveal itself over time and the user must continuallly redact them.
