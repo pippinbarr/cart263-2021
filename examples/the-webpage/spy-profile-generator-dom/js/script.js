@@ -1,6 +1,6 @@
 "use strict";
 
-/*****************
+/**
 
 Spy Profile Generator
 Pippin Barr
@@ -14,7 +14,7 @@ Uses:
 Darius Kazemi's corpora project:
 https://github.com/dariusk/corpora/
 
-******************/
+*/
 
 // URLs to JSON data
 const TAROT_DATA_URL = `https://raw.githubusercontent.com/dariusk/corpora/master/data/divination/tarot_interpretations.json`;
@@ -42,42 +42,62 @@ else {
   newUser();
 }
 
+/**
+Loads JSON data for user generation then generates a profile
+*/
 function newUser() {
+  // We use Promise.all() here to guarantee the data all loads before
+  // we do the things in the .then() part of this instruction.
+  // Promises are a WHOLE THING that you can read more about!
   Promise.all([
       fetch(TAROT_DATA_URL).then(response => response.json()),
       fetch(OBJECT_DATA_URL).then(response => response.json()),
       fetch(INSTRUMENT_DATA_URL).then(response => response.json())
     ])
+    // This part handles the resulting data
+    // All three JSON files end up in a data array
     .then((data) => {
+      // Assign across the data to the named variables
       let tarotData = data[0];
       let objectData = data[1];
       let instrumentData = data[2];
-
+      // Generate a profile with the data
       let profile = generateProfile(tarotData, objectData, instrumentData);
+      // Set the current profile to display on the page
       setProfile(profile);
     })
+    // The catch part happens if there's an error loading the JSON
     .catch((err) => {
-      console.log(err);
+      console.error(err);
     });
 }
 
+/**
+Generates a spy profile using the data provided
+*/
 function generateProfile(tarot, objects, instruments) {
+  // Ask for the username
   let username = prompt(`Username:`);
+  // Get a random tarot card (for the password)
   let card = random(tarot.tarot_interpretations);
-
+  // Create the profile object
   let profile = {
-    username: username,
-    alias: `The ${random(instruments.instruments)}`,
-    secretWeapon: random(objects.objects),
-    password: random(card.keywords)
+    username: username, // The name the entered
+    alias: `The ${random(instruments.instruments)}`, // Alias based on an instrument
+    secretWeapon: random(objects.objects), // Weapon based on an everyday object
+    password: random(card.keywords) // Password based on a tarot card's keyword
   };
 
   // Save the resulting profile to local storage
   localStorage.setItem(PROFILE_DATA_KEY, JSON.stringify(profile));
-
+  // Return the profile so it can be used
   return profile;
 }
 
+/**
+Displays the provided profile on the webpage by setting the innerText
+of the appropriate spans by id
+*/
 function setProfile(profile) {
   document.getElementById(`username`).innerText = profile.username;
   document.getElementById(`alias`).innerText = profile.alias;
@@ -85,6 +105,9 @@ function setProfile(profile) {
   document.getElementById(`password`).innerText = profile.password;
 }
 
+/**
+Returns a random element from the provided array
+*/
 function random(array) {
   return array[Math.floor(Math.random() * array.length)];
 }

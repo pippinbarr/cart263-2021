@@ -159,6 +159,12 @@ Gradually corrupts the text on the webpage until it's all just illegible symbols
 
 * [Nonsensifier Generator](https://pippinbarr.github.io/cart263-2021/examples/the-webpage/nonsenifier) ([Source](https://www.github.com/pippinbarr/cart263-2021/tree/master/examples/the-webpage/nonsensifier))
 
+### Spy Profile Generator
+
+Generates a spy profile for the user based on the name they enter, then allows them too view it by entering the password later on. Demonstrates loading multiple JSON files in plain JavaScript with Promises.
+
+* [Spy Profile Generator](https://pippinbarr.github.io/cart263-2021/examples/the-webpage/spy-profile-generator) ([Source](https://www.github.com/pippinbarr/cart263-2021/tree/master/examples/the-webpage/spy-profile-generator))
+
 ### Transform Poem
 A poem with very moving words. Ha ha ha.
 
@@ -220,7 +226,7 @@ Reveals a secret message to the user based on their mouse position on the webpag
 
 ### Spy Profile Generator
 
-Generates profiles for multiple spies, and lets them login later on with a username and password to view their saved profile.
+Generates profiles for multiple spies, and lets them login later on with a username and password to view their saved profile. Demonstrates loading multiple JSON files with jQuery.
 
 * [Spy Profile Generator](https://pippinbarr.github.io/cart263-2021/examples/jquery/spy-profile-generator) ([Source](https://www.github.com/pippinbarr/cart263-2021/tree/master/examples/jquery/spy-profile-generator))
 
