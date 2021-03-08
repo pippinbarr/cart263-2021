@@ -40,8 +40,8 @@ The proposal and prototype stage will require you to write a **short proposal do
 
 ### Deadline
 
-* Section B (Tuesdays): 11:59PM, 16 March 2021
-* Section A (Thursdays): 11:59PM, 18 March 2021
+* Section A (Tuesdays): 11:59PM, 16 March 2021
+* Section B (Thursdays): 11:59PM, 18 March 2021
 
 ### Requirements
 
@@ -72,8 +72,8 @@ The final project will consist of an **artist's statement** and the final **p5 p
 
 ### Deadline
 
-* Section B (Tuesdays): 11:59PM, 23 April 2021
-* Section A (Thursdays): 11:59PM, 25 April 2021
+* Section A (Tuesdays): 11:59PM, 23 April 2021
+* Section B (Thursdays): 11:59PM, 25 April 2021
 
 ### Requirements
 
