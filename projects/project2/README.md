@@ -7,8 +7,10 @@
 #### Deadlines
 
 ##### Proposal and prototype
-* Section A (Tuesdays): 11:59PM, 16 March 2021
-* Section B (Thursdays): 11:59PM, 18 March 2021
+* Section A (Tuesdays): 11:59PM, 16, 23, or 30 March 2021
+* Section B (Thursdays): 11:59PM, 18, 25 March 2021 or 1 April 2021
+
+**Tell Pippin when you submit.**
 
 ##### Final project
 * Section A (Tuesdays): 11:59PM, 23 April 2021
@@ -40,8 +42,10 @@ The proposal and prototype stage will require you to write a **short proposal do
 
 ### Deadline
 
-* Section A (Tuesdays): 11:59PM, 16 March 2021
-* Section B (Thursdays): 11:59PM, 18 March 2021
+* Section A (Tuesdays): 11:59PM, 16, 23, or 30 March 2021
+* Section B (Thursdays): 11:59PM, 18, 25 March 2021 or 1 April 2021
+
+**Tell Pippin when you submit.**
 
 ### Requirements
 
@@ -125,7 +129,6 @@ Your submission should just be plain text that includes:
 
 1. A link to your project folder (including your proposal document or artist's statement)
 2. A link to your running project
-
 
 ## Evaluation
 
