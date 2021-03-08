@@ -464,7 +464,7 @@ Week of 22 March 2021
   * [jQuery UI API](https://api.jqueryui.com/)
 
 ### Activity
-* tbd.
+* **Complete** [Activity: Code Taker](../activities/code-taker.md) (**Watch** [8.5. Activity: Code Taker](#) to see Pippin doing it) ([Example final code](https://github.com/pippinbarr/cart263-2021/tree/main/examples/jquery-ui/code-taker/), [Online](https://pippinbarr.github.io/cart263-2021/examples/jquery-ui/code-taker/))
 
 ### Exercise
 * tbd.

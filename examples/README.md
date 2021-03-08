@@ -8,6 +8,7 @@
 * [AI](#ai)
 * [The Webpage](#the-webpage)
 * [jQuery](#jquery)
+* [jQuery UI](#jquery-ui)
 
 ---
 
@@ -235,3 +236,49 @@ Generates profiles for multiple spies, and lets them login later on with a usern
 A recreation of the earlier transform poem using CSS animations instead of JavaScript-based animation.
 
 * [Transform Poem](https://pippinbarr.github.io/cart263-2021/examples/jquery/transform-poem) ([Source](https://www.github.com/pippinbarr/cart263-2021/tree/master/examples/jquery/transform-poem))
+
+---
+
+## jQuery UI
+
+### Beach Party
+
+A beach party of animated GIFs on a YouTube background!
+
+* [Beach Party](https://pippinbarr.github.io/cart263-2021/examples/jquery-ui/beach-party) ([Source](https://www.github.com/pippinbarr/cart263-2021/tree/master/examples/jquery-ui/beach-party))
+
+### Code Taker
+
+Crack the code by mousing over hidden letters and then dragging them to the answer area to reveal the stunning truth!
+
+* [Code Taker](https://pippinbarr.github.io/cart263-2021/examples/jquery-ui/code-taker) ([Source](https://www.github.com/pippinbarr/cart263-2021/tree/master/examples/jquery-ui/code-taker))
+
+### Endless Dialogs
+
+A Sisyphean struggle against the perpetual popping up of existentialist dialogs.
+
+* [Endless Dialogs](https://pippinbarr.github.io/cart263-2021/examples/jquery-ui/endless-dialogs) ([Source](https://www.github.com/pippinbarr/cart263-2021/tree/master/examples/jquery-ui/endless-dialogs))
+
+### Fridge Poetry
+
+The fridge poetry experiences on a webpage that remembers your arrangements using localStorage.
+
+* [Fridge Poetry](https://pippinbarr.github.io/cart263-2021/examples/jquery-ui/fridge-poetry) ([Source](https://www.github.com/pippinbarr/cart263-2021/tree/master/examples/jquery-ui/fridge-poetry))
+
+### Hacking
+
+A deadly serious simulation of what it is like to **HACK INTO THE MAINFRAME**, complete with a drum loop courtesy of Gibber.
+
+* [Hacking](https://pippinbarr.github.io/cart263-2021/examples/jquery-ui/hacking) ([Source](https://www.github.com/pippinbarr/cart263-2021/tree/master/examples/jquery-ui/hacking))
+
+### Six Shooter
+
+A textual representation of a gun that fires textual representations of bullets.
+
+* [Six Shooter](https://pippinbarr.github.io/cart263-2021/examples/jquery-ui/six-shooter) ([Source](https://www.github.com/pippinbarr/cart263-2021/tree/master/examples/jquery-ui/six-shooter))
+
+### The Great Escape
+
+Help "The Prisoner" escape from their "Prison" using an "Escape Tunnel" or the powers of your imagination.
+
+* [The Great Escape](https://pippinbarr.github.io/cart263-2021/examples/jquery-ui/the-great-escape) ([Source](https://www.github.com/pippinbarr/cart263-2021/tree/master/examples/jquery-ui/the-great-escape))

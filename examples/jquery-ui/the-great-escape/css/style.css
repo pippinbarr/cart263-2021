@@ -1,0 +1,31 @@
+/* CSS mostly to make the prison look like a prison
+and the tunnel look like a tunnel... */
+
+#prison {
+  width: 30vw;
+  height: 30vw;
+  border: 5px dashed black;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+
+}
+
+#prisoner {
+  font-size: 2rem;
+}
+
+.prisoner-dragging {
+  color: #4444ff;
+  text-decoration: underline;
+}
+
+#escape-tunnel {
+  width: 5vw;
+  height: 5vw;
+  border: 2px dashed black;
+  border-radius: 100%;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+}
