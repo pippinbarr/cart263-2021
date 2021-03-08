@@ -452,10 +452,41 @@ Week of 22 March 2021
 ## Before class
 
 ### Topics
-* **jQuery UI**
+
+#### jQuery UI
+* **Watch** [8.1. jQuery UI Overview](#) and **read** the [notes](../topics/jquery/jquery-ui-overview.md)
+* **Watch** [8.2. jQuery UI Interactions](#) and **read** the [notes](../topics/jquery/jquery-ui-interactions.md)
+* **Watch** [8.3. jQuery UI Effects](#) and **read** the [notes](../topics/jquery/jquery-ui-effects.md)
+* **Watch** [8.4. jQuery UI Widgets](#) and **read** the [notes](../topics/jquery/jquery-ui-widgets.md)
+* References
   * [jQuery UI Homepage](https://jqueryui.com/)
-  * [jQuery UI API](https://api.jqueryui.com/)
   * [jQuery UI Demos](https://jqueryui.com/demos/)
+  * [jQuery UI API](https://api.jqueryui.com/)
+
+### Activity
+* tbd.
+
+### Exercise
+* tbd.
+
+## [Examples](../examples/#jquery-ui)
+Click through for examples of the topics covered in this section
+
+## Classroom (in Discord classroom channels at 13:30 on the day of class)
+* Q&A
+* Review of the week's material
+* [Project 2: Anything](../projects/project2/README.md)
+* The [C-LAB](https://clab.concordia.ca/) is there to help you
+
+## Studio (in Discord studio channels after classroom period)
+* Instructor and TA available to help
+* Work on Exercise
+* Work on Project
+* Start work on next week's material
+
+## Homework
+* Continue work on next week's material
+* [Project 2: Anything](../projects/project2/README.md)
 
 ---
 
