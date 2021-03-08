@@ -140,7 +140,7 @@ Grading for the proposal and prototype will consider the following categories:
 
 - __Implementation__ (50%)- the code meets the requirements, show mastery over the course material, has no errors, is technically ambitious.
 - __Creativity__ (30%) - the project is an interesting and expressive. It has a clear point of view and conveys it consistently. The project uses code in surprising ways to create new experiences.
-- __Style__ (20%) - the code is well-commented, well-formatted and indented, uses good names for variables, functions, classes etc., attributes appropriately, and has a good number of commits representing sustained work with well-written commit messages. All commits include the prefix "P2:".
+- __Style__ (20%) - the code follows the [Style Guide](../../guides/style-guide.md). This includes code formatting.
 
 ### Grade breakdown
 

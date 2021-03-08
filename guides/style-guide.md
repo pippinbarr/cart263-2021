@@ -6,7 +6,7 @@
 4. [Variables](#variables)
 5. [Functions](#functions)
 6. [Version control](#version-control)
-7. [Attribution](#attribution)]
+7. [Attribution](#attribution)
 
 ---
 
@@ -14,9 +14,7 @@
 
 ### Use a package
 
-__Use the `prettier-atom` package to format your code automatically!__ It won't do absolutely everything you need, but it will do most of it. In the settings, select "Format Code on Save" so that it happens automatically.
-
-There is another package called `atom-beauty` which you can install and use instead if you prefer it.
+__Use the `atom-beautify` or `prettier-atom` package to format your code automatically!__ It won't do absolutely everything you need, but it will do most of it. In the settings, enable formatting code on save so that it happens automatically.
 
 ### The basic ideas
 
@@ -30,7 +28,9 @@ Poorly formatted example:
 
 ```javascript
 let circle={x:0,y:250,speed:1,size:100}
-function setup() {
+function setup()
+
+{
 createCanvas(500,500)}
 function draw(){
 background(0);
