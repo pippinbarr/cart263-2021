@@ -7,12 +7,12 @@
 #### Deadlines
 
 ##### Proposal and prototype
-* Section B (Tuesdays): 11:59PM, 16 March 2021
-* Section A (Thursdays): 11:59PM, 18 March 2021
+* Section A (Tuesdays): 11:59PM, 16 March 2021
+* Section B (Thursdays): 11:59PM, 18 March 2021
 
 ##### Final project
-* Section B (Tuesdays): 11:59PM, 23 April 2021
-* Section A (Thursdays): 11:59PM, 25 April 2021
+* Section A (Tuesdays): 11:59PM, 23 April 2021
+* Section B (Thursdays): 11:59PM, 25 April 2021
 
 ## Objectives
 
