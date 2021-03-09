@@ -72,7 +72,7 @@ The proposal and prototype stage will require you to write a **short proposal do
 
 The final project will be the culmination of your learning in the course and so its key objectives are to demonstrate your technical mastery of concepts covered as well as to show your artistic engagement with programming as a medium of expression. Because the course covers diverse topics, there is no expectation to use **all** the technologies discussed.
 
-The final project will consist of an **artist's statement** and the final **p5 project**.
+The final project will consist of an **artist's statement** and the final **project**.
 
 ### Deadline
 
