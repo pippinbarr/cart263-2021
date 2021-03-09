@@ -454,10 +454,10 @@ Week of 22 March 2021
 ### Topics
 
 #### jQuery UI
-* **Watch** [8.1. jQuery UI Overview](#) and **read** the [notes](../topics/jquery/jquery-ui-overview.md)
-* **Watch** [8.2. jQuery UI Interactions](#) and **read** the [notes](../topics/jquery/jquery-ui-interactions.md)
-* **Watch** [8.3. jQuery UI Effects](#) and **read** the [notes](../topics/jquery/jquery-ui-effects.md)
-* **Watch** [8.4. jQuery UI Widgets](#) and **read** the [notes](../topics/jquery/jquery-ui-widgets.md)
+* **Watch** [8.1. jQuery UI Overview](#) and **read** the [notes](../topics/jquery-ui/jquery-ui-overview.md)
+* **Watch** [8.2. jQuery UI Interactions](#) and **read** the [notes](../topics/jquery-ui/jquery-ui-interactions.md)
+* **Watch** [8.3. jQuery UI Effects](#) and **read** the [notes](../topics/jquery-ui/jquery-ui-effects.md)
+* **Watch** [8.4. jQuery UI Widgets](#) and **read** the [notes](../topics/jquery-ui/jquery-ui-widgets.md)
 * References
   * [jQuery UI Homepage](https://jqueryui.com/)
   * [jQuery UI Demos](https://jqueryui.com/demos/)
