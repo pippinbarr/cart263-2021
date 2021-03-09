@@ -95,7 +95,7 @@ In `index.html`
 <body>
   <div id="prison">
     <span id="prisoner">The Prisoner.</span>
-  </div<
+  </div>
 </body>
 ```
 
