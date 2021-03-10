@@ -114,7 +114,7 @@ It's all very well to find the correct letters, but to make this more interestin
 
 So, in our `script.js`...
 
-1. Select the secret element and make them **draggable**
+1. Select the secret elements and make them **draggable**
 2. Add an option to the `.draggable()` method that creates a clone of the element when dragging (look up the `helper` option in the documentation or the "Visual feedback" demo)
 
 Now you should be able to drag the secret letters around on the page as a clone of the original letter. When you let go, they just disappear for now because we haven't handled dropping them in the right place...
@@ -132,9 +132,9 @@ So, onwards in `script.js`...
 1. Make the answer area droppable by selecting it and using the `.droppable()` method
 2. Add the `drop` option to the `.droppable()` method and provide a function that:
   * Receives the `event` and `ui` parameters
-  * Creates a `character` variable and assign the text inside the dragged element (remember `ui.draggable`)
+  * Creates a `character` variable and assigns the text inside the dragged element (remember `ui.draggable`)
   * Adds the character to the answer section (you can use `.append()` here most easily)
-  * Stops the dragged element from being draggable (check the `disable` method for Draggables)
+  * Stops the dragged element from being draggable (remember the `disable` method for Draggables)
   * Removes the `found` class from the dragged element (animate the removal)
   * Disables the mouseover for the dragged element (remember `.off()`)
 
