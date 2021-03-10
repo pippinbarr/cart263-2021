@@ -454,17 +454,17 @@ Week of 22 March 2021
 ### Topics
 
 #### jQuery UI
-* **Watch** [8.1. jQuery UI Overview](#) and **read** the [notes](../topics/jquery-ui/jquery-ui-overview.md)
-* **Watch** [8.2. jQuery UI Interactions](#) and **read** the [notes](../topics/jquery-ui/jquery-ui-interactions.md)
-* **Watch** [8.3. jQuery UI Effects](#) and **read** the [notes](../topics/jquery-ui/jquery-ui-effects.md)
-* **Watch** [8.4. jQuery UI Widgets](#) and **read** the [notes](../topics/jquery-ui/jquery-ui-widgets.md)
+* **Watch** [8.1. jQuery UI Overview](https://youtu.be/rIcb5sgDFrU) and **read** the [notes](../topics/jquery-ui/jquery-ui-overview.md)
+* **Watch** [8.2. jQuery UI Interactions](https://youtu.be/dPptjfKvOWs) and **read** the [notes](../topics/jquery-ui/jquery-ui-interactions.md)
+* **Watch** [8.3. jQuery UI Effects](https://youtu.be/3xRwwLgTpo0) and **read** the [notes](../topics/jquery-ui/jquery-ui-effects.md)
+* **Watch** [8.4. jQuery UI Widgets](https://youtu.be/KYTyCV1C918) and **read** the [notes](../topics/jquery-ui/jquery-ui-widgets.md)
 * References
   * [jQuery UI Homepage](https://jqueryui.com/)
   * [jQuery UI Demos](https://jqueryui.com/demos/)
   * [jQuery UI API](https://api.jqueryui.com/)
 
 ### Activity
-* **Complete** [Activity: Code Taker](../activities/code-taker.md) (**Watch** [8.5. Activity: Code Taker](#) to see Pippin doing it) ([Example final code](https://github.com/pippinbarr/cart263-2021/tree/main/examples/jquery-ui/code-taker/), [Online](https://pippinbarr.github.io/cart263-2021/examples/jquery-ui/code-taker/))
+* **Complete** [Activity: Code Taker](../activities/code-taker.md) (**Watch** [8.5. Activity: Code Taker](https://youtu.be/aNMHZy5Z8i8) to see Pippin doing it) ([Example final code](https://github.com/pippinbarr/cart263-2021/tree/main/examples/jquery-ui/code-taker/), [Online](https://pippinbarr.github.io/cart263-2021/examples/jquery-ui/code-taker/))
 
 ### Exercise
 * tbd.
