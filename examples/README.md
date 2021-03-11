@@ -158,13 +158,13 @@ Generate beautiful haiku.
 ### Nonsensifier
 Gradually corrupts the text on the webpage until it's all just illegible symbols.
 
-* [Nonsensifier Generator](https://pippinbarr.github.io/cart263-2021/examples/the-webpage/nonsenifier) ([Source](https://www.github.com/pippinbarr/cart263-2021/tree/master/examples/the-webpage/nonsensifier))
+* [Nonsensifier Generator](https://pippinbarr.github.io/cart263-2021/examples/the-webpage/nonsensifier) ([Source](https://www.github.com/pippinbarr/cart263-2021/tree/master/examples/the-webpage/nonsensifier))
 
 ### Spy Profile Generator
 
 Generates a spy profile for the user based on the name they enter, then allows them too view it by entering the password later on. Demonstrates loading multiple JSON files in plain JavaScript with Promises.
 
-* [Spy Profile Generator](https://pippinbarr.github.io/cart263-2021/examples/the-webpage/spy-profile-generator) ([Source](https://www.github.com/pippinbarr/cart263-2021/tree/master/examples/the-webpage/spy-profile-generator))
+* [Spy Profile Generator](https://pippinbarr.github.io/cart263-2021/examples/the-webpage/spy-profile-generator-dom) ([Source](https://www.github.com/pippinbarr/cart263-2021/tree/master/examples/the-webpage/spy-profile-generator-dom))
 
 ### Transform Poem
 A poem with very moving words. Ha ha ha.
