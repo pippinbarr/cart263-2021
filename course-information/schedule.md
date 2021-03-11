@@ -20,7 +20,7 @@
 - Week 7 - [The webpage](#the-webpage) - Introduction to HTML, CSS, and the DOM
 - Week 8 - [jQuery](#jquery) - Manipulating HTML and CSS via jQuery
 - Week 9 - [jQuery UI](#jquery-ui) - Interface elements with jQuery UI
-- Week 10 - [3D](#3d) - 3D graphics on the canvas with A-Frame
+- Week 10 - [Game Engine](#game-engine) - Working with Phaser as a game engine
 - Week 11 - [Project 2 Studio I](#project-2-studio-i) - Studio support for Project 2
 - Week 12 - [Project 2 Studio II](#project-2-studio-ii) - Studio support for Project 2
 - Week 13 - [Project 2 Studio III](#project-2-studio-iii) - Studio support for Project 2
@@ -490,20 +490,22 @@ Click through for examples of the topics covered in this section
 
 ---
 
-# A-Frame
+# Game Engine
 
 Week of 29 March 2021
 
 ## Objectives
-- Learning the A-Frame library
-- Using jQuery with A-Frame
+- Learning the structure of Phaser
+- Using Phaser to make simple game structures
 
 ## Before class
 
 ### Topics
-* **A-Frame**
-  * [A-Frame Homepage](https://aframe.io/)
-  * [A-Frame Documentation](https://aframe.io/docs/1.1.0/introduction/) (includes API)
+* **Phaser 3**
+  * [Phaser 3 Homepage](https://phaser.io/)
+  * [Phaser 3 API Documentation](https://photonstorm.github.io/phaser3-docs/)
+  * [Phaser 3 Examples](https://phaser.io/examples)
+  * [Phaser 3 Tutorials](https://phaser.io/news/category/tutorial)
 
 ---
 
