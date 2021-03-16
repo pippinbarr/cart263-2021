@@ -427,6 +427,7 @@ Click through for examples of the topics covered in this section
 * Q&A
 * Review of the week's material
 * [Project 2: Anything](../projects/project2/README.md)
+  * [Example final projects from 2020](../projects/project2/README.md#example-final-projects-from-2020)
 * The [C-LAB](https://clab.concordia.ca/) is there to help you
 
 ## Studio (in Discord studio channels after classroom period)
