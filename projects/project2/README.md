@@ -6,17 +6,17 @@
 
 ### Example final projects from 2020
 * *Computational Wizard Duel* by Anne Boutet
-  * https://github.com/purplunicorn25/CART263/tree/master/00-Projects/Project_3
-  * https://purplunicorn25.github.io/CART263/00-Projects/Project_3/index.html
+  * [Online](https://purplunicorn25.github.io/CART263/00-Projects/Project_3/index.html)
+  * [Source](https://github.com/purplunicorn25/CART263/tree/master/00-Projects/Project_3)
 * *Civitus* by Martin Hanses
-  * https://marafrass.github.io/cart263/Project3/index.html
-  * https://github.com/marafrass/cart263/tree/master/Project3
+  * [Online](https://marafrass.github.io/cart263/Project3/index.html)
+  * [Source](https://github.com/marafrass/cart263/tree/master/Project3)
 * *Plant Symphony* by Jonah McKay
-  * https://jonahmckay.github.io/cart263/projects/plant-symphony/
-  * https://github.com/jonahmckay/cart263/tree/master/projects/plant-symphony
+  * [Online](https://jonahmckay.github.io/cart263/projects/plant-symphony/)
+  * [Source](https://github.com/jonahmckay/cart263/tree/master/projects/plant-symphony)
 * *Questionable Logic: The Cube* by Yichen Wang
-  * https://github.com/tonylindorock/cart263-2020/tree/master/Projects/P3
-  * https://tonylindorock.github.io/cart263-2020/Projects/P3/index.html
+  * [Online](https://tonylindorock.github.io/cart263-2020/Projects/P3/index.html)
+  * [Source](https://github.com/tonylindorock/cart263-2020/tree/master/Projects/P3)
 
 #### Deadlines
 
