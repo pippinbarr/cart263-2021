@@ -263,7 +263,7 @@ A Sisyphean struggle against the perpetual popping up of existentialist dialogs.
 
 The fridge poetry experiences on a webpage that remembers your arrangements using localStorage.
 
-* [Fridge Poetry](https://pippinbarr.github.io/cart263-2021/examples/jquery-ui/fridge-poetry) ([Source](https://www.github.com/pippinbarr/cart263-2021/tree/master/examples/jquery-ui/fridge-poetry))
+* [Fridge Poetry](https://pippinbarr.github.io/cart263-2021/examples/jquery-ui/fridgepoetry) ([Source](https://www.github.com/pippinbarr/cart263-2021/tree/master/examples/jquery-ui/fridgepoetry))
 
 ### Hacking
 
@@ -275,7 +275,7 @@ A deadly serious simulation of what it is like to **HACK INTO THE MAINFRAME**, c
 
 A textual representation of a gun that fires textual representations of bullets.
 
-* [Six Shooter](https://pippinbarr.github.io/cart263-2021/examples/jquery-ui/six-shooter) ([Source](https://www.github.com/pippinbarr/cart263-2021/tree/master/examples/jquery-ui/six-shooter))
+* [Six Shooter](https://pippinbarr.github.io/cart263-2021/examples/jquery-ui/sixshooter) ([Source](https://www.github.com/pippinbarr/cart263-2021/tree/master/examples/jquery-ui/sixshooter))
 
 ### The Great Escape
 
