@@ -282,3 +282,61 @@ A textual representation of a gun that fires textual representations of bullets.
 Help "The Prisoner" escape from their "Prison" using an "Escape Tunnel" or the powers of your imagination.
 
 * [The Great Escape](https://pippinbarr.github.io/cart263-2021/examples/jquery-ui/the-great-escape) ([Source](https://www.github.com/pippinbarr/cart263-2021/tree/master/examples/jquery-ui/the-great-escape))
+
+---
+
+## Game Engine
+
+### Desperately Seeking Sadness
+
+The activity game in which you fly a neutral face emoji around a sea of thumbs ups seeking out the solitary thumbs down so you can collect it and feel bad about yourself. Over and over again!
+
+* [Desperately Seeking Sadness](https://pippinbarr.github.io/cart263-2021/examples/game-engine/desperately-seeking-sadness) ([Source](https://www.github.com/pippinbarr/cart263-2021/tree/master/examples/game-engine/desperately-seeking-sadness))
+
+### Combat at the Movies
+
+Pippin's game adapting different classic movies into the videogame "language" of *Combat* for the Atari 2600.
+
+**Very poor commenting.**
+
+* [Combat at the Movies](https://pippinbarr.github.io/combat-at-the-movies) ([Source](https://github.com/pippinbarr/combat-at-the-movies))
+
+### Let's Play: Ancient Greek Punishment: Competition Edition
+
+Pippin's game adapting his own game *Let's Play: Ancient Greek Punishment* into a competitive experience.
+
+**Very poor commenting.**
+
+* [Let's Play: Ancient Greek Punishment: Competition Edition](https://pippinbarr.github.io/lets-play-ancient-greek-punishment-competition-edition/) ([Source](https://github.com/pippinbarr/lets-play-ancient-greek-punishment-competition-edition))
+
+### Let's Play: Ancient Greek Punishment: Five-in-One
+
+Pippin's game adapting his own game *Let's Play: Ancient Greek Punishment* into a version where you play five minigames at the same time. Includes displaying multiple scenes simultaneously in Phaser 3.
+
+**Very poor commenting.**
+
+* [Let's Play: Ancient Greek Punishment: Five-in-One](https://pippinbarr.github.io/lets-play-ancient-greek-punishment-five-in-one) ([Source](https://github.com/pippinbarr/lets-play-ancient-greek-punishment-five-in-one))
+
+### Let's Play: Ancient Greek Punishment: Inversion Edition
+
+Pippin's game adapting his own game *Let's Play: Ancient Greek Punishment* into a version where you play the antagonist instead of the protagonist. Be the boulder instead of Sisyphus.
+
+**Very poor commenting.**
+
+* [Let's Play: Ancient Greek Punishment: Inversion Edition](https://pippinbarr.github.io/lets-play-ancient-greek-punishment-inversion-edition) ([Source](https://github.com/pippinbarr/lets-play-ancient-greek-punishment-inversion-edition))
+
+### Let's Play: Ancient Greek Punishment: Teaches Typing
+
+Pippin's game adapting his own game *Let's Play: Ancient Greek Punishment* into a typing tutor.
+
+**Very poor commenting.**
+
+* [Let's Play: Ancient Greek Punishment: Teaches Typing](https://pippinbarr.github.io/lets-play-ancient-greek-punishment-teaches-typing) ([Source](https://github.com/pippinbarr/lets-play-ancient-greek-punishment-teaches-typing))
+
+### The Artist Is Present 2
+
+Pippin's game recreating Marina Abramovic's classic performance *The Artist Is Present*. The player gets to play as Marina Abramovic herself, starting off in her apartment and making her way to the MoMA to start the performance. Lots of animation, scene switching, and more.
+
+**Very poor commenting.**
+
+* [The Artist Is Present 2](https://pippinbarr.github.io/the-artist-is-present-2/) ([Source](https://github.com/pippinbarr/the-artist-is-present-2))
