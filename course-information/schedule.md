@@ -502,11 +502,41 @@ Week of 29 March 2021
 ## Before class
 
 ### Topics
-* **Phaser 3**
+
+#### Phaser 3
+* **Watch** [1. Phaser 3 Overview](#) and **read** the [notes](../topics/game-engine/phaser-3-overview.md)
+* **Watch** [2. Phaser 3 Setup](#) and **read** the [notes](../topics/game-engine/phaser-3-setyo.md)
+* **Watch** [3. Phaser 3 Sprites](#) and **read** the [notes](../topics/game-engine/phaser-3-sprites.md)
+* **Watch** [4. Phaser 3 Physics and Movement](#) and **read** the [notes](../topics/game-engine/phaser-3-physics-and-movement.md)
+* **Watch** [5. Phaser 3 Physics and Collision](#) and **read** the [notes](../topics/game-engine/phaser-3-physics-and-collision.md)
+* References
   * [Phaser 3 Homepage](https://phaser.io/)
   * [Phaser 3 API Documentation](https://photonstorm.github.io/phaser3-docs/)
   * [Phaser 3 Examples](https://phaser.io/examples)
   * [Phaser 3 Tutorials](https://phaser.io/news/category/tutorial)
+
+### Activity
+* **Complete** [Activity: Desperately Seeking Sadness](../activities/desperately-seeking-sadness.md) (**Watch** [8.5. Activity: Desperately Seeking Sadness](#) to see Pippin doing it) ([Example final code](https://github.com/pippinbarr/cart263-2021/tree/main/examples/game-engine/desperately-seeking-sadness/), [Online](https://pippinbarr.github.io/cart263-2021/examples/game-engine/desperately-seeking-sadness/))
+
+### Exercise
+* tbd.
+
+## [Examples](../examples/#game-engine)
+Click through for examples of the topics covered in this section
+
+## Classroom (in Discord classroom channels at 13:30 on the day of class)
+* Q&A
+* Review of the week's material
+* [Project 2: Anything](../projects/project2/README.md)
+* The [C-LAB](https://clab.concordia.ca/) is there to help you
+
+## Studio (in Discord studio channels after classroom period)
+* Instructor and TA available to help
+* Work on Exercise
+* Work on Project
+
+## Homework
+* [Project 2: Anything](../projects/project2/README.md)
 
 ---
 
