@@ -516,7 +516,7 @@ Week of 29 March 2021
   * [Phaser 3 Tutorials](https://phaser.io/news/category/tutorial)
 
 ### Activity
-* **Complete** [Activity: Desperately Seeking Sadness](../activities/desperately-seeking-sadness.md) (**Watch** [8.5. Activity: Desperately Seeking Sadness](#) to see Pippin doing it) ([Example final code](https://github.com/pippinbarr/cart263-2021/tree/main/examples/game-engine/desperately-seeking-sadness/), [Online](https://pippinbarr.github.io/cart263-2021/examples/game-engine/desperately-seeking-sadness/))
+* **Complete** [Activity: Desperately Seeking Sadness](../activities/desperately-seeking-sadness.md) (**Watch** [6. Activity: Desperately Seeking Sadness](#) to see Pippin doing it) ([Example final code](https://github.com/pippinbarr/cart263-2021/tree/main/examples/game-engine/desperately-seeking-sadness/), [Online](https://pippinbarr.github.io/cart263-2021/examples/game-engine/desperately-seeking-sadness/))
 
 ### Exercise
 * tbd.
