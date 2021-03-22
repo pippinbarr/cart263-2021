@@ -505,7 +505,7 @@ Week of 29 March 2021
 
 #### Phaser 3
 * **Watch** [1. Phaser 3 Overview](#) and **read** the [notes](../topics/game-engine/phaser-3-overview.md)
-* **Watch** [2. Phaser 3 Setup](#) and **read** the [notes](../topics/game-engine/phaser-3-setyo.md)
+* **Watch** [2. Phaser 3 Setup](#) and **read** the [notes](../topics/game-engine/phaser-3-setup.md)
 * **Watch** [3. Phaser 3 Sprites](#) and **read** the [notes](../topics/game-engine/phaser-3-sprites.md)
 * **Watch** [4. Phaser 3 Physics and Movement](#) and **read** the [notes](../topics/game-engine/phaser-3-physics-and-movement.md)
 * **Watch** [5. Phaser 3 Physics and Collision](#) and **read** the [notes](../topics/game-engine/phaser-3-physics-and-collision.md)
