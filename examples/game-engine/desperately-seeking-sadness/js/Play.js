@@ -26,7 +26,7 @@ class Play extends Phaser.Scene {
     this.avatar.setCollideWorldBounds(true);
 
     // Create a sadness emoji in a random position
-    this.sadness = this.physics.add.sprite(x, y, `thumbs-down`);
+    this.sadness = this.physics.add.sprite(0, 0, `thumbs-down`);
     // Note how we can use RandomRectangle() here if we put the object we want
     // to reposition randomly in an array!
     Phaser.Actions.RandomRectangle([this.sadness], this.physics.world.bounds);
