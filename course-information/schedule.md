@@ -519,7 +519,7 @@ Week of 29 March 2021
 * **Complete** [Activity: Desperately Seeking Sadness](../activities/desperately-seeking-sadness.md) (**Watch** [6. Activity: Desperately Seeking Sadness](https://youtu.be/q_Irkdk5R-E) to see Pippin doing it) ([Example final code](https://github.com/pippinbarr/cart263-2021/tree/main/examples/game-engine/desperately-seeking-sadness/), [Online](https://pippinbarr.github.io/cart263-2021/examples/game-engine/desperately-seeking-sadness/))
 
 ### Exercise
-* tbd.
+* **Complete** [Exercise: Desperately Seeking Sadness++](../exercises/desperately-seeking-sadness-plus-plus.md) (due the night of class)
 
 ## [Examples](../examples/#game-engine)
 Click through for examples of the topics covered in this section
