@@ -1,0 +1,5 @@
+/* Some CSS grid styling to make the UI look less totally awful */
+#ui {
+  display: grid;
+  grid-template-columns: 250px 250px;
+}

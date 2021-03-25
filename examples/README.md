@@ -242,6 +242,12 @@ A recreation of the earlier transform poem using CSS animations instead of JavaS
 
 ## jQuery UI
 
+### jQuery with p5.js
+
+A fairly simple example of using jQuery and p5.js at the same time, including using HTML input elements to control things in the p5.js canvas.
+
+* [jQuery with p5.js](https://pippinbarr.github.io/cart263-2021/examples/jquery-ui/jquery-with-p5) ([Source](https://www.github.com/pippinbarr/cart263-2021/tree/master/examples/jquery-ui/jquery-with-p5))
+
 ### Beach Party
 
 A beach party of animated GIFs on a YouTube background!
