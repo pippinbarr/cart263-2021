@@ -258,6 +258,7 @@ Week of 15 February 2021
   * [ml5.js Reference](https://learn.ml5js.org/#/reference/index) (API)
   * [Dan Schiffman's introduction to ml5.js](https://www.youtube.com/watch?v=jmznx0Q1fP0)
   * [Teachable Machine](https://teachablemachine.withgoogle.com/) from Google
+  * [Coded Bias](https://concordiauniversity.on.worldcat.org/oclc/1200171382) (a documentary about bias in machine learning)
 
 ### Activity
 * **Complete** [Activity: Bubble Popper](../activities/bubble-popper.md) (**Watch** [5.4. Activity: Bubble Popper](https://youtu.be/zx0pNnoHp4Y) video to see Pippin doing it) ([Example final code](https://github.com/pippinbarr/cart263-2021/tree/main/examples/ai/bubble-popper/), [Online](https://pippinbarr.github.io/cart263-2021/examples/ai/bubble-popper/))
