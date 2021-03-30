@@ -106,7 +106,8 @@ Students will create their own repository on GitHub to save, track, and present 
 Specific evaluation requirements will be provided when assigned.
 
 - Weekly exercises (10%)
-   - 8 exercises worth 1.25% each
+   - 8 exercises total
+   - **Top 5** exercise grades will contribute 2% each of the final exercise grade
 - Project 1 (20%)
 - Project 2 proposal and prototype (10%)
 - Project final version (40%)
