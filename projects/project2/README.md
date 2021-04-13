@@ -27,8 +27,8 @@
 **Tell Pippin when you submit.**
 
 ##### Final project
-* Section A (Tuesdays): 11:59PM, 23 April 2021
-* Section B (Thursdays): 11:59PM, 25 April 2021
+* Section A (Tuesdays): 11:59PM, 27 April 2021
+* Section B (Thursdays): 11:59PM, 29 April 2021
 
 ## Objectives
 
@@ -90,8 +90,8 @@ The final project will consist of an **artist's statement** and the final **proj
 
 ### Deadline
 
-* Section A (Tuesdays): 11:59PM, 23 April 2021
-* Section B (Thursdays): 11:59PM, 25 April 2021
+* Section A (Tuesdays): 11:59PM, 27 April 2021
+* Section B (Thursdays): 11:59PM, 29 April 2021
 
 ### Requirements
 
